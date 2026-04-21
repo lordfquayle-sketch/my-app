@@ -3,11 +3,17 @@ import FXPanel from '@/components/FXPanel'
 
 export default function Home() {
   return (
-    <div className="grid grid-cols-3 gap-4 p-4 bg-black min-h-screen">
-      <div>
+    <div style={{
+      display: 'grid',
+      gridTemplateColumns: '340px 1fr',
+      gap: '1px',
+      background: '#1a2d4a',
+      minHeight: 'calc(100vh - 56px)',
+    }}>
+      <div style={{ background: '#050d1a' }}>
         <FXPanel />
       </div>
-      <div className="col-span-2">
+      <div style={{ background: '#050d1a' }}>
         <LiveTape />
       </div>
     </div>
