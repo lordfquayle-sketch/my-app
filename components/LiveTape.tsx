@@ -2,8 +2,14 @@
 
 import { useEffect, useState } from 'react'
 
+interface TapeEvent {
+  time: string
+  type: string
+  message: string
+}
+
 export default function LiveTape() {
-  const [events, setEvents] = useState([])
+  const [events, setEvents] = useState<TapeEvent[]>([])
   const [lastUpdated, setLastUpdated] = useState('')
 
   useEffect(() => {
