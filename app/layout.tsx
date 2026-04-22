@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import Link from 'next/link'
+import Ticker from '@/components/Ticker'
 
 export const metadata: Metadata = {
   title: 'Fiifi Terminal',
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               borderRadius: '50%',
               background: '#00c48c',
               boxShadow: '0 0 8px #00c48c',
+              animation: 'pulse 2s infinite',
             }} />
             <span style={{
               fontFamily: 'Syne, sans-serif',
@@ -51,7 +53,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Link href="/about" style={{ fontFamily: 'Space Mono, monospace', fontSize: '11px', letterSpacing: '0.1em', color: '#6b82a0', textDecoration: 'none' }}>ABOUT</Link>
           </div>
         </nav>
+        <Ticker />
         {children}
+        <style>{`
+          @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+          }
+        `}</style>
       </body>
     </html>
   )
