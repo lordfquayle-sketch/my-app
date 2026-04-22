@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell, RadarChart, Radar, PolarGrid, PolarAngleAxis } from 'recharts'
 
 export default function Insights() {
-  const [fx, setFx] = useState<any>({ NGN: 1580, GHS: 11.05, KES: 129.5, EGP: 50.2, XOF: 610, ZAR: 18.5 })
+  const [fx, setFx] = useState<any>({})
 
   useEffect(() => {
     const fetchFX = async () => {
@@ -17,23 +17,27 @@ export default function Insights() {
     return () => clearInterval(interval)
   }, [])
 
-  const fxData = [
-    { country: 'NGN', rate: Number(fx.NGN) },
-    { country: 'GHS', rate: Number(fx.GHS) },
-    { country: 'KES', rate: Number(fx.KES) },
-    { country: 'EGP', rate: Number(fx.EGP) },
-    { country: 'XOF', rate: Number(fx.XOF) },
-    { country: 'ZAR', rate: Number(fx.ZAR) },
+  const countries = [
+    { code: 'NGN', country: 'Nigeria', flag: '🇳🇬', risk: 72, driver: 'FX + Debt' },
+    { code: 'GHS', country: 'Ghana', flag: '🇬🇭', risk: 68, driver: 'Debt restructure' },
+    { code: 'EGP', country: 'Egypt', flag: '🇪🇬', risk: 74, driver: 'IMF pressure' },
+    { code: 'KES', country: 'Kenya', flag: '🇰🇪', risk: 61, driver: 'Fiscal deficit' },
+    { code: 'XOF', country: 'Ivory Coast', flag: '🇨🇮', risk: 55, driver: 'Stable' },
+    { code: 'ZAR', country: 'South Africa', flag: '🇿🇦', risk: 58, driver: 'Growth risk' },
+    { code: 'ETB', country: 'Ethiopia', flag: '🇪🇹', risk: 65, driver: 'Conflict risk' },
+    { code: 'TZS', country: 'Tanzania', flag: '🇹🇿', risk: 50, driver: 'Stable growth' },
+    { code: 'UGX', country: 'Uganda', flag: '🇺🇬', risk: 57, driver: 'Fiscal pressure' },
+    { code: 'MAD', country: 'Morocco', flag: '🇲🇦', risk: 48, driver: 'Resilient' },
+    { code: 'XAF', country: 'Senegal', flag: '🇸🇳', risk: 52, driver: 'Oil transition' },
+    { code: 'ZMW', country: 'Zambia', flag: '🇿🇲', risk: 70, driver: 'Debt restructure' },
+    { code: 'AOA', country: 'Angola', flag: '🇦🇴', risk: 63, driver: 'Oil dependency' },
+    { code: 'MZN', country: 'Mozambique', flag: '🇲🇿', risk: 66, driver: 'Gas + debt' },
   ]
 
-  const riskData = [
-    { country: 'Nigeria', score: 72, flag: '🇳🇬', driver: 'FX + Debt' },
-    { country: 'Ghana', score: 68, flag: '🇬🇭', driver: 'Debt restructure' },
-    { country: 'Egypt', score: 74, flag: '🇪🇬', driver: 'IMF pressure' },
-    { country: 'Kenya', score: 61, flag: '🇰🇪', driver: 'Fiscal deficit' },
-    { country: 'Ivory Coast', score: 55, flag: '🇨🇮', driver: 'Stable' },
-    { country: 'South Africa', score: 58, flag: '🇿🇦', driver: 'Growth risk' },
-  ]
+  const fxData = countries.map(c => ({
+    country: c.code,
+    rate: Number(fx[c.code]) || 0,
+  }))
 
   const radarData = [
     { metric: 'FX Stress', value: 78 },
@@ -44,7 +48,7 @@ export default function Insights() {
     { metric: 'External', value: 72 },
   ]
 
-  const colors = ['#ff3b3b', '#f5a623', '#00c48c', '#1e6bff', '#a855f7', '#ec4899']
+  const colors = ['#ff3b3b', '#f5a623', '#00c48c', '#1e6bff', '#a855f7', '#ec4899', '#ff3b3b', '#f5a623', '#00c48c', '#1e6bff', '#a855f7', '#ec4899', '#ff3b3b', '#f5a623']
 
   const getRiskColor = (score: number) => {
     if (score >= 70) return '#ff3b3b'
@@ -56,16 +60,16 @@ export default function Insights() {
     <div style={{ background: '#050d1a', minHeight: 'calc(100vh - 56px)', padding: '24px' }}>
       <div style={{ fontFamily: 'Space Mono, monospace', fontSize: '10px', letterSpacing: '0.15em', color: '#6b82a0', marginBottom: '4px' }}>FIIFI TERMINAL</div>
       <h1 style={{ fontFamily: 'Syne, sans-serif', fontWeight: 800, fontSize: '28px', color: '#e8eef8', marginBottom: '4px' }}>Market Insights</h1>
-      <p style={{ fontFamily: 'Space Mono, monospace', fontSize: '11px', color: '#6b82a0', marginBottom: '32px' }}>Live African sovereign and currency intelligence</p>
+      <p style={{ fontFamily: 'Space Mono, monospace', fontSize: '11px', color: '#6b82a0', marginBottom: '32px' }}>Live African sovereign and currency intelligence — 14 markets</p>
 
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '16px' }}>
 
         <div style={{ background: '#0a1628', border: '1px solid #1a2d4a', borderRadius: '8px', padding: '20px' }}>
-          <div style={{ fontFamily: 'Space Mono, monospace', fontSize: '10px', color: '#6b82a0', letterSpacing: '0.15em', marginBottom: '16px' }}>USD EXCHANGE RATES</div>
+          <div style={{ fontFamily: 'Space Mono, monospace', fontSize: '10px', color: '#6b82a0', letterSpacing: '0.15em', marginBottom: '16px' }}>USD EXCHANGE RATES — 14 MARKETS</div>
           <ResponsiveContainer width="99%" height={220}>
             <BarChart data={fxData}>
-              <XAxis dataKey="country" stroke="#2d4463" tick={{ fontFamily: 'Space Mono', fontSize: 10, fill: '#6b82a0' }} />
-              <YAxis stroke="#2d4463" tick={{ fontFamily: 'Space Mono', fontSize: 10, fill: '#6b82a0' }} />
+              <XAxis dataKey="country" stroke="#2d4463" tick={{ fontFamily: 'Space Mono', fontSize: 8, fill: '#6b82a0' }} />
+              <YAxis stroke="#2d4463" tick={{ fontFamily: 'Space Mono', fontSize: 8, fill: '#6b82a0' }} />
               <Tooltip contentStyle={{ background: '#0a1628', border: '1px solid #1a2d4a', fontFamily: 'Space Mono', fontSize: 11 }} />
               <Bar dataKey="rate" radius={[4, 4, 0, 0]}>
                 {fxData.map((_, i) => <Cell key={i} fill={colors[i]} />)}
@@ -88,21 +92,24 @@ export default function Insights() {
       </div>
 
       <div style={{ background: '#0a1628', border: '1px solid #1a2d4a', borderRadius: '8px', padding: '20px' }}>
-        <div style={{ fontFamily: 'Space Mono, monospace', fontSize: '10px', color: '#6b82a0', letterSpacing: '0.15em', marginBottom: '16px' }}>COUNTRY RISK SCORES</div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '12px' }}>
-          {riskData.map((c, i) => (
-            <div key={i} style={{ background: '#050d1a', border: '1px solid #1a2d4a', borderRadius: '6px', padding: '16px' }}>
+        <div style={{ fontFamily: 'Space Mono, monospace', fontSize: '10px', color: '#6b82a0', letterSpacing: '0.15em', marginBottom: '16px' }}>COUNTRY RISK SCORES — 14 MARKETS</div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '10px' }}>
+          {countries.map((c, i) => (
+            <div key={i} style={{ background: '#050d1a', border: '1px solid #1a2d4a', borderRadius: '6px', padding: '14px' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  <span style={{ fontSize: '16px' }}>{c.flag}</span>
-                  <span style={{ fontFamily: 'Syne, sans-serif', fontSize: '13px', color: '#e8eef8', fontWeight: 600 }}>{c.country}</span>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                  <span style={{ fontSize: '14px' }}>{c.flag}</span>
+                  <span style={{ fontFamily: 'Syne, sans-serif', fontSize: '12px', color: '#e8eef8', fontWeight: 600 }}>{c.country}</span>
                 </div>
-                <span style={{ fontFamily: 'Space Mono, monospace', fontSize: '18px', fontWeight: 700, color: getRiskColor(c.score) }}>{c.score}</span>
+                <span style={{ fontFamily: 'Space Mono, monospace', fontSize: '16px', fontWeight: 700, color: getRiskColor(c.risk) }}>{c.risk}</span>
               </div>
-              <div style={{ background: '#0a1628', borderRadius: '4px', height: '4px', marginBottom: '8px' }}>
-                <div style={{ background: getRiskColor(c.score), height: '4px', borderRadius: '4px', width: c.score + '%' }} />
+              <div style={{ background: '#0a1628', borderRadius: '4px', height: '3px', marginBottom: '6px' }}>
+                <div style={{ background: getRiskColor(c.risk), height: '3px', borderRadius: '4px', width: c.risk + '%' }} />
               </div>
               <div style={{ fontFamily: 'Space Mono, monospace', fontSize: '9px', color: '#6b82a0' }}>{c.driver}</div>
+              <div style={{ fontFamily: 'Space Mono, monospace', fontSize: '10px', color: '#00c48c', marginTop: '4px' }}>
+                {fx[c.code] ? Number(fx[c.code]).toFixed(2) : '...'}
+              </div>
             </div>
           ))}
         </div>
