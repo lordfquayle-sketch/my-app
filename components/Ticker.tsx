@@ -25,14 +25,9 @@ export default function Ticker() {
   }, [])
 
   const pairs: string[] = ['NGN','GHS','KES','EGP','ZAR','ETB','MAD','ZMW','AOA','MZN']
-  const flags: Record<string, string> = {
-    NGN: 'NG', GHS: 'GH', KES: 'KE', EGP: 'EG',
-    ZAR: 'ZA', ETB: 'ET', MAD: 'MA', ZMW: 'ZM',
-    AOA: 'AO', MZN: 'MZ'
-  }
 
-  const items = pairs.map(c =>
-    flags[c] + ' USD/' + c + ' ' + (fx[c] ? Number(fx[c]).toFixed(2) : '...')
+  const items = pairs.map((c: string) =>
+    'USD/' + c + ' ' + (fx[c] ? Number(fx[c]).toFixed(2) : '...')
   ).join('   |   ')
 
   return (
