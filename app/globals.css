@@ -6,7 +6,6 @@
   --navy-3: #0f1e35;
   --border: #1a2d4a;
   --accent: #1e6bff;
-  --accent-dim: #0d3d99;
   --red: #ff3b3b;
   --yellow: #f5a623;
   --green: #00c48c;
@@ -29,3 +28,15 @@ body {
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: var(--navy-2); }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+@media (max-width: 768px) {
+  .desktop-only { display: none !important; }
+  .mobile-stack { flex-direction: column !important; }
+  .mobile-full { width: 100% !important; grid-template-columns: 1fr !important; }
+  .mobile-pad { padding: 16px !important; }
+  .mobile-text-sm { font-size: 10px !important; }
+}
+
+@media (min-width: 769px) {
+  .mobile-only { display: none !important; }
+}
