@@ -10,16 +10,24 @@ export default function About() {
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
           <div style={{ background: '#0a1628', border: '1px solid #1a2d4a', borderRadius: '8px', overflow: 'hidden' }}>
-            <Image
-              src="/profile.jpeg"
-              alt="Lord Fiifi Quayle"
-              width={400}
-              height={400}
-              style={{ width: '100%', height: '300px', objectFit: 'cover', objectPosition: 'top' }}
-            />
+            <Image src="/profile.jpeg" alt="Lord Fiifi Quayle" width={400} height={400} style={{ width: '100%', height: '300px', objectFit: 'cover', objectPosition: 'top' }} />
             <div style={{ padding: '16px' }}>
               <div style={{ fontFamily: 'Syne, sans-serif', fontWeight: 700, fontSize: '16px', color: '#e8eef8', marginBottom: '4px' }}>Lord Fiifi Quayle</div>
               <div style={{ fontFamily: 'Space Mono, monospace', fontSize: '10px', color: '#f5a623', letterSpacing: '0.1em' }}>SOVEREIGN RISK ANALYST</div>
+            </div>
+          </div>
+
+          <div style={{ background: '#0a1628', border: '1px solid #1a2d4a', borderRadius: '8px', padding: '16px' }}>
+            <div style={{ fontFamily: 'Space Mono, monospace', fontSize: '10px', color: '#6b82a0', letterSpacing: '0.15em', marginBottom: '12px' }}>CONNECT</div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+              <a href="https://twitter.com/lordfquayle" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px 14px', background: '#050d1a', border: '1px solid #1a2d4a', borderRadius: '6px', textDecoration: 'none' }}>
+                <span style={{ fontFamily: 'Space Mono, monospace', fontSize: '11px', color: '#1e6bff' }}>X (Twitter)</span>
+                <span style={{ fontFamily: 'Space Mono, monospace', fontSize: '11px', color: '#6b82a0' }}>@lordfquayle</span>
+              </a>
+              <a href="https://linkedin.com/in/lord-fiifi-quayle" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px 14px', background: '#050d1a', border: '1px solid #1a2d4a', borderRadius: '6px', textDecoration: 'none' }}>
+                <span style={{ fontFamily: 'Space Mono, monospace', fontSize: '11px', color: '#1e6bff' }}>LinkedIn</span>
+                <span style={{ fontFamily: 'Space Mono, monospace', fontSize: '11px', color: '#6b82a0' }}>Lord Fiifi Quayle</span>
+              </a>
             </div>
           </div>
 
