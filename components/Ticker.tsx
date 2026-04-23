@@ -20,7 +20,7 @@ export default function Ticker() {
     return () => clearInterval(tick)
   }, [])
   const pairs = ['NGN','GHS','KES','EGP','ZAR','ETB','MAD','ZMW','AOA','MZN']
-  const flags = {'NGN':'🇳🇬','GHS':'🇬🇭','KES':'🇰🇪','EGP':'🇪🇬','ZAR':'🇿🇦','ETB':'🇪🇹','MAD':'🇲🇦','ZMW':'🇿🇲','AOA':'🇦🇴','MZN':'🇲🇿'}
+  const flags: Record<string, string> = {'NGN':'🇳🇬','GHS':'🇬🇭','KES':'🇰🇪','EGP':'🇪🇬','ZAR':'🇿🇦','ETB':'🇪🇹','MAD':'🇲🇦','ZMW':'🇿🇲','AOA':'🇦🇴','MZN':'🇲🇿'}
   const items = pairs.map(c => flags[c] + ' USD/' + c + ' ' + (fx[c] ? Number(fx[c]).toFixed(2) : '...')).join('   |   ')
   return (
     <div style={{background:'#0a1628',borderBottom:'1px solid #1a2d4a',height:'32px',display:'flex',alignItems:'center',overflow:'hidden'}}>
