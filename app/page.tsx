@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import LiveTape from '@/components/LiveTape'
 import FXPanel from '@/components/FXPanel'
 
-const signals = [
+const defaultSignals = [
   { time: '14:32', signal: 'GHANA 2030s → +42bps', detail: 'LIQUIDITY THIN', type: 'ALERT' },
   { time: '14:31', signal: 'NIGERIA NGN → -1.8%', detail: 'PARALLEL GAP WIDENS', type: 'ALERT' },
   { time: '14:30', signal: 'BRENT → -2.1%', detail: 'DEMAND FEARS', type: 'WARNING' },
@@ -27,29 +27,20 @@ const riskTable = [
   { country: 'IVORY COAST', cds: 410, delta: '+6', bond: '-0.2pts', fx: '-0.1%', signal: 'STABLE BUT WATCH', color: '#00c48c' },
 ]
 
-const insights = [
-  {
-    title: 'MARKETS ARE MISPRICING DURATION RISK',
-    body: 'Oil volatility is priced. Credit deterioration is not. Spreads are not fully reflecting funding stress across frontier sovereigns.',
-    bullets: ['BRENT VOL HIGH BUT NOT STICKY', 'CDS WIDENING UNEVENLY', 'LOCAL LIQUIDITY TIGHTENING'],
-    conclusion: 'EXPECT CREDIT TO CATCH DOWN.'
-  },
-  {
-    title: 'FX IS THE FIRST WARNING SIGNAL',
-    body: 'Currency weakness is outpacing bond repricing. This is not stable.',
-    bullets: ['NGN DISLOCATION PERSISTING', 'GHS UNDER PRESSURE', 'ZMW FOLLOWING'],
-    conclusion: 'FX MOVES FIRST. CREDIT FOLLOWS.'
-  },
-]
-
 export default function Home() {
   const [blink, setBlink] = useState(true)
   const [copied, setCopied] = useState(false)
   const [activeTab, setActiveTab] = useState('signals')
+  const [content, setContent] = useState<any>(null)
 
   useEffect(() => {
     const b = setInterval(() => setBlink(v => !v), 800)
     return () => clearInterval(b)
+  }, [])
+
+  useEffect(() => {
+    const saved = localStorage.getItem('terminal_content')
+    if (saved) setContent(JSON.parse(saved))
   }, [])
 
   const handleShare = () => {
@@ -72,10 +63,15 @@ export default function Home() {
     INFO: '#00c48c',
   }
 
+  const riskIndex = content?.riskIndex || '68'
+  const riskStatus = content?.riskStatus || 'ELEVATED'
+  const insight1 = content?.insight1 || { title: 'MARKETS ARE MISPRICING DURATION RISK', body: 'Oil volatility is priced. Credit deterioration is not. Spreads are not fully reflecting funding stress across frontier sovereigns.', conclusion: 'EXPECT CREDIT TO CATCH DOWN.' }
+  const insight2 = content?.insight2 || { title: 'FX IS THE FIRST WARNING SIGNAL', body: 'Currency weakness is outpacing bond repricing. This is not stable.', conclusion: 'FX MOVES FIRST. CREDIT FOLLOWS.' }
+  const brief = content?.brief || { title: 'LIQUIDITY IS TIGHTENING FASTER THAN MARKETS ADMIT', body: 'African sovereign credit is entering a phase where funding conditions are deteriorating quietly while global markets remain distracted by oil and rates.', week: '17' }
+
   return (
     <div style={{ background: '#050d1a', minHeight: 'calc(100vh - 88px)' }}>
 
-      {/* HERO HEADER */}
       <div style={{ background: '#0a1628', borderBottom: '1px solid #1a2d4a', padding: '20px 24px' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '12px' }}>
           <div>
@@ -96,15 +92,11 @@ export default function Home() {
 
       <div style={{ padding: '16px 24px', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px' }}>
 
-        {/* LEFT: RISK INDEX + FX */}
         <div style={{ minWidth: 0 }}>
-          <FXPanel />
+          <FXPanel riskIndex={riskIndex} riskStatus={riskStatus} />
         </div>
 
-        {/* RIGHT: TABS */}
         <div style={{ minWidth: 0, gridColumn: 'span 2' }}>
-
-          {/* TAB BAR */}
           <div style={{ display: 'flex', gap: '2px', marginBottom: '16px', background: '#0a1628', borderRadius: '8px', padding: '4px', border: '1px solid #1a2d4a' }}>
             {[['signals', 'SIGNAL STREAM'], ['risk', 'RISK TABLE'], ['insights', 'MACRO INSIGHTS'], ['tape', 'NEWS TAPE']].map(([key, label]) => (
               <button key={key} onClick={() => setActiveTab(key)} style={{ flex: 1, fontFamily: 'Space Mono, monospace', fontSize: '9px', padding: '8px 4px', borderRadius: '6px', border: 'none', background: activeTab === key ? '#1e6bff22' : 'transparent', color: activeTab === key ? '#1e6bff' : '#6b82a0', cursor: 'pointer', letterSpacing: '0.05em', transition: 'all 0.2s' }}>
@@ -113,12 +105,11 @@ export default function Home() {
             ))}
           </div>
 
-          {/* SIGNAL STREAM */}
           {activeTab === 'signals' && (
             <div style={{ background: '#0a1628', border: '1px solid #1a2d4a', borderRadius: '8px', padding: '16px' }}>
               <div style={{ fontFamily: 'Space Mono, monospace', fontSize: '10px', color: '#6b82a0', letterSpacing: '0.15em', marginBottom: '12px' }}>LIVE SIGNAL LAYER — AFRICAN MARKETS</div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                {signals.map((s, i) => (
+                {defaultSignals.map((s, i) => (
                   <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '10px 14px', background: '#050d1a', border: '1px solid #1a2d4a', borderLeft: '3px solid ' + signalColor[s.type], borderRadius: '6px' }}>
                     <span style={{ fontFamily: 'Space Mono, monospace', fontSize: '9px', color: '#2d4463', whiteSpace: 'nowrap' }}>{s.time}</span>
                     <span style={{ fontFamily: 'Space Mono, monospace', fontSize: '11px', color: '#e8eef8', flex: 1 }}>{s.signal}</span>
@@ -129,7 +120,6 @@ export default function Home() {
             </div>
           )}
 
-          {/* RISK TABLE */}
           {activeTab === 'risk' && (
             <div style={{ background: '#0a1628', border: '1px solid #1a2d4a', borderRadius: '8px', padding: '16px', overflowX: 'auto' }}>
               <div style={{ fontFamily: 'Space Mono, monospace', fontSize: '10px', color: '#6b82a0', letterSpacing: '0.15em', marginBottom: '12px' }}>SOVEREIGN RISK — RANKED BY REAL-TIME DETERIORATION</div>
@@ -157,42 +147,27 @@ export default function Home() {
             </div>
           )}
 
-          {/* MACRO INSIGHTS */}
           {activeTab === 'insights' && (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-              {insights.map((insight, i) => (
+              {[insight1, insight2].map((insight, i) => (
                 <div key={i} style={{ background: '#0a1628', border: '1px solid #1a2d4a', borderRadius: '8px', padding: '20px' }}>
                   <div style={{ fontFamily: 'Space Mono, monospace', fontSize: '12px', color: '#1e6bff', letterSpacing: '0.1em', marginBottom: '10px', fontWeight: 700 }}>{insight.title}</div>
                   <p style={{ fontFamily: 'Syne, sans-serif', fontSize: '13px', color: '#6b82a0', lineHeight: 1.7, marginBottom: '12px' }}>{insight.body}</p>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', marginBottom: '12px' }}>
-                    {insight.bullets.map((b, j) => (
-                      <div key={j} style={{ fontFamily: 'Space Mono, monospace', fontSize: '10px', color: '#f5a623' }}>→ {b}</div>
-                    ))}
-                  </div>
                   <div style={{ fontFamily: 'Space Mono, monospace', fontSize: '11px', color: '#e8eef8', borderTop: '1px solid #1a2d4a', paddingTop: '10px' }}>{insight.conclusion}</div>
                 </div>
               ))}
-
               <div style={{ background: '#0a1628', border: '1px solid #1a2d4a', borderRadius: '8px', padding: '20px' }}>
-                <div style={{ fontFamily: 'Space Mono, monospace', fontSize: '10px', color: '#6b82a0', letterSpacing: '0.15em', marginBottom: '12px' }}>WEEKLY MACRO BRIEF — WEEK 17</div>
-                <div style={{ fontFamily: 'Space Mono, monospace', fontSize: '11px', color: '#f5a623', marginBottom: '10px' }}>LIQUIDITY IS TIGHTENING FASTER THAN MARKETS ADMIT</div>
-                <p style={{ fontFamily: 'Syne, sans-serif', fontSize: '13px', color: '#6b82a0', lineHeight: 1.7, marginBottom: '12px' }}>African sovereign credit is entering a phase where funding conditions are deteriorating quietly while global markets remain distracted by oil and rates.</p>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
-                  {['CREDIT SPREADS LAGGING REAL CONDITIONS', 'FX PRESSURE BUILDING UNDER SURFACE', 'POLICY RESPONSES NOT YET ALIGNED'].map((b, j) => (
-                    <div key={j} style={{ fontFamily: 'Space Mono, monospace', fontSize: '10px', color: '#f5a623' }}>→ {b}</div>
-                  ))}
-                </div>
+                <div style={{ fontFamily: 'Space Mono, monospace', fontSize: '10px', color: '#6b82a0', letterSpacing: '0.15em', marginBottom: '12px' }}>WEEKLY MACRO BRIEF — WEEK {brief.week}</div>
+                <div style={{ fontFamily: 'Space Mono, monospace', fontSize: '11px', color: '#f5a623', marginBottom: '10px' }}>{brief.title}</div>
+                <p style={{ fontFamily: 'Syne, sans-serif', fontSize: '13px', color: '#6b82a0', lineHeight: 1.7 }}>{brief.body}</p>
               </div>
             </div>
           )}
 
-          {/* NEWS TAPE */}
           {activeTab === 'tape' && <LiveTape />}
-
         </div>
       </div>
 
-      {/* FOOTER */}
       <div style={{ borderTop: '1px solid #1a2d4a', padding: '16px 24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '8px' }}>
         <div style={{ fontFamily: 'Space Mono, monospace', fontSize: '10px', color: '#2d4463' }}>POWERED BY LORD FIIFI QUAYLE ©️ 2026</div>
         <div style={{ fontFamily: 'Space Mono, monospace', fontSize: '10px', color: '#2d4463' }}>AFRICA MACRO INTELLIGENCE · REAL-TIME SOVEREIGN RISK</div>
@@ -200,7 +175,6 @@ export default function Home() {
           {copied ? 'COPIED!' : '↗️ SHARE TERMINAL'}
         </button>
       </div>
-
     </div>
   )
 }
