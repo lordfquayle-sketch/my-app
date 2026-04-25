@@ -8,6 +8,7 @@ export default function Admin() {
   const [error, setError] = useState('')
   const [saving, setSaving] = useState(false)
   const [saved, setSaved] = useState(false)
+  const [loading, setLoading] = useState(false)
 
   const [insight1Title, setInsight1Title] = useState('MARKETS ARE MISPRICING DURATION RISK')
   const [insight1Body, setInsight1Body] = useState('Oil volatility is priced. Credit deterioration is not.')
@@ -20,29 +21,33 @@ export default function Admin() {
   const [weekNumber, setWeekNumber] = useState('17')
   const [riskIndex, setRiskIndex] = useState('68')
   const [riskStatus, setRiskStatus] = useState('ELEVATED')
-
   const [fxRates, setFxRates] = useState({
     NGN: '', GHS: '', KES: '', EGP: '', XOF: '', ZAR: '',
     ETB: '', TZS: '', UGX: '', MAD: '', XAF: '', ZMW: '', AOA: '', MZN: ''
   })
 
-  useEffect(() => {
-    const saved = localStorage.getItem('terminal_content')
-    if (saved) {
-      const content = JSON.parse(saved)
-      if (content.insight1) { setInsight1Title(content.insight1.title); setInsight1Body(content.insight1.body); setInsight1Conclusion(content.insight1.conclusion) }
-      if (content.insight2) { setInsight2Title(content.insight2.title); setInsight2Body(content.insight2.body); setInsight2Conclusion(content.insight2.conclusion) }
-      if (content.brief) { setBriefTitle(content.brief.title); setBriefBody(content.brief.body); setWeekNumber(content.brief.week) }
-      if (content.riskIndex) setRiskIndex(content.riskIndex)
-      if (content.riskStatus) setRiskStatus(content.riskStatus)
-      if (content.fxRates) setFxRates(content.fxRates)
+  const loadContent = async () => {
+    setLoading(true)
+    try {
+      const res = await fetch('/api/content')
+      const data = await res.json()
+      if (data.insight1) { setInsight1Title(data.insight1.title); setInsight1Body(data.insight1.body); setInsight1Conclusion(data.insight1.conclusion) }
+      if (data.insight2) { setInsight2Title(data.insight2.title); setInsight2Body(data.insight2.body); setInsight2Conclusion(data.insight2.conclusion) }
+      if (data.brief) { setBriefTitle(data.brief.title); setBriefBody(data.brief.body); setWeekNumber(data.brief.week) }
+      if (data.riskIndex) setRiskIndex(data.riskIndex)
+      if (data.riskStatus) setRiskStatus(data.riskStatus)
+      if (data.fxRates) setFxRates(data.fxRates)
+    } catch (e) {
+      console.error(e)
     }
-  }, [])
+    setLoading(false)
+  }
 
-  const handleLogin = () => {
+  const handleLogin = async () => {
     if (password === '1221password!') {
       setLoggedIn(true)
       setError('')
+      await loadContent()
     } else {
       setError('Incorrect password')
     }
@@ -58,11 +63,18 @@ export default function Admin() {
       riskStatus,
       fxRates,
     }
-    localStorage.setItem('terminal_content', JSON.stringify(content))
-    await new Promise(r => setTimeout(r, 800))
+    try {
+      await fetch('/api/content', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(content)
+      })
+      setSaved(true)
+      setTimeout(() => setSaved(false), 2000)
+    } catch (e) {
+      console.error(e)
+    }
     setSaving(false)
-    setSaved(true)
-    setTimeout(() => setSaved(false), 2000)
   }
 
   if (!loggedIn) {
@@ -79,26 +91,27 @@ export default function Admin() {
     )
   }
 
+  if (loading) {
+    return (
+      <div style={{ background: '#050d1a', minHeight: 'calc(100vh - 88px)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <div style={{ fontFamily: 'Space Mono, monospace', fontSize: '12px', color: '#6b82a0' }}>LOADING CONTENT...</div>
+      </div>
+    )
+  }
+
   const inputStyle = { width: '100%', padding: '10px', background: '#050d1a', border: '1px solid #1a2d4a', borderRadius: '6px', color: '#e8eef8', fontFamily: 'Syne, sans-serif', fontSize: '13px', outline: 'none', marginBottom: '8px' }
   const textareaStyle = { ...inputStyle, minHeight: '80px', resize: 'vertical' as const }
   const labelStyle = { fontFamily: 'Space Mono, monospace', fontSize: '9px', color: '#6b82a0', letterSpacing: '0.15em', marginBottom: '6px', display: 'block' }
   const sectionStyle = { background: '#0a1628', border: '1px solid #1a2d4a', borderRadius: '8px', padding: '20px', marginBottom: '16px' }
 
   const fxCurrencies = [
-    { code: 'NGN', country: 'Nigeria' },
-    { code: 'GHS', country: 'Ghana' },
-    { code: 'KES', country: 'Kenya' },
-    { code: 'EGP', country: 'Egypt' },
-    { code: 'XOF', country: 'Ivory Coast' },
-    { code: 'ZAR', country: 'South Africa' },
-    { code: 'ETB', country: 'Ethiopia' },
-    { code: 'TZS', country: 'Tanzania' },
-    { code: 'UGX', country: 'Uganda' },
-    { code: 'MAD', country: 'Morocco' },
-    { code: 'XAF', country: 'Senegal' },
-    { code: 'ZMW', country: 'Zambia' },
-    { code: 'AOA', country: 'Angola' },
-    { code: 'MZN', country: 'Mozambique' },
+    { code: 'NGN', country: 'Nigeria' }, { code: 'GHS', country: 'Ghana' },
+    { code: 'KES', country: 'Kenya' }, { code: 'EGP', country: 'Egypt' },
+    { code: 'XOF', country: 'Ivory Coast' }, { code: 'ZAR', country: 'South Africa' },
+    { code: 'ETB', country: 'Ethiopia' }, { code: 'TZS', country: 'Tanzania' },
+    { code: 'UGX', country: 'Uganda' }, { code: 'MAD', country: 'Morocco' },
+    { code: 'XAF', country: 'Senegal' }, { code: 'ZMW', country: 'Zambia' },
+    { code: 'AOA', country: 'Angola' }, { code: 'MZN', country: 'Mozambique' },
   ]
 
   return (

@@ -5,9 +5,10 @@ import { useEffect, useState } from 'react'
 interface FXPanelProps {
   riskIndex?: string
   riskStatus?: string
+  manualFx?: Record<string, string>
 }
 
-export default function FXPanel({ riskIndex = '68', riskStatus = 'ELEVATED' }: FXPanelProps) {
+export default function FXPanel({ riskIndex = '68', riskStatus = 'ELEVATED', manualFx = {} }: FXPanelProps) {
   const [fx, setFx] = useState<Record<string, string>>({})
   const [time, setTime] = useState('')
 
@@ -42,6 +43,12 @@ export default function FXPanel({ riskIndex = '68', riskStatus = 'ELEVATED' }: F
 
   const statusColor = riskStatus === 'ELEVATED' || riskStatus === 'HIGH' ? '#ff3b3b' : riskStatus === 'MODERATE' ? '#f5a623' : '#00c48c'
 
+  const getRate = (code: string) => {
+    if (manualFx[code] && manualFx[code] !== '') return Number(manualFx[code]).toFixed(2)
+    if (fx[code]) return Number(fx[code]).toFixed(2)
+    return '...'
+  }
+
   return (
     <div style={{ padding: '24px', height: '100%', overflowY: 'auto' }}>
       <div style={{ fontFamily: 'Space Mono, monospace', fontSize: '10px', letterSpacing: '0.15em', color: '#6b82a0', marginBottom: '24px' }}>SOVEREIGN RISK MONITOR</div>
@@ -71,8 +78,13 @@ export default function FXPanel({ riskIndex = '68', riskStatus = 'ELEVATED' }: F
                   <div style={{ fontFamily: 'Syne, sans-serif', fontSize: '9px', color: '#6b82a0' }}>{country}</div>
                 </div>
               </div>
-              <div style={{ fontFamily: 'Space Mono, monospace', fontSize: '12px', color: '#00c48c', fontWeight: 700 }}>
-                {fx[code] ? Number(fx[code]).toFixed(2) : '...'}
+              <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+                {manualFx[code] && manualFx[code] !== '' && (
+                  <span style={{ fontFamily: 'Space Mono, monospace', fontSize: '8px', color: '#f5a623' }}>M</span>
+                )}
+                <div style={{ fontFamily: 'Space Mono, monospace', fontSize: '12px', color: '#00c48c', fontWeight: 700 }}>
+                  {getRate(code)}
+                </div>
               </div>
             </div>
           ))}

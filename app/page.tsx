@@ -39,8 +39,16 @@ export default function Home() {
   }, [])
 
   useEffect(() => {
-    const saved = localStorage.getItem('terminal_content')
-    if (saved) setContent(JSON.parse(saved))
+    const loadContent = async () => {
+      try {
+        const res = await fetch('/api/content')
+        const data = await res.json()
+        if (data && Object.keys(data).length > 0) setContent(data)
+      } catch (e) {
+        console.error(e)
+      }
+    }
+    loadContent()
   }, [])
 
   const handleShare = () => {
@@ -65,13 +73,13 @@ export default function Home() {
 
   const riskIndex = content?.riskIndex || '68'
   const riskStatus = content?.riskStatus || 'ELEVATED'
-  const insight1 = content?.insight1 || { title: 'MARKETS ARE MISPRICING DURATION RISK', body: 'Oil volatility is priced. Credit deterioration is not. Spreads are not fully reflecting funding stress across frontier sovereigns.', conclusion: 'EXPECT CREDIT TO CATCH DOWN.' }
+  const manualFx = content?.fxRates || {}
+  const insight1 = content?.insight1 || { title: 'MARKETS ARE MISPRICING DURATION RISK', body: 'Oil volatility is priced. Credit deterioration is not.', conclusion: 'EXPECT CREDIT TO CATCH DOWN.' }
   const insight2 = content?.insight2 || { title: 'FX IS THE FIRST WARNING SIGNAL', body: 'Currency weakness is outpacing bond repricing. This is not stable.', conclusion: 'FX MOVES FIRST. CREDIT FOLLOWS.' }
-  const brief = content?.brief || { title: 'LIQUIDITY IS TIGHTENING FASTER THAN MARKETS ADMIT', body: 'African sovereign credit is entering a phase where funding conditions are deteriorating quietly while global markets remain distracted by oil and rates.', week: '17' }
+  const brief = content?.brief || { title: 'LIQUIDITY IS TIGHTENING FASTER THAN MARKETS ADMIT', body: 'African sovereign credit is entering a phase where funding conditions are deteriorating quietly.', week: '17' }
 
   return (
     <div style={{ background: '#050d1a', minHeight: 'calc(100vh - 88px)' }}>
-
       <div style={{ background: '#0a1628', borderBottom: '1px solid #1a2d4a', padding: '20px 24px' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '12px' }}>
           <div>
@@ -82,18 +90,15 @@ export default function Home() {
             <h1 style={{ fontFamily: 'Syne, sans-serif', fontWeight: 800, fontSize: 'clamp(20px, 4vw, 32px)', color: '#e8eef8', marginBottom: '4px' }}>REAL-TIME SOVEREIGN RISK</h1>
             <p style={{ fontFamily: 'Space Mono, monospace', fontSize: '11px', color: '#6b82a0' }}>FX · CREDIT · MACRO FLOWS · FRONTIER MARKETS</p>
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-            <button onClick={handleShare} style={{ fontFamily: 'Space Mono, monospace', fontSize: '11px', padding: '8px 16px', background: '#1e6bff22', border: '1px solid #1e6bff', borderRadius: '6px', color: '#1e6bff', cursor: 'pointer' }}>
-              {copied ? 'COPIED!' : '↗️ SHARE'}
-            </button>
-          </div>
+          <button onClick={handleShare} style={{ fontFamily: 'Space Mono, monospace', fontSize: '11px', padding: '8px 16px', background: '#1e6bff22', border: '1px solid #1e6bff', borderRadius: '6px', color: '#1e6bff', cursor: 'pointer' }}>
+            {copied ? 'COPIED!' : '↗️ SHARE'}
+          </button>
         </div>
       </div>
 
       <div style={{ padding: '16px 24px', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px' }}>
-
         <div style={{ minWidth: 0 }}>
-          <FXPanel riskIndex={riskIndex} riskStatus={riskStatus} />
+          <FXPanel riskIndex={riskIndex} riskStatus={riskStatus} manualFx={manualFx} />
         </div>
 
         <div style={{ minWidth: 0, gridColumn: 'span 2' }}>
