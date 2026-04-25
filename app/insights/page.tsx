@@ -1,10 +1,11 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { content as siteContent } from '@/app/content'
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell, RadarChart, Radar, PolarGrid, PolarAngleAxis, LineChart, Line } from 'recharts'
 
 export default function Insights() {
-  const [fx, setFx] = useState<any>({})
+  const [fx, setFx] = useState<any>(siteContent.fxRates)
   const [history, setHistory] = useState<any[]>([])
   const [selectedCurrency, setSelectedCurrency] = useState('GHS')
 
