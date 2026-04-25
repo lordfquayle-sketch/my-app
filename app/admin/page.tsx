@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export default function Admin() {
   const [password, setPassword] = useState('')
@@ -21,6 +21,24 @@ export default function Admin() {
   const [riskIndex, setRiskIndex] = useState('68')
   const [riskStatus, setRiskStatus] = useState('ELEVATED')
 
+  const [fxRates, setFxRates] = useState({
+    NGN: '', GHS: '', KES: '', EGP: '', XOF: '', ZAR: '',
+    ETB: '', TZS: '', UGX: '', MAD: '', XAF: '', ZMW: '', AOA: '', MZN: ''
+  })
+
+  useEffect(() => {
+    const saved = localStorage.getItem('terminal_content')
+    if (saved) {
+      const content = JSON.parse(saved)
+      if (content.insight1) { setInsight1Title(content.insight1.title); setInsight1Body(content.insight1.body); setInsight1Conclusion(content.insight1.conclusion) }
+      if (content.insight2) { setInsight2Title(content.insight2.title); setInsight2Body(content.insight2.body); setInsight2Conclusion(content.insight2.conclusion) }
+      if (content.brief) { setBriefTitle(content.brief.title); setBriefBody(content.brief.body); setWeekNumber(content.brief.week) }
+      if (content.riskIndex) setRiskIndex(content.riskIndex)
+      if (content.riskStatus) setRiskStatus(content.riskStatus)
+      if (content.fxRates) setFxRates(content.fxRates)
+    }
+  }, [])
+
   const handleLogin = () => {
     if (password === '1221password!') {
       setLoggedIn(true)
@@ -38,6 +56,7 @@ export default function Admin() {
       brief: { title: briefTitle, body: briefBody, week: weekNumber },
       riskIndex,
       riskStatus,
+      fxRates,
     }
     localStorage.setItem('terminal_content', JSON.stringify(content))
     await new Promise(r => setTimeout(r, 800))
@@ -64,6 +83,23 @@ export default function Admin() {
   const textareaStyle = { ...inputStyle, minHeight: '80px', resize: 'vertical' as const }
   const labelStyle = { fontFamily: 'Space Mono, monospace', fontSize: '9px', color: '#6b82a0', letterSpacing: '0.15em', marginBottom: '6px', display: 'block' }
   const sectionStyle = { background: '#0a1628', border: '1px solid #1a2d4a', borderRadius: '8px', padding: '20px', marginBottom: '16px' }
+
+  const fxCurrencies = [
+    { code: 'NGN', country: 'Nigeria' },
+    { code: 'GHS', country: 'Ghana' },
+    { code: 'KES', country: 'Kenya' },
+    { code: 'EGP', country: 'Egypt' },
+    { code: 'XOF', country: 'Ivory Coast' },
+    { code: 'ZAR', country: 'South Africa' },
+    { code: 'ETB', country: 'Ethiopia' },
+    { code: 'TZS', country: 'Tanzania' },
+    { code: 'UGX', country: 'Uganda' },
+    { code: 'MAD', country: 'Morocco' },
+    { code: 'XAF', country: 'Senegal' },
+    { code: 'ZMW', country: 'Zambia' },
+    { code: 'AOA', country: 'Angola' },
+    { code: 'MZN', country: 'Mozambique' },
+  ]
 
   return (
     <div style={{ background: '#050d1a', minHeight: 'calc(100vh - 88px)', padding: '24px' }}>
@@ -99,6 +135,19 @@ export default function Admin() {
           <input style={inputStyle} value={briefTitle} onChange={e => setBriefTitle(e.target.value)} />
           <label style={labelStyle}>BRIEF BODY</label>
           <textarea style={textareaStyle} value={briefBody} onChange={e => setBriefBody(e.target.value)} />
+        </div>
+      </div>
+
+      <div style={sectionStyle}>
+        <div style={{ fontFamily: 'Space Mono, monospace', fontSize: '10px', color: '#6b82a0', letterSpacing: '0.15em', marginBottom: '4px' }}>MANUAL FX RATES</div>
+        <div style={{ fontFamily: 'Syne, sans-serif', fontSize: '11px', color: '#2d4463', marginBottom: '16px' }}>Leave blank to use live API rates. Fill in to override manually.</div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '10px' }}>
+          {fxCurrencies.map(({ code, country }) => (
+            <div key={code}>
+              <label style={labelStyle}>USD/{code} — {country}</label>
+              <input style={inputStyle} placeholder="e.g. 11.05" value={fxRates[code as keyof typeof fxRates]} onChange={e => setFxRates(prev => ({ ...prev, [code]: e.target.value }))} />
+            </div>
+          ))}
         </div>
       </div>
 
