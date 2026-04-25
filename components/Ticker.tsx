@@ -1,21 +1,10 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { content } from '@/app/content'
 
 export default function Ticker() {
-  const [fx, setFx] = useState<Record<string, string>>({})
   const [time, setTime] = useState('')
-
-  useEffect(() => {
-    const fetchFX = async () => {
-      const res = await fetch('/api/fx')
-      const data = await res.json()
-      if (data.NGN !== 'N/A') setFx(data)
-    }
-    fetchFX()
-    const interval = setInterval(fetchFX, 60000)
-    return () => clearInterval(interval)
-  }, [])
 
   useEffect(() => {
     const tick = setInterval(() => {
@@ -24,11 +13,8 @@ export default function Ticker() {
     return () => clearInterval(tick)
   }, [])
 
-  const pairs: string[] = ['NGN','GHS','KES','EGP','ZAR','ETB','MAD','ZMW','AOA','MZN']
-
-  const items = pairs.map((c: string) =>
-    'USD/' + c + ' ' + (fx[c] ? Number(fx[c]).toFixed(2) : '...')
-  ).join('   |   ')
+  const pairs = Object.entries(content.fxRates)
+  const items = pairs.map(([code, rate]) => 'USD/' + code + ' ' + rate).join('   |   ')
 
   return (
     <div style={{ background: '#0a1628', borderBottom: '1px solid #1a2d4a', height: '32px', display: 'flex', alignItems: 'center', overflow: 'hidden' }}>
