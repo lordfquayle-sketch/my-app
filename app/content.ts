@@ -1,7 +1,23 @@
 export const content = {
   riskIndex: '68',
   riskStatus: 'ELEVATED',
-  
+
+  pressureMap: [
+    { country: 'Nigeria', flag: '🇳🇬', outlook: 'Negative', status: 'STRESSED', statusColor: '#ff3b3b', cds: '402', fxPressure: 'HIGH', liquidity: 'TIGHT' },
+    { country: 'Ghana', flag: '🇬🇭', outlook: 'Negative', status: 'TIGHTENING', statusColor: '#f5a623', cds: '221', fxPressure: 'ELEVATED', liquidity: 'WATCH' },
+    { country: 'Kenya', flag: '🇰🇪', outlook: 'Stable', status: 'STABLE', statusColor: '#00c48c', cds: '146', fxPressure: 'MODERATE', liquidity: 'ADEQUATE' },
+    { country: 'Egypt', flag: '🇪🇬', outlook: 'Negative', status: 'STRESSED', statusColor: '#ff3b3b', cds: '580', fxPressure: 'HIGH', liquidity: 'TIGHT' },
+    { country: 'Zambia', flag: '🇿🇲', outlook: 'Negative', status: 'STRESSED', statusColor: '#ff3b3b', cds: '980', fxPressure: 'HIGH', liquidity: 'TIGHT' },
+    { country: 'South Africa', flag: '🇿🇦', outlook: 'Stable', status: 'WATCH', statusColor: '#f5a623', cds: '185', fxPressure: 'MODERATE', liquidity: 'ADEQUATE' },
+  ],
+
+  whatMattersNow: [
+    { title: 'FX CORRIDORS UNDER PRESSURE', body: 'Multiple African central banks intervening to defend FX bands. Watch for policy slippage and devaluation risk.', icon: '💱' },
+    { title: 'LIQUIDITY REMAINS FRAGILE', body: 'System liquidity tight in NGN and GHS. Elevated T-bill rollover needs pose near-term refinancing risk.', icon: '💧' },
+    { title: 'FISCAL & DEBT SUSTAINABILITY', body: 'Rising debt servicing costs and external imbalances limit fiscal space across key markets.', icon: '📊' },
+    { title: 'GLOBAL BACKDROP', body: 'Higher for longer rates and strong USD flow keeping EM risk premia elevated.', icon: '🌍' },
+  ],
+
   insight1: {
     title: 'MARKETS ARE MISPRICING DURATION RISK',
     body: 'Oil volatility is priced. Credit deterioration is not. Spreads are not fully reflecting funding stress across frontier sovereigns.',
@@ -38,16 +54,14 @@ export const content = {
   },
 
   signals: [
-    { time: '14:32', signal: 'GHANA 2030s → +42bps', detail: 'LIQUIDITY THIN', type: 'ALERT' },
-    { time: '14:31', signal: 'NIGERIA NGN → -1.8%', detail: 'PARALLEL GAP WIDENS', type: 'ALERT' },
-    { time: '14:30', signal: 'BRENT → -2.1%', detail: 'DEMAND FEARS', type: 'WARNING' },
-    { time: '14:29', signal: 'KENYA CDS → +18bps', detail: 'FISCAL PRESSURE', type: 'WARNING' },
-    { time: '14:28', signal: 'EGYPT 2027s → -0.9pts', detail: 'BUYING INTEREST', type: 'INFO' },
-    { time: '14:27', signal: 'ZAMBIA KWACHA → -1.1%', detail: 'DOLLAR DEMAND', type: 'ALERT' },
-    { time: '14:26', signal: 'SOUTH AFRICA 10Y → +9bps', detail: 'GLOBAL RATES PRESSURE', type: 'WARNING' },
-    { time: '14:25', signal: 'IVORY COAST CDS → +6bps', detail: 'MODEST WIDENING', type: 'INFO' },
-    { time: '14:24', signal: 'ANGOLA OIL LINK', detail: 'STRESS BUILDING', type: 'WARNING' },
-    { time: '14:23', signal: 'FRONTIER FX', detail: 'BROAD WEAKNESS', type: 'ALERT' },
+    { time: '10:24:31', signal: 'CBN intervenes in FX market — reserves down $210M WoW', detail: 'HIGH', type: 'ALERT', tag: 'FX PRESSURE', country: 'NGN' },
+    { time: '10:18:07', signal: 'Ghana T-bill subscription falls 32% vs prior auction', detail: 'MEDIUM', type: 'WARNING', tag: 'LIQUIDITY ALERT', country: 'GHS' },
+    { time: '10:12:45', signal: 'Africa sovereign CDS index widens +18bps', detail: 'HIGH', type: 'ALERT', tag: 'RISK SENTIMENT', country: 'AFRICA' },
+    { time: '10:07:21', signal: 'CBK holds rate at 12.75%, maintains hawkish stance', detail: 'LOW', type: 'INFO', tag: 'POLICY SIGNAL', country: 'KEN' },
+    { time: '10:02:11', signal: 'Foreign inflows into SA bonds reach 6-week high', detail: 'MEDIUM', type: 'INFO', tag: 'MARKET FLOW', country: 'ZAR' },
+    { time: '09:55:44', signal: 'Zambia external debt talks stall — creditor committee split', detail: 'HIGH', type: 'ALERT', tag: 'CREDIT STRESS', country: 'ZMW' },
+    { time: '09:48:12', signal: 'Egypt IMF tranche delayed pending fiscal review', detail: 'HIGH', type: 'ALERT', tag: 'FISCAL RISK', country: 'EGP' },
+    { time: '09:41:30', signal: 'Angola oil revenue tracking 8% below budget assumption', detail: 'MEDIUM', type: 'WARNING', tag: 'OIL LINK', country: 'AOA' },
   ],
 
   riskTable: [
