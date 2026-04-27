@@ -8,6 +8,20 @@ export default function Home() {
   const [blink, setBlink] = useState(true)
   const [copied, setCopied] = useState(false)
   const [activeTab, setActiveTab] = useState('signals')
+  const [liveSignals, setLiveSignals] = useState<any[]>(content.signals)
+
+  useEffect(() => {
+    const fetchSignals = async () => {
+      try {
+        const res = await fetch('/api/tape')
+        const data = await res.json()
+        if (data && data.length > 0) setLiveSignals(data)
+      } catch {}
+    }
+    fetchSignals()
+    const interval = setInterval(fetchSignals, 30000)
+    return () => clearInterval(interval)
+  }, [])
   const [time, setTime] = useState('')
 
   useEffect(() => {
@@ -148,7 +162,7 @@ export default function Home() {
             <p style={{ fontFamily: 'Syne, sans-serif', fontSize: '11px', color: '#2d4463', marginBottom: '16px' }}>Real-time market alerts and signals as they happen.</p>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-              {content.signals.map((s, i) => (
+              {liveSignals.map((s, i) => (
                 <div key={i} style={{ background: '#050d1a', border: '1px solid #1a2d4a', borderLeft: '3px solid ' + signalColor[s.type], borderRadius: '6px', padding: '10px 12px' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '4px' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
@@ -181,7 +195,7 @@ export default function Home() {
 
           {activeTab === 'signals' && (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-              {content.signals.map((s, i) => (
+              {liveSignals.map((s, i) => (
                 <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '10px 14px', background: '#050d1a', border: '1px solid #1a2d4a', borderLeft: '3px solid ' + signalColor[s.type], borderRadius: '6px' }}>
                   <span style={{ fontFamily: 'Space Mono, monospace', fontSize: '9px', color: '#2d4463', whiteSpace: 'nowrap' }}>{s.time}</span>
                   <span style={{ fontFamily: 'Space Mono, monospace', fontSize: '9px', color: signalColor[s.type], background: signalColor[s.type] + '22', padding: '2px 6px', borderRadius: '3px', whiteSpace: 'nowrap' }}>{s.tag}</span>
