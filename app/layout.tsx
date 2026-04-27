@@ -30,21 +30,31 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               borderRadius: '50%',
               background: '#00c48c',
               boxShadow: '0 0 8px #00c48c',
-              animation: 'pulse 2s infinite',
             }} />
-            <span style={{
-              fontFamily: 'Syne, sans-serif',
-              fontWeight: 800,
-              fontSize: '14px',
-              letterSpacing: '0.15em',
-              color: '#e8eef8',
-            }}>FIIFI TERMINAL</span>
+            <div style={{ display: 'flex', alignItems: 'baseline', gap: '0px' }}>
+              <span style={{
+                fontFamily: 'Syne, sans-serif',
+                fontWeight: 800,
+                fontSize: '18px',
+                letterSpacing: '0.1em',
+                color: '#e8eef8',
+              }}>LFQ</span>
+              <span style={{
+                fontFamily: 'Syne, sans-serif',
+                fontWeight: 800,
+                fontSize: '18px',
+                color: '#00c48c',
+                borderBottom: '2px solid #00c48c',
+                lineHeight: 1,
+                paddingBottom: '1px',
+              }}>_</span>
+            </div>
             <span style={{
               fontFamily: 'Space Mono, monospace',
               fontSize: '10px',
               color: '#6b82a0',
               letterSpacing: '0.1em',
-              marginLeft: '8px',
+              marginLeft: '4px',
             }}>AFRICA MACRO INTELLIGENCE</span>
           </div>
           <div style={{ display: 'flex', gap: '32px' }}>
