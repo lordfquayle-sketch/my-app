@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { content } from '@/app/content'
 
 interface FXPanelProps {
   riskIndex?: string
@@ -9,18 +10,13 @@ interface FXPanelProps {
 }
 
 export default function FXPanel({ riskIndex = '68', riskStatus = 'ELEVATED', manualFx = {} }: FXPanelProps) {
-  const [fx, setFx] = useState<Record<string, string>>({})
   const [time, setTime] = useState('')
 
   useEffect(() => {
-    const fetchFX = async () => {
-      const res = await fetch('/api/fx')
-      const data = await res.json()
-      if (data.NGN !== 'N/A') setFx(data)
+    setTime(new Date().toISOString().slice(11, 19) + ' UTC')
+    const interval = setInterval(() => {
       setTime(new Date().toISOString().slice(11, 19) + ' UTC')
-    }
-    fetchFX()
-    const interval = setInterval(fetchFX, 60000)
+    }, 60000)
     return () => clearInterval(interval)
   }, [])
 
@@ -45,8 +41,8 @@ export default function FXPanel({ riskIndex = '68', riskStatus = 'ELEVATED', man
 
   const getRate = (code: string) => {
     if (manualFx[code] && manualFx[code] !== '') return Number(manualFx[code]).toFixed(2)
-    if (fx[code]) return Number(fx[code]).toFixed(2)
-    return '...'
+    if (content.fxRates[code as keyof typeof content.fxRates]) return Number(content.fxRates[code as keyof typeof content.fxRates]).toFixed(2)
+    return 'N/A'
   }
 
   return (
@@ -78,13 +74,8 @@ export default function FXPanel({ riskIndex = '68', riskStatus = 'ELEVATED', man
                   <div style={{ fontFamily: 'Syne, sans-serif', fontSize: '9px', color: '#6b82a0' }}>{country}</div>
                 </div>
               </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-                {manualFx[code] && manualFx[code] !== '' && (
-                  <span style={{ fontFamily: 'Space Mono, monospace', fontSize: '8px', color: '#f5a623' }}>M</span>
-                )}
-                <div style={{ fontFamily: 'Space Mono, monospace', fontSize: '12px', color: '#00c48c', fontWeight: 700 }}>
-                  {getRate(code)}
-                </div>
+              <div style={{ fontFamily: 'Space Mono, monospace', fontSize: '12px', color: '#00c48c', fontWeight: 700 }}>
+                {getRate(code)}
               </div>
             </div>
           ))}
