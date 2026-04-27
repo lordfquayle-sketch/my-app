@@ -14,7 +14,7 @@ export const content = {
   whatMattersNow: [
     { title: 'FX CORRIDORS UNDER PRESSURE', body: 'Multiple African central banks intervening to defend FX bands. Watch for policy slippage and devaluation risk.', icon: '💱' },
     { title: 'LIQUIDITY REMAINS FRAGILE', body: 'System liquidity tight in NGN and GHS. Elevated T-bill rollover needs pose near-term refinancing risk.', icon: '💧' },
-    { title: 'FISCAL & DEBT SUSTAINABILITY', body: 'Rising debt servicing costs and external imbalances limit fiscal space across key markets.', icon: '📊' },
+    { title: 'FISCAL AND DEBT SUSTAINABILITY', body: 'Rising debt servicing costs and external imbalances limit fiscal space across key markets.', icon: '📊' },
     { title: 'GLOBAL BACKDROP', body: 'Higher for longer rates and strong USD flow keeping EM risk premia elevated.', icon: '🌍' },
   ],
 
@@ -37,23 +37,23 @@ export const content = {
   },
 
   fxRates: {
-    NGN: '1357.00',
-    GHS: '10.99',
+    NGN: '1384.03',
+    GHS: '11.09',
     KES: '129.25',
-    EGP: '51.97',
+    EGP: '52.62',
     XOF: '610.00',
-    ZAR: '16.64',
+    ZAR: '18.72',
     ETB: '130.00',
     TZS: '2680.00',
     UGX: '3680.00',
     MAD: '9.85',
     XAF: '610.00',
-    ZMW: '27.50',
+    ZMW: '19.13',
     AOA: '912.00',
     MZN: '63.80',
   },
 
-    signals: [
+  signals: [
     { time: '10:45:00', signal: 'Naira trades at 1,384 — CBN intervention pressure building as parallel market gap widens', detail: 'HIGH', type: 'ALERT', tag: 'FX PRESSURE', country: 'NGN' },
     { time: '10:32:00', signal: 'Egyptian pound at 52.62 — IMF fiscal review delays adding to EGP stress', detail: 'HIGH', type: 'ALERT', tag: 'CREDIT STRESS', country: 'EGP' },
     { time: '10:18:00', signal: 'Zambian kwacha surges to 19.13 — significant strengthening from prior level', detail: 'MEDIUM', type: 'INFO', tag: 'MARKET FLOW', country: 'ZMW' },
