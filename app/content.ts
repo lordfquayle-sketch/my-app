@@ -53,15 +53,15 @@ export const content = {
     MZN: '63.80',
   },
 
-  signals: [
-    { time: '10:24:31', signal: 'CBN intervenes in FX market — reserves down $210M WoW', detail: 'HIGH', type: 'ALERT', tag: 'FX PRESSURE', country: 'NGN' },
-    { time: '10:18:07', signal: 'Ghana T-bill subscription falls 32% vs prior auction', detail: 'MEDIUM', type: 'WARNING', tag: 'LIQUIDITY ALERT', country: 'GHS' },
-    { time: '10:12:45', signal: 'Africa sovereign CDS index widens +18bps', detail: 'HIGH', type: 'ALERT', tag: 'RISK SENTIMENT', country: 'AFRICA' },
-    { time: '10:07:21', signal: 'CBK holds rate at 12.75%, maintains hawkish stance', detail: 'LOW', type: 'INFO', tag: 'POLICY SIGNAL', country: 'KEN' },
-    { time: '10:02:11', signal: 'Foreign inflows into SA bonds reach 6-week high', detail: 'MEDIUM', type: 'INFO', tag: 'MARKET FLOW', country: 'ZAR' },
-    { time: '09:55:44', signal: 'Zambia external debt talks stall — creditor committee split', detail: 'HIGH', type: 'ALERT', tag: 'CREDIT STRESS', country: 'ZMW' },
-    { time: '09:48:12', signal: 'Egypt IMF tranche delayed pending fiscal review', detail: 'HIGH', type: 'ALERT', tag: 'FISCAL RISK', country: 'EGP' },
-    { time: '09:41:30', signal: 'Angola oil revenue tracking 8% below budget assumption', detail: 'MEDIUM', type: 'WARNING', tag: 'OIL LINK', country: 'AOA' },
+    signals: [
+    { time: '10:45:00', signal: 'Naira trades at 1,384 — CBN intervention pressure building as parallel market gap widens', detail: 'HIGH', type: 'ALERT', tag: 'FX PRESSURE', country: 'NGN' },
+    { time: '10:32:00', signal: 'Egyptian pound at 52.62 — IMF fiscal review delays adding to EGP stress', detail: 'HIGH', type: 'ALERT', tag: 'CREDIT STRESS', country: 'EGP' },
+    { time: '10:18:00', signal: 'Zambian kwacha surges to 19.13 — significant strengthening from prior level', detail: 'MEDIUM', type: 'INFO', tag: 'MARKET FLOW', country: 'ZMW' },
+    { time: '10:05:00', signal: 'Ghana cedi holds at 11.09 — relative stability but liquidity conditions remain tight', detail: 'MEDIUM', type: 'WARNING', tag: 'LIQUIDITY ALERT', country: 'GHS' },
+    { time: '09:55:00', signal: 'South Africa rand at 18.72 — tracking global USD weakness, external support holding', detail: 'LOW', type: 'INFO', tag: 'MARKET FLOW', country: 'ZAR' },
+    { time: '09:42:00', signal: 'Kenya shilling stable at 129.25 — CBK hawkish stance containing FX volatility', detail: 'LOW', type: 'INFO', tag: 'POLICY SIGNAL', country: 'KES' },
+    { time: '09:30:00', signal: 'Africa sovereign CDS spreads widening — Nigeria and Egypt leading deterioration', detail: 'HIGH', type: 'ALERT', tag: 'RISK SENTIMENT', country: 'AFRICA' },
+    { time: '09:15:00', signal: 'Frontier FX broad weakness persisting — USD strength keeping EM risk premia elevated', detail: 'MEDIUM', type: 'WARNING', tag: 'FX PRESSURE', country: 'AFRICA' },
   ],
 
   riskTable: [
