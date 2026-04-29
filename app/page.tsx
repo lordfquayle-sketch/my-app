@@ -63,7 +63,20 @@ export default function Home() {
             </div>
             <h1 style={{ fontFamily: 'Syne, sans-serif', fontWeight: 800, fontSize: 'clamp(28px, 5vw, 52px)', color: '#e8eef8', lineHeight: 1.1, marginBottom: '4px' }}>REAL-TIME</h1>
             <h1 style={{ fontFamily: 'Syne, sans-serif', fontWeight: 800, fontSize: 'clamp(28px, 5vw, 52px)', color: '#00c48c', lineHeight: 1.1, marginBottom: '12px' }}>SOVEREIGN RISK</h1>
-            <p style={{ fontFamily: 'Syne, sans-serif', fontSize: '14px', color: '#6b82a0', maxWidth: '500px' }}>Actionable intelligence. Unrivalled clarity. Timed for advantage.</p>
+            <p style={{ fontFamily: 'Syne, sans-serif', fontSize: '14px', color: '#6b82a0', maxWidth: '500px', marginBottom: '16px' }}>Actionable intelligence. Unrivalled clarity. Timed for advantage.</p>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+              <div style={{ background: '#ff3b3b22', border: '1px solid #ff3b3b44', borderRadius: '8px', padding: '12px 20px' }}>
+                <div style={{ fontFamily: 'Space Mono, monospace', fontSize: '9px', color: '#6b82a0', letterSpacing: '0.15em', marginBottom: '4px' }}>AFRICA RISK INDEX</div>
+                <div style={{ fontFamily: 'Syne, sans-serif', fontWeight: 800, fontSize: '36px', color: '#ff3b3b', lineHeight: 1 }}>{content.riskIndex}</div>
+              </div>
+              <div style={{ background: '#ff3b3b22', border: '1px solid #ff3b3b44', borderRadius: '8px', padding: '12px 20px' }}>
+                <div style={{ fontFamily: 'Space Mono, monospace', fontSize: '9px', color: '#6b82a0', letterSpacing: '0.15em', marginBottom: '4px' }}>STATUS</div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                  <div style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#ff3b3b', boxShadow: '0 0 6px #ff3b3b' }} />
+                  <span style={{ fontFamily: 'Space Mono, monospace', fontSize: '12px', color: '#ff3b3b', fontWeight: 700 }}>{content.riskStatus}</span>
+                </div>
+              </div>
+            </div>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '12px' }}>
             <button onClick={handleShare} style={{ fontFamily: 'Space Mono, monospace', fontSize: '11px', padding: '8px 16px', background: '#1e6bff22', border: '1px solid #1e6bff', borderRadius: '6px', color: '#1e6bff', cursor: 'pointer' }}>
