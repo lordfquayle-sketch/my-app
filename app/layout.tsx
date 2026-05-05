@@ -11,7 +11,40 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body style={{ background: '#050d1a' }}>
+            <script
+        type='application/ld+json'
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Person',
+            'name': 'Lord Fiifi Quayle',
+            'jobTitle': 'Author and Economic Strategist',
+            'url': 'https://lordfiifiquayle.com',
+            'description': 'Ghanaian author and thought leader focused on financial systems, uncertainty modeling, and African market dynamics.',
+            'sameAs': [
+              'https://linkedin.com/in/lord-fiifi-quayle',
+              'https://twitter.com/lordfquayle',
+              'https://amazon.com'
+            ],
+            'mainEntityOfPage': {
+              '@type': 'WebPage',
+              '@id': 'https://lordfiifiquayle.com'
+            },
+            'workExample': [{
+              '@type': 'Book',
+              'name': 'Pricing Uncertainty: Black-Scholes, Risk, and the Future of African Finance',
+              'author': 'Lord Fiifi Quayle',
+              'datePublished': '2026-03-31',
+              'inLanguage': 'English',
+              'publisher': {
+                '@type': 'Organization',
+                'name': 'Lord Fiifi Quayle Publishing'
+              }
+            }]
+          })
+        }}
+      />
+        <body style={{ background: '#050d1a' }}>
         <nav style={{
           background: '#0a1628',
           borderBottom: '1px solid #1a2d4a',
