@@ -12,32 +12,32 @@ export const content = {
   ],
 
   whatMattersNow: [
-    { title: 'SA-AFRICA DIPLOMATIC CRISIS ESCALATING', body: 'Nigeria preparing repatriation flights for 130+ nationals. Kenya High Commission issues advisory note. At least 2 Nigerians and 4 Ethiopians killed. Ramaphosa condemned attacks but cautioned foreigners. Intra-African trade flows at risk.', icon: '🚨' },
-    { title: 'CHINA DROPS TARIFFS ON 53 AFRICAN NATIONS', body: 'China extends tariff-free treatment to Africa\'s 20 largest economies including Nigeria, South Africa, Egypt, Kenya. Only Eswatini excluded. Significant shift in trade architecture as US-Africa travel drops 46% for Nigeria under tighter visa rules.', icon: '🇨🇳' },
-    { title: 'OPEC+ RAISES OUTPUT — AFRICA OIL DYNAMICS SHIFT', body: '7 OPEC+ members agree to add 188,000 bpd in June. Nigeria benefits from Iran war-driven price surge. Dangote Refinery partnering with Afreximbank for Namibia tanker hub to cut Persian Gulf reliance.', icon: '🛢️' },
-    { title: 'EGYPT PROPERTY COSTS RISING 15%', body: 'New Urban Communities Authority fees could push project costs up 15%. Talaat Moustafa warning adds to Egypt cost pressures. EGP at 53.55 with Middle East conflict keeping external stress elevated.', icon: '🏗️' },
+    { title: 'DANGOTE UNVEILS 20,000MW POWER PLAN + $20BN DIVIDEND', body: 'Aliko Dangote announced a 20,000MW power generation programme at the IFC in Washington — dwarfing Nigeria\'s current 13,000MW installed capacity. Committed to $20bn in dividends to African investors from planned pan-African refinery listing. Biggest Nigeria corporate story of 2026.', icon: '⚡' },
+    { title: 'SA DIPLOMATIC CRISIS — GHANA NOW INVOLVED', body: 'Ghana has summoned South Africa\'s envoy after a Ghanaian national was publicly challenged over immigration status. SA officially hosts 2.4m migrants. Nigeria repatriation flights underway. Exercise African Lion 2026 ends today — 5,000+ troops across Morocco, Ghana, Senegal, Tunisia.', icon: '🚨' },
+    { title: 'KASAPREKO LAUNCHES GH¢700M IPO ON GSE', body: 'Kasapreko PLC launches GH¢700 million IPO on the Ghana Stock Exchange — the largest Ghanaian IPO of 2026. Mahama\'s Damang Mine delivers first gold to Bank of Ghana. Ghana capital markets showing post-restructuring recovery momentum.', icon: '🇬🇭' },
+    { title: 'ANGOLA FACES DECLINING OIL OUTPUT + STEEP DEBT REPAYMENTS', body: 'Angola\'s 2026 debt repayment obligations coincide with declining oil production. OPEC+ output increase of 188,000 bpd in June adds downside risk to oil prices. Lower prices combined with lower output is the most dangerous combination for any commodity-dependent sovereign.', icon: '🛢️' },
   ],
 
   insight1: {
-    title: 'THE SA CRISIS IS AN INTRA-AFRICAN TRADE RISK EVENT',
-    body: 'The anti-migrant violence in South Africa has moved beyond a political story. Nigeria is preparing repatriation flights. Kenya has issued an official advisory. At least 6 African nationals killed. This threatens remittance channels, business operations and the AfCFTA narrative. Markets are treating this as noise. It is not noise — it is a structural risk to intra-African economic integration.',
-    conclusion: 'ZAR AND SA BONDS FACE A POLITICAL RISK PREMIUM THAT IS NOT YET PRICED.',
+    title: 'DANGOTE\'S 20,000MW ANNOUNCEMENT CHANGES THE NIGERIA INVESTMENT THESIS',
+    body: 'A 20,000MW power commitment from Dangote — combined with the refinery IPO, $20bn dividend promise, and Moody\'s B3 upgrade — fundamentally reframes Nigeria from a reform story into an industrial conglomerate thesis. MTN credits Nigeria for its strongest year in decades. Ralph Mupita takes home a record R99 million. The reform story is becoming a growth story.',
+    conclusion: 'NIGERIA IS NO LONGER JUST A REFORM TRADE. IT IS BECOMING AN INDUSTRIAL TRANSFORMATION TRADE.',
   },
 
   insight2: {
-    title: 'CHINA\'S TARIFF MOVE IS THE MOST SIGNIFICANT AFRICA TRADE EVENT OF 2026',
-    body: 'China extending tariff-free treatment to 53 African nations — including Nigeria, Egypt, South Africa and Kenya — is a strategic masterstroke timed precisely as US-Africa relations deteriorate under tighter visa rules and transactional Trump policies. This reshapes African export architecture and deepens Sino-African economic integration at exactly the moment Washington is pulling back.',
-    conclusion: 'THE GEOPOLITICAL TRADE IS CLEAR: CHINA IS FILLING THE VACUUM. WATCH YUAN-DENOMINATED AFRICAN TRADE FLOWS.',
+    title: 'ANGOLA IS THE MOST UNDERAPPRECIATED SOVEREIGN RISK IN SOUTHERN AFRICA',
+    body: 'Angola faces declining oil output against steep 2026 repayment obligations. OPEC+ output increase adds downside price pressure. The Namibia tanker hub via Dangote-Afreximbank is a structural hedge — but Angola\'s own balance sheet remains exposed. Lower oil prices plus lower output is the most dangerous combination for any commodity-dependent sovereign.',
+    conclusion: 'ANGOLA CREDIT RISK IS UNDERPRICED RELATIVE TO ITS 2026 REPAYMENT PROFILE. WATCH AOA AND ANGOLA BONDS.',
   },
 
   brief: {
     week: '19',
-    title: 'THREE MACRO RISKS CONVERGING ON AFRICAN MARKETS THIS WEEK',
-    body: 'First: the South Africa diplomatic crisis is escalating with repatriation flights now being organised — this is no longer a political abstraction. Second: China\'s tariff-free treatment for 53 African nations reshapes the trade architecture at exactly the moment US-Africa ties are weakening. Third: OPEC+ output increase of 188,000 bpd in June will test African oil revenue assumptions — Nigeria benefits from the Iran war premium, but Angola faces declining output against steep 2026 repayment obligations. The convergence of these three factors makes this one of the more complex macro environments African sovereigns have faced in 2026.',
+    title: 'WEEK 19: THREE MACRO RISKS CONVERGING — DIPLOMATIC RUPTURE, CHINA TRADE PIVOT, OPEC+ SUPPLY SHIFT',
+    body: 'African markets are at one of the most complex macro junctions of 2026. The SA diplomatic crisis has transitioned from rhetoric to real economic disruption — repatriation flights are now being organised, Ghana has summoned the SA envoy. China\'s tariff-free treatment for 53 nations reshapes trade architecture as US-Africa ties weaken. OPEC+ output increase introduces downside oil price risk just as Angola faces its most exposed repayment year. Together, these three forces tighten financial conditions, compress fiscal space and increase refinancing costs across African sovereigns. The divergence thesis remains: Nigeria and Ghana are outperforming; Kenya, Angola and South Africa face the sharpest pressure.',
   },
 
   fxRates: {
-    NGN: '1360.17',
+    NGN: '1365.89',
     GHS: '11.12',
     KES: '129.10',
     EGP: '53.55',
@@ -54,23 +54,23 @@ export const content = {
   },
 
   signals: [
-    { time: '09:30:00', signal: 'Nigeria preparing repatriation flights — 130+ nationals registered. Kenya issues advisory note. SA diplomatic crisis deepening.', detail: 'HIGH', type: 'ALERT', tag: 'GEOPOLITICAL', country: 'ZAR' },
-    { time: '09:15:00', signal: 'China extends tariff-free treatment to 53 African nations — Nigeria, Egypt, South Africa, Kenya among 20 largest economies covered.', detail: 'MEDIUM', type: 'INFO', tag: 'TRADE SIGNAL', country: 'AFRICA' },
-    { time: '09:00:00', signal: 'OPEC+ adds 188,000 bpd in June — Nigeria reaping Iran war oil premium. Dangote-Afreximbank Namibia tanker hub announced.', detail: 'MEDIUM', type: 'INFO', tag: 'OIL SIGNAL', country: 'NGN' },
-    { time: '08:45:00', signal: 'Egypt EGP at 53.55 — Talaat Moustafa warns new fees push property costs up 15%. External pressure from Middle East persisting.', detail: 'HIGH', type: 'WARNING', tag: 'FX PRESSURE', country: 'EGP' },
-    { time: '08:30:00', signal: 'Equity Bank sweeps 10 categories at Kenya Banking Awards — James Mwangi CEO of Year. Bright spot amid Kenya macro stress.', detail: 'LOW', type: 'INFO', tag: 'MARKET FLOW', country: 'KES' },
-    { time: '08:15:00', signal: 'US-Africa travel drops sharply — Nigeria down 46.4%, Zimbabwe down 70%. Trade and diaspora flows under pressure from Trump visa policy.', detail: 'MEDIUM', type: 'WARNING', tag: 'MACRO RISK', country: 'AFRICA' },
-    { time: '08:00:00', signal: 'Ghana GHS at 11.12 — cedi holding post-restructuring gains. First annual gain vs USD since 1994 confirmed. Recovery story intact.', detail: 'LOW', type: 'INFO', tag: 'FX UPDATE', country: 'GHS' },
-    { time: '07:45:00', signal: 'Senegal flagged as highest acute distress risk in West Africa — rising borrowing costs, hidden liabilities, frozen IMF programme.', detail: 'HIGH', type: 'ALERT', tag: 'CREDIT STRESS', country: 'XOF' },
+    { time: '09:30:00', signal: 'Dangote unveils 20,000MW power plan and $20bn dividend commitment at IFC Washington — Nigeria industrial transformation thesis confirmed', detail: 'HIGH', type: 'INFO', tag: 'MARKET FLOW', country: 'NGN' },
+    { time: '09:15:00', signal: 'Ghana summons SA envoy — Ghanaian national publicly challenged over immigration status. SA diplomatic crisis now involves 3 West African nations', detail: 'HIGH', type: 'ALERT', tag: 'GEOPOLITICAL', country: 'ZAR' },
+    { time: '09:00:00', signal: 'Kasapreko launches GH¢700m IPO on Ghana Stock Exchange — largest Ghanaian IPO of 2026. GSE capital markets recovery accelerating', detail: 'MEDIUM', type: 'INFO', tag: 'MARKET FLOW', country: 'GHS' },
+    { time: '08:45:00', signal: 'Angola faces declining oil output + steep 2026 debt repayments — OPEC+ output increase adds downside oil price risk to already exposed balance sheet', detail: 'HIGH', type: 'ALERT', tag: 'CREDIT STRESS', country: 'AOA' },
+    { time: '08:30:00', signal: 'Exercise African Lion 2026 ends today — 5,000+ troops from 40+ nations completed drills across Morocco, Ghana, Senegal, Tunisia', detail: 'LOW', type: 'INFO', tag: 'GEOPOLITICAL', country: 'AFRICA' },
+    { time: '08:15:00', signal: 'Nigeria NGN at 1,365 — down 14.70% vs USD over past year. MTN credits Nigeria for strongest year in decades. Reform momentum holding', detail: 'MEDIUM', type: 'INFO', tag: 'FX UPDATE', country: 'NGN' },
+    { time: '08:00:00', signal: 'Mahama\'s Damang Mine delivers first gold to Bank of Ghana — Ghana gold sector reform delivering. GHS holding at 11.12', detail: 'LOW', type: 'INFO', tag: 'MACRO UPDATE', country: 'GHS' },
+    { time: '07:45:00', signal: 'Senegal remains highest acute distress risk in West Africa — rising borrowing costs, hidden liabilities, frozen IMF programme during political transition', detail: 'HIGH', type: 'ALERT', tag: 'CREDIT STRESS', country: 'XOF' },
   ],
 
   riskTable: [
-    { country: 'SOUTH AFRICA', cds: 192, delta: '+18', bond: '-0.9pts', fx: '-0.6%', signal: 'POLITICAL RISK', color: '#ff3b3b' },
-    { country: 'KENYA', cds: 182, delta: '+22', bond: '-1.1pts', fx: '-0.2%', signal: 'DEBT ROLLOVER', color: '#ff3b3b' },
-    { country: 'EGYPT', cds: 580, delta: '+15', bond: '-0.7pts', fx: '-0.8%', signal: 'FX + COST PRESSURE', color: '#ff3b3b' },
-    { country: 'ZAMBIA', cds: 995, delta: '+8', bond: '-0.4pts', fx: '-0.3%', signal: 'RESTRUCTURING', color: '#f5a623' },
-    { country: 'NIGERIA', cds: 415, delta: '-6', bond: '+0.3pts', fx: '+0.1%', signal: 'OIL PREMIUM', color: '#00c48c' },
-    { country: 'GHANA', cds: 245, delta: '-10', bond: '+0.6pts', fx: '+0.2%', signal: 'RECOVERY INTACT', color: '#00c48c' },
-    { country: 'IVORY COAST', cds: 395, delta: '+3', bond: '-0.1pts', fx: '0.0%', signal: 'STABLE', color: '#00c48c' },
+    { country: 'SOUTH AFRICA', cds: 192, delta: '+18', bond: '-0.9pts', fx: '-0.5%', signal: 'DIPLOMATIC CRISIS', color: '#ff3b3b' },
+    { country: 'KENYA', cds: 182, delta: '+20', bond: '-1.0pts', fx: '-0.2%', signal: 'DEBT ROLLOVER', color: '#ff3b3b' },
+    { country: 'ANGOLA', cds: 560, delta: '+15', bond: '-0.8pts', fx: '-0.6%', signal: 'OIL + DEBT RISK', color: '#ff3b3b' },
+    { country: 'EGYPT', cds: 580, delta: '+10', bond: '-0.5pts', fx: '-0.4%', signal: 'COST PRESSURE', color: '#f5a623' },
+    { country: 'ZAMBIA', cds: 995, delta: '+5', bond: '-0.3pts', fx: '-0.2%', signal: 'RESTRUCTURING', color: '#f5a623' },
+    { country: 'NIGERIA', cds: 415, delta: '-8', bond: '+0.4pts', fx: '+0.2%', signal: 'INDUSTRIAL STORY', color: '#00c48c' },
+    { country: 'GHANA', cds: 245, delta: '-12', bond: '+0.7pts', fx: '+0.3%', signal: 'IPO + RECOVERY', color: '#00c48c' },
   ],
 }
