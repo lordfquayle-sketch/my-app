@@ -3,9 +3,9 @@
 import { useEffect, useState } from 'react'
 import LiveTape from '@/components/LiveTape'
 import { content } from '@/app/content'
-import RiskMonitor from '@/app/components/RiskMonitor'
-import SovereignAlerts from '@/app/components/SovereignAlerts'
-import FeaturedSignal from '@/app/components/FeaturedSignal'
+import RiskMonitor from '@/components/RiskMonitor'
+import SovereignAlerts from '@/components/SovereignAlerts'
+import FeaturedSignal from '@/components/FeaturedSignal'
 
 export default function Home() {
   const [blink, setBlink] = useState(true)
