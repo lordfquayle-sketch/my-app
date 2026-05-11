@@ -1,4 +1,9 @@
 'use client'
+import HeatMap from '@/app/components/HeatMap'
+import CurrencyStress from '@/app/components/CurrencyStress'
+import ElectionTracker from '@/app/components/ElectionTracker'
+import DebtMaturity from '@/app/components/DebtMaturity'
+import CommodityMatrix from '@/app/components/CommodityMatrix'
 
 import { useEffect, useState } from 'react'
 import { content as siteContent } from '@/app/content'
@@ -145,6 +150,12 @@ export default function Insights() {
           ))}
         </div>
       </div>
+    </div>
+      <HeatMap />
+      <CurrencyStress />
+      <ElectionTracker />
+      <DebtMaturity />
+      <CommodityMatrix />
     </div>
   )
 }

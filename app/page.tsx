@@ -3,6 +3,9 @@
 import { useEffect, useState } from 'react'
 import LiveTape from '@/components/LiveTape'
 import { content } from '@/app/content'
+import RiskMonitor from '@/app/components/RiskMonitor'
+import SovereignAlerts from '@/app/components/SovereignAlerts'
+import FeaturedSignal from '@/app/components/FeaturedSignal'
 
 export default function Home() {
   const [blink, setBlink] = useState(true)
@@ -88,6 +91,9 @@ export default function Home() {
       </div>
 
       <div style={{ maxWidth: '1400px', margin: '0 auto', padding: '24px' }}>
+        <RiskMonitor />
+        <FeaturedSignal />
+        <SovereignAlerts />
 
         {/* 3 COLUMN GRID */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '16px', marginBottom: '24px' }}>
