@@ -5,6 +5,7 @@ import ElectionTracker from '@/components/ElectionTracker'
 import DebtMaturity from '@/components/DebtMaturity'
 import CommodityMatrix from '@/components/CommodityMatrix'
 
+
 import { useEffect, useState } from 'react'
 import { content as siteContent } from '@/app/content'
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell, RadarChart, Radar, PolarGrid, PolarAngleAxis, LineChart, Line } from 'recharts'
@@ -150,6 +151,12 @@ export default function Insights() {
           ))}
         </div>
       </div>
+    </div>
+      
+      
+      
+      
+      
     </div>
       <HeatMap />
       <CurrencyStress />
