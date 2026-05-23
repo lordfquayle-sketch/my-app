@@ -95,8 +95,7 @@ export const content = {
     { time: '07:45:00', signal: 'Ghana GHS at 11.36 — continental benchmark for recovery holds. Fitch B/positive outlook. GSE strongest African market YTD in hard currency. Accra Reset health sovereignty agenda gaining traction.', detail: 'LOW', type: 'INFO', tag: 'CREDIT UPDATE', country: 'GHS' },
   ],
 
-  // heatMap, currencyStress, elections, debtMaturities, commodityExposure, riskTable unchanged from May 20
-  // Update elections Somalia entry and Kenya entry:
+  
 
   elections: [
     { country: 'Somalia', flag: '🇸🇴', date: 'Extended to 2027', type: 'Presidential Election', risk: 'CRITICAL', note: 'Parliament extended terms 4→5 years in March. President term expired May 15. Opposition calls it constitutional coup. Parallel government process threatened by Somali Future Council.', color: '#ff3b3b' },
@@ -105,5 +104,59 @@ export const content = {
     { country: 'South Africa', flag: '🇿🇦', date: 'Fall 2026', type: 'Municipal Elections', risk: 'HIGH', note: 'NHI court defeat. Immigration crackdown accelerating. GNU durability test. US-SA lowest point. President corruption allegations ongoing.', color: '#ff3b3b' },
     { country: 'Nigeria', flag: '🇳🇬', date: 'Early 2027', type: 'General Election', risk: 'HIGH', note: 'Dangote IPO positive but food inflation, IS threat and political risk building from multiple directions.', color: '#ff3b3b' },
     { country: 'Kenya', flag: '🇰🇪', date: '2027', type: 'General Election', risk: 'CRITICAL', note: 'Fuel crisis partially defused by Ruto concession. 4 dead, 30 injured in protests. Ebola border risk. Eurobond rollover. Structural fiscal exposure unresolved.', color: '#ff3b3b' },
+  ],heatMap: [
+    { country: 'Nigeria', flag: '🇳🇬', score: 62, fiscal: 60, fx: 55, debt: 60, political: 78, external: 62 },
+    { country: 'Ghana', flag: '🇬🇭', score: 42, fiscal: 44, fx: 36, debt: 46, political: 35, external: 48 },
+    { country: 'Kenya', flag: '🇰🇪', score: 84, fiscal: 80, fx: 76, debt: 88, political: 90, external: 88 },
+    { country: 'Egypt', flag: '🇪🇬', score: 70, fiscal: 72, fx: 74, debt: 68, political: 65, external: 70 },
+    { country: 'South Africa', flag: '🇿🇦', score: 78, fiscal: 68, fx: 72, debt: 62, political: 92, external: 78 },
+    { country: 'Senegal', flag: '🇸🇳', score: 90, fiscal: 94, fx: 84, debt: 92, political: 80, external: 88 },
+    { country: 'Mali', flag: '🇲🇱', score: 96, fiscal: 88, fx: 85, debt: 85, political: 99, external: 92 },
+    { country: 'Uganda', flag: '🇺🇬', score: 84, fiscal: 70, fx: 78, debt: 74, political: 68, external: 96 },
   ],
+
+  currencyStress: [
+    { code: 'NGN', country: 'Nigeria', rate: '1,370.31', change: '-14.37%', stress: 'MODERATE', ytd: '-5.18%', color: '#f5a623' },
+    { code: 'GHS', country: 'Ghana', rate: '11.36', change: '-12.91%', stress: 'LOW', ytd: '+8.20%', color: '#00c48c' },
+    { code: 'KES', country: 'Kenya', rate: '129.50', change: '-2.40%', stress: 'ELEVATED', ytd: '-1.50%', color: '#ff3b3b' },
+    { code: 'EGP', country: 'Egypt', rate: '53.12', change: '+6.40%', stress: 'HIGH', ytd: '-9.20%', color: '#ff3b3b' },
+    { code: 'ZAR', country: 'South Africa', rate: '18.20', change: '+0.90%', stress: 'MODERATE', ytd: '+0.70%', color: '#f5a623' },
+    { code: 'UGX', country: 'Uganda', rate: '3,710.00', change: '-9.10%', stress: 'ELEVATED', ytd: '-5.40%', color: '#ff3b3b' },
+    { code: 'ZMW', country: 'Zambia', rate: '19.11', change: '-32.63%', stress: 'HIGH', ytd: '-12.50%', color: '#ff3b3b' },
+    { code: 'XOF', country: 'Mali/Senegal', rate: '610.00', change: '0.00%', stress: 'ELEVATED', ytd: '0.00%', color: '#f5a623' },
+  ],
+
+  debtMaturities: [
+    { country: 'Kenya', flag: '🇰🇪', amount: '$2.0bn', instrument: 'Eurobond', maturity: 'Q2 2026', risk: 'CRITICAL', color: '#ff3b3b' },
+    { country: 'Egypt', flag: '🇪🇬', amount: '$2.1bn', instrument: 'Eurobond', maturity: 'Q2 2026', risk: 'HIGH', color: '#ff3b3b' },
+    { country: 'Egypt', flag: '🇪🇬', amount: '$1.4bn', instrument: 'IMF Repurchase', maturity: 'Q3 2026', risk: 'HIGH', color: '#ff3b3b' },
+    { country: 'Senegal', flag: '🇸🇳', amount: '$1.8bn', instrument: 'IMF Programme', maturity: 'Disbursement Frozen', risk: 'CRITICAL', color: '#ff3b3b' },
+    { country: 'Angola', flag: '🇦🇴', amount: '$1.8bn', instrument: 'Eurobond', maturity: 'Q3 2026', risk: 'HIGH', color: '#ff3b3b' },
+    { country: 'South Africa', flag: '🇿🇦', amount: '$2.2bn', instrument: 'Domestic Bond Rollovers', maturity: 'Q2-Q3 2026', risk: 'HIGH', color: '#ff3b3b' },
+    { country: 'Nigeria', flag: '🇳🇬', amount: '$1.1bn', instrument: 'Eurobond', maturity: 'Q4 2026', risk: 'MEDIUM', color: '#f5a623' },
+    { country: 'Ghana', flag: '🇬🇭', amount: '$0.8bn', instrument: 'Post-Restructuring Bilateral', maturity: 'Q3-Q4 2026', risk: 'LOW', color: '#00c48c' },
+  ],
+
+  commodityExposure: [
+    { country: 'Nigeria', flag: '🇳🇬', primary: 'Oil', exposure: 'HIGH', gdpShare: '8%', revenueShare: '65%', price2026: '$82', fiscalBreakeven: '$92/bbl', breakevenNote: 'BELOW BREAKEVEN', trend: '↑', risk: 'HIGH' },
+    { country: 'Angola', flag: '🇦🇴', primary: 'Oil', exposure: 'VERY HIGH', gdpShare: '45%', revenueShare: '80%', price2026: '$82', fiscalBreakeven: '$78/bbl', breakevenNote: 'ABOVE BREAKEVEN', trend: '↓', risk: 'HIGH' },
+    { country: 'Ghana', flag: '🇬🇭', primary: 'Gold/Oil/Cocoa', exposure: 'MEDIUM', gdpShare: '15%', revenueShare: '35%', price2026: '$3,200/oz', fiscalBreakeven: '$1,800/oz', breakevenNote: 'STRONG BUFFER', trend: '↑', risk: 'LOW' },
+    { country: 'Zambia', flag: '🇿🇲', primary: 'Copper', exposure: 'VERY HIGH', gdpShare: '12%', revenueShare: '70%', price2026: '$9,800/t', fiscalBreakeven: '$7,500/t', breakevenNote: 'ABOVE BREAKEVEN', trend: '→', risk: 'MEDIUM' },
+    { country: 'South Africa', flag: '🇿🇦', primary: 'Gold/Platinum', exposure: 'HIGH', gdpShare: '8%', revenueShare: '40%', price2026: '$3,200/oz', fiscalBreakeven: '$1,600/oz', breakevenNote: 'STRONG BUFFER', trend: '↑', risk: 'LOW' },
+    { country: 'Kenya', flag: '🇰🇪', primary: 'Tea/Coffee', exposure: 'MEDIUM', gdpShare: '5%', revenueShare: '25%', price2026: 'Stable', fiscalBreakeven: 'N/A', breakevenNote: 'NON-COMMODITY', trend: '→', risk: 'MEDIUM' },
+    { country: 'Egypt', flag: '🇪🇬', primary: 'Oil/Gas/Tourism', exposure: 'MEDIUM', gdpShare: '10%', revenueShare: '30%', price2026: '$82', fiscalBreakeven: '$70/bbl', breakevenNote: 'ABOVE BREAKEVEN', trend: '↑', risk: 'MEDIUM' },
+  ],
+
+  riskTable: [
+    { country: 'SENEGAL', cds: 850, delta: '+55', bond: '-2.5pts', fx: '-2.1%', signal: 'DEFAULT RISK', color: '#ff3b3b' },
+    { country: 'KENYA', cds: 192, delta: '+38', bond: '-1.9pts', fx: '-0.4%', signal: 'SHUTDOWN + DEBT', color: '#ff3b3b' },
+    { country: 'MALI', cds: 920, delta: '+65', bond: '-3.0pts', fx: '-1.5%', signal: 'SECURITY COLLAPSE', color: '#ff3b3b' },
+    { country: 'SOUTH AFRICA', cds: 198, delta: '+20', bond: '-1.0pts', fx: '+0.2%', signal: 'NHI DEFEAT + GNU', color: '#ff3b3b' },
+    { country: 'ZAMBIA', cds: 990, delta: '+10', bond: '-0.5pts', fx: '-0.3%', signal: 'POLL + DEBT', color: '#f5a623' },
+    { country: 'EGYPT', cds: 568, delta: '+5', bond: '-0.2pts', fx: '-0.1%', signal: 'OIL EXPORT BENEFIT', color: '#f5a623' },
+    { country: 'NIGERIA', cds: 415, delta: '-10', bond: '+0.5pts', fx: '+0.2%', signal: 'REFINERY MARGINS', color: '#00c48c' },
+    { country: 'GHANA', cds: 232, delta: '-15', bond: '+0.8pts', fx: '+0.4%', signal: 'FITCH UPGRADE', color: '#00c48c' },
+  ],
+  
+
 }
