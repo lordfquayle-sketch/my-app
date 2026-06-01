@@ -61,9 +61,21 @@ export default function Insights() {
         <ResponsiveContainer width="99%" height={200}>
           <LineChart data={history}>
             <XAxis dataKey="date" stroke="#2d4463" tick={{ fontFamily: 'Space Mono', fontSize: 8, fill: '#6b82a0' }} tickFormatter={d => d.slice(5)} />
-            <YAxis stroke="#2d4463" tick={{ fontFamily: 'Space Mono', fontSize: 8, fill: '#6b82a0' }} />
+            <YAxis
+  stroke="#2d4463"
+  tick={{ fontFamily: 'Space Mono', fontSize: 8, fill: '#6b82a0' }}
+  domain={
+    selectedCurrency === 'GHS' ? [9, 14] :
+    selectedCurrency === 'NGN' ? [1300, 1450] :
+    selectedCurrency === 'KES' ? [127, 132] :
+    selectedCurrency === 'EGP' ? [50, 56] :
+    selectedCurrency === 'ZAR' ? [14, 20] :
+    selectedCurrency === 'MAD' ? [9, 11] :
+    ['auto', 'auto']
+  }
+/>
             <Tooltip contentStyle={{ background: '#0a1628', border: '1px solid #1a2d4a', fontFamily: 'Space Mono', fontSize: 11 }} />
-            <Line type="monotone" dataKey="rate" stroke="#1e6bff" strokeWidth={2} dot={false} />
+            <Line type="monotone" dataKey="value" stroke="#1e6bff" strokeWidth={2} dot={false} />
           </LineChart>
         </ResponsiveContainer>
       </div>
