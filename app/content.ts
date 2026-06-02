@@ -1,32 +1,32 @@
 export const content = {
-  riskIndex: '97',
+  riskIndex: '98',
   riskStatus: 'CRITICAL',
 
   riskMonitor: {
     updated: 'June 2, 2026 09:00 UTC',
-    overallScore: 97,
+    overallScore: 98,
     trend: 'WORSENING',
-    drivers: ['Ramaphosa Impeachment Panel Sits For First Time In SA Democratic History', 'Bafana World Cup Departure Delayed — SAFA Visa Blunder — US-SA Relations Signal', 'Kenya Confirms 16 Ebola Suspects Negative — No Cases In Country', 'Ethiopia Post-Election War Window Live — Results June 11'],
+    drivers: ['5 Mozambicans Killed in SA Xenophobic Attacks — Mossel Bay — First Deaths Officially Linked', 'Kenya: 2 Shot Dead in Protests Against US Ebola Facility', 'Sonko Declares Pastef Will NOT Join Faye Government — Senegal Political Deadlock', 'Guinea Parliamentary Elections — 40 Opposition Parties Dissolved Pre-Vote'],
     regions: [
       { region: 'East Africa', score: 98, trend: '↑', color: '#ff3b3b' },
-      { region: 'West Africa', score: 94, trend: '→', color: '#ff3b3b' },
+      { region: 'West Africa', score: 95, trend: '↑', color: '#ff3b3b' },
       { region: 'North Africa', score: 72, trend: '→', color: '#ff3b3b' },
-      { region: 'Southern Africa', score: 97, trend: '↑', color: '#ff3b3b' },
+      { region: 'Southern Africa', score: 99, trend: '↑', color: '#ff3b3b' },
       { region: 'Central Africa', score: 99, trend: '↑', color: '#ff3b3b' },
     ]
   },
 
   sovereignAlerts: [
-    { country: 'South Africa', flag: '🇿🇦', alert: 'Ramaphosa impeachment panel sits for first time in SA democratic history — 31-member committee elects chairperson. Established after Constitutional Court in May compelled parliament to consider Phala Phala misconduct allegations — $500,000+ hidden in farm sofa. ANC retains over one-third of seats so two-thirds threshold for removal unlikely. But panel process adds compound pressure: June 30 deadline 28 days away, SANDF-minister contradiction on record, Bafana visa blunder embarrassing government globally, xenophobia escalation ongoing.', severity: 'CRITICAL', color: '#ff3b3b' },
-    { country: 'South Africa', flag: '🇿🇦', alert: 'Bafana Bafana World Cup departure to Mexico delayed — SAFA administrative visa blunder left 20+ players and technical staff without visas. Sports Minister McKenzie: "We are being made to look like fools." Deputy minister: "heads must roll." SAFA said most visas resolved by Monday — chartered flight departing today. First game vs Mexico at Estadio Azteca June 11. Warm-up vs Jamaica in Mexico Friday. US visa delays for SA nationals amid US-SA tensions adds diplomatic dimension.', severity: 'HIGH', color: '#ff3b3b' },
-    { country: 'Ethiopia', flag: '🇪🇹', alert: 'Voted June 1. Results due June 11. Post-election war window on Tigray now live — 9 days to results. PP sweep expected. TPLF reinstated Debretsion in violation of Pretoria Agreement. All major analysts flag post-election military operations against TPLF as expected outcome. Egypt, UAE, Saudi, Turkey, Israel positioning for Horn influence. 10-day war risk window is the most dangerous in the Horn since November 2020.', severity: 'CRITICAL', color: '#ff3b3b' },
-    { country: 'Kenya', flag: '🇰🇪', alert: 'Positive signal: Kenya confirms all 16 Ebola suspected cases are negative as of May 29. PS Muthoni: "We do not have any confirmed cases of Ebola within our borders." But Finance Bill 2026 due June 30 — Gen-Z ghost building through public hearings. Eurobond Q2 rollover critical. US-Kenya relations strained after court blocked Ebola facility. KES at 129.41.', severity: 'HIGH', color: '#ff3b3b' },
-    { country: 'Senegal', flag: '🇸🇳', alert: '6 days to June 8 — IMF visit + €53.75m coupon. $38.75m due June 10. JPMorgan: 15% haircut + 5-year extension + 75% coupon priced in 2033 bonds. Bonds at record 50.6 cents. PM Lo declared "state of emergency." Debt 132% GDP. Sonko controls legislature 130/165. Dakar protests ongoing. Default window Q4 2026–Q1 2027.', severity: 'CRITICAL', color: '#ff3b3b' },
+    { country: 'South Africa', flag: '🇿🇦', alert: 'FIRST DEATHS CONFIRMED. 5 Mozambicans killed in xenophobic attacks in Mossel Bay over the weekend — first deaths officially linked to anti-migrant protests sweeping SA. Around 800 Mozambicans caught up in violence — 55 shacks torched, some while people were inside. 300 returned home by own means Saturday. 500+ sheltered in Western Cape pending repatriation. SA teenager also killed. Mozambique government issued formal statement. Mayor Kotze: "people have been murdered, houses burned and families displaced." June 30 deadline — 28 days. GNU coherence failing.', severity: 'CRITICAL', color: '#ff3b3b' },
+    { country: 'Kenya', flag: '🇰🇪', alert: 'TWO PEOPLE SHOT DEAD in protests against planned US Ebola quarantine facility. High Court had already suspended the facility Friday. Protests turned deadly over the weekend. Kenyan doctors called it a biosecurity trade-off for foreign aid. US-Kenya relations severely strained entering Finance Bill June 30 deadline and Eurobond Q2 rollover. KES at 129.41. Ebola case count revised downward as DRC testing improved — four nurses recovered.', severity: 'CRITICAL', color: '#ff3b3b' },
+    { country: 'Senegal', flag: '🇸🇳', alert: 'POLITICAL DEADLOCK DEEPENS. Sonko declares Pastef will NOT join President Faye\'s newly announced government — raises prospect of permanent standoff between presidency and parliament. Pastef holds commanding 130/165 majority as Speaker. 6 days to June 8 — IMF visit + €53.75m coupon. JPMorgan 15% haircut priced. Debt 132% GDP. IMF negotiations structurally blocked. Default window Q4 2026–Q1 2027.', severity: 'CRITICAL', color: '#ff3b3b' },
+    { country: 'Guinea', flag: '🇬🇳', alert: 'Parliamentary and municipal elections held June 1 — completing return to constitutional order after Doumbouya\'s December 2025 presidential win. But 40 opposition parties including UFDG, RPG and UFR dissolved by government in March. Opposition boycotted, civil society condemned. Poor turnout linked to post-Tabaski timing. Provisional results expected within days. ECOWAS monitoring. Democratic legitimacy deeply compromised.', severity: 'HIGH', color: '#ff3b3b' },
+    { country: 'Ethiopia', flag: '🇪🇹', alert: 'Voted June 1 — results due June 11. Post-election war window on Tigray live — 9 days. PP sweep confirmed. TPLF reinstated Debretsion in violation of Pretoria Agreement. All major analysts flag post-election military operations against TPLF as expected. Egypt, UAE, Saudi, Turkey, Israel all positioning for Horn influence.', severity: 'CRITICAL', color: '#ff3b3b' },
   ],
 
   featuredSignal: {
-    title: 'RAMAPHOSA IMPEACHMENT PANEL SITS — BAFANA VISA BLUNDER EXPOSES US-SA RIFT — KENYA ALL 16 EBOLA SUSPECTS NEGATIVE — SOUTH AFRICA\'S COMPOUND CRISIS DEEPENS',
-    body: 'June 2 delivers South Africa\'s most consequential governance day since the formation of the GNU. For the first time in democratic history, a parliamentary impeachment panel is sitting to consider allegations against a sitting president — Ramaphosa\'s Phala Phala farm scandal, in which $500,000+ was hidden in a sofa and foreign workers were allegedly unlawfully detained after the theft. The Constitutional Court compelled parliament to proceed in May after it blocked the inquiry in 2022. The ANC retains sufficient seats to prevent a two-thirds removal vote — but the panel process itself is a governance signal that compounds every other pressure on the GNU: June 30 deadline 28 days away, SANDF-minister public contradiction on record, and now the Bafana Bafana visa blunder. Twenty-plus players and staff were stranded without US visas due to a SAFA administrative failure — the sports minister publicly called it embarrassing and said heads must roll. The US embassy delayed processing is being read in some quarters as a reflection of the broader US-SA diplomatic chill. Kenya has confirmed all 16 Ebola suspected cases are negative — the one clear positive signal of the day. Senegal\'s IMF visit is 6 days away.',
+    title: 'FIRST DEATHS IN SA XENOPHOBIA — 5 MOZAMBICANS KILLED MOSSEL BAY — KENYA 2 DEAD IN EBOLA FACILITY PROTESTS — SENEGAL SONKO BLOCKS GOVERNMENT — JUNE 2 IS THE CONTINENT\'S MOST DANGEROUS DAY THIS YEAR',
+    body: 'June 2 delivers the most consequential single day in African sovereign risk since the start of this cycle. South Africa has its first confirmed deaths from the xenophobia wave — five Mozambicans killed in Mossel Bay, 55 shacks torched, 800 nationals caught in the violence. A South African teenager was also killed. The Mozambican government has issued a formal statement. The mayor of Mossel Bay called it a scene of murder, arson and displacement. This is no longer a threatened crisis — it is an active one, 28 days before the June 30 deadline. In Kenya, two people were shot dead during protests against the US Ebola quarantine facility — protests that broke out even after the High Court already suspended the plan. US-Kenya relations are now severely strained with the Finance Bill June 30 deadline and Eurobond rollover approaching. In Senegal, Sonko has declared Pastef will not join Faye\'s newly announced government — turning the constitutional standoff into a permanent political deadlock with the IMF arriving in 6 days. Guinea held parliamentary elections after dissolving 40 opposition parties. June 2, 2026 is the most dangerous day on the African sovereign risk calendar this decade.',
     tag: 'JUNE 2 CRITICAL SIGNAL',
     color: '#ff3b3b',
     author: 'Lord Fiifi Quayle',
@@ -43,32 +43,32 @@ export const content = {
   ],
 
   whatMattersNow: [
-    { title: 'RAMAPHOSA IMPEACHMENT PANEL — FIRST IN SA DEMOCRATIC HISTORY — 31-MEMBER COMMITTEE SITS', body: 'The 31-member parliamentary impeachment panel elected its chairperson today — the first such committee in South Africa\'s democratic history. Established after the Constitutional Court in May compelled parliament to revisit its 2022 decision to block the Phala Phala inquiry. The ANC retained over one-third of National Assembly seats in 2024 — two-thirds required for removal. Ramaphosa unlikely to be removed. But the process itself is a GNU durability signal: a president managing Phala Phala impeachment proceedings, June 30 xenophobia deadline, NHI court defeat, US-SA relations and municipal elections simultaneously.', icon: '⚖️' },
-    { title: 'BAFANA BAFANA VISA BLUNDER — SAFA ADMINISTRATIVE FAILURE — US-SA RIFT SIGNAL', body: 'Bafana Bafana\'s World Cup departure to Mexico delayed after SAFA administrative blunder left 20+ players and staff without US visas. Sports Minister McKenzie on X: "We are being made to look like fools. I need a report and action must be taken." Deputy minister: "heads must roll." SAFA says most visas procured by Monday, chartered flight departing today. First game vs Mexico at Estadio Azteca June 11. Warm-up vs Jamaica Friday. US embassy visa processing delays for South African nationals being read in diplomatic circles as a reflection of the broader US-SA chill.', icon: '🔥' },
-    { title: 'KENYA: ALL 16 EBOLA SUSPECTS NEGATIVE — NO CONFIRMED CASES IN COUNTRY', body: 'Kenya\'s Ministry of Health PS Muthoni confirmed June 1: all 16 Ebola suspected cases identified in Kenya have tested negative as of May 29. "We do not have any confirmed cases of Ebola Virus Disease within our borders." This is a significant positive signal — Kenya borders Uganda where 8-9 confirmed cases have been identified. Active surveillance is ongoing. The Finance Bill court battles and Eurobond rollover remain the dominant Kenya risk stories, but the Ebola all-clear removes one major compound risk.', icon: '✅' },
-    { title: 'SENEGAL: 6 DAYS TO IMF VISIT + €53.75M COUPON — BONDS AT RECORD DISTRESS', body: 'June 8: IMF team Dakar + €53.75m coupon on 2037 euro bonds. June 10: $38.75m on 2031 dollar bonds. JPMorgan: 15% haircut + 5yr extension + 75% coupon priced in 2033 bonds. 2033 dollar bonds at record 50.6 cents. PM Lo declared "state of emergency." Sonko controls legislature 130/165. Barclays: IMF requires fuel subsidy removal — Sonko\'s legislature blocked exactly that. Dakar protests ongoing. Default window Q4 2026–Q1 2027.', icon: '🚨' },
+    { title: '5 MOZAMBICANS KILLED IN SA XENOPHOBIC ATTACKS — MOSSEL BAY — FIRST OFFICIAL DEATHS', body: 'Mozambique government confirmed five nationals killed in xenophobic attacks in Mossel Bay over the weekend — first deaths officially linked to anti-migrant protests sweeping South Africa. 800 Mozambicans caught in violence. 55 shacks torched including some with people inside. One Mozambican resident: "We were still inside when people started burning down our house." 300 returned home Saturday by own means. 500+ sheltered in Western Cape. SA police confirmed 2 deaths, investigating others. SA teenager also killed. Mayor Kotze: "people have been murdered, houses burned, families displaced." Repatriation underway. June 30: 28 days.', icon: '🚨' },
+    { title: 'KENYA: 2 SHOT DEAD IN PROTESTS AGAINST US EBOLA FACILITY — US-KENYA RELATIONS CRITICAL', body: 'Two people killed in protests against the planned US Ebola quarantine facility in Kenya — protests that erupted even after the High Court had already suspended the plan. Kenyan doctors called it a biosecurity trade-off for foreign aid. CDC officials had themselves recommended against the plan. US committing $13.5m to Kenya Ebola preparedness. US-Kenya diplomatic relations severely strained — arriving at worst moment: Finance Bill June 30 deadline, Eurobond $2bn Q2 rollover, IMF positioning all require US goodwill. Ebola case count revised down as DRC testing improved. Four nurses recovered.', icon: '🔥' },
+    { title: 'SENEGAL: SONKO DECLARES PASTEF WILL NOT JOIN FAYE GOVERNMENT — PERMANENT DEADLOCK', body: 'Sonko has stated Pastef will not join President Faye\'s newly announced government — converting the constitutional rupture into a permanent political deadlock. Pastef holds 130/165 National Assembly seats. Sonko is Speaker. Faye\'s executive has no legislative support from his own party. IMF arrives in 6 days — any programme requires fuel subsidy reform through a legislature whose Speaker is now openly in opposition to the president. JPMorgan: 15% haircut + 5yr extension + 75% coupon priced. Default window Q4 2026–Q1 2027.', icon: '⚖️' },
+    { title: 'GUINEA PARLIAMENTARY ELECTIONS — 40 OPPOSITION PARTIES DISSOLVED — LEGITIMACY VOID', body: 'Guinea held parliamentary and municipal elections June 1 — first legislative vote since Doumbouya\'s December 2025 presidential win. But government dissolved 40 opposition parties in March — including UFDG, RPG and UFR. Opposition boycotted. Civil society condemned process. Poor turnout. ECOWAS monitoring but results expected to deliver Doumbouya allies a commanding majority. Democratic legitimacy deeply compromised. West Africa now has Guinea in authoritarian consolidation alongside Mali and Burkina Faso junta states.', icon: '🌍' },
   ],
 
   insight1: {
-    title: 'THE RAMAPHOSA IMPEACHMENT PANEL MAKES SOUTH AFRICA\'S GNU THE MOST COMPOUND-STRESSED GOVERNMENT IN AFRICA',
-    body: 'No other government on the continent is simultaneously managing: an active presidential impeachment process; a dual-movement national shutdown deadline 28 days away; a public SANDF-minister contradiction on security deployment; a World Cup visa blunder that exposed administrative failure to a global audience; a NHI court defeat; US relations at their lowest point in decades; a retail bombing under investigation; and municipal elections in the fall. The GNU was designed to provide stability after the 2024 electoral realignment. Instead it has become the most compound-stressed executive in Africa. The Ramaphosa impeachment process will not remove him — but it will consume parliamentary bandwidth, fracture ANC-GNU partner relations, and give the opposition a platform for months. The June 30 countdown runs in parallel.',
-    conclusion: 'SOUTH AFRICA\'S GNU IS THE MOST COMPOUND-STRESSED EXECUTIVE IN AFRICA. THE RAMAPHOSA IMPEACHMENT PANEL, JUNE 30 DEADLINE, SANDF CONTRADICTION AND BAFANA BLUNDER HAVE ALL LANDED IN THE SAME WEEK. WATCH ZAR AND GNU COHESION AS JUNE ACCELERATES.',
+    title: 'THE MOSSEL BAY KILLINGS MARK THE TRANSITION FROM THREATENED CRISIS TO ACTIVE CRISIS IN SOUTH AFRICA',
+    body: 'Five confirmed deaths in Mossel Bay — houses burned with people inside, 800 nationals displaced, one South African teenager also killed — is not a protest incident. It is a xenophobic massacre, and it has happened 28 days before the June 30 deadline when two organised movements are planning a national shutdown. The Mozambican government has formally condemned the attacks. South African police have confirmed two deaths and are investigating more. The mayor of Mossel Bay has called it murder and arson. This is now an active crisis, not a threatened one. The GNU has lost its most important narrative — that it can manage the June 30 risk through dialogue and deterrence. The Ramaphosa impeachment panel sits. The army contradicted the minister. Now foreign nationals are being killed. The ZAR, GNU cohesion and South Africa\'s standing with its African neighbours are all under simultaneous acute pressure.',
+    conclusion: 'THE MOSSEL BAY KILLINGS ARE THE DEFINING MOMENT OF SOUTH AFRICA\'S JUNE CRISIS. THE TRANSITION FROM THREATENED TO ACTIVE XENOPHOBIC VIOLENCE 28 DAYS BEFORE JUNE 30 CHANGES THE RISK CALCULUS ENTIRELY. WATCH ZAR, GNU COHESION AND SADC RESPONSE.',
   },
 
   insight2: {
-    title: 'KENYA\'S EBOLA ALL-CLEAR IS SIGNIFICANT — BUT THE FINANCE BILL IS THE REAL JUNE 30 RISK',
-    body: 'Kenya confirming all 16 Ebola suspects are negative is a meaningful positive — it removes the most acute health risk from a country that borders Uganda, manages a major regional aviation hub, and is already under compound fiscal and political pressure. But the dominant June 30 Kenya risk is not Ebola — it is the Finance Bill 2026. Public hearings are live. The bill proposes taxes on mobile phones, bottled water, coal and credit card swipes — the same political profile that produced the 2024 parliament storming, 60+ deaths and Ruto\'s veto. Ruto is offering PAYE relief for lower earners as a pre-emptive concession but Africa Confidential notes his street arithmetic is deteriorating. The Eurobond $2bn Q2 rollover and the court battle over the US Ebola facility add two more pressure vectors. Kenya is managing more simultaneous tier-1 risk events than at any point in the Ruto era.',
-    conclusion: 'KENYA\'S EBOLA ALL-CLEAR IS A GENUINE POSITIVE. BUT THE FINANCE BILL JUNE 30 DEADLINE IS THE DOMINANT RISK — AND IT IS BUILDING, NOT RECEDING, THROUGH PUBLIC HEARINGS.',
+    title: 'SONKO\'S REFUSAL TO JOIN FAYE\'S GOVERNMENT MAKES SENEGAL\'S IMF RE-ENGAGEMENT STRUCTURALLY IMPOSSIBLE',
+    body: 'When the leader of a party that holds 130 of 165 parliamentary seats publicly refuses to join the executive — six days before the IMF arrives — the government\'s ability to pass any legislation is structurally zero. The IMF requires fuel subsidy removal as a condition for programme resumption. Sonko blocked that as PM. He now blocks it as Speaker in permanent opposition to Faye\'s executive. Faye cannot govern. The IMF cannot re-engage. The coupon payments on June 8 and 10 may proceed — analysts expect this — but the structural path to debt sustainability is closed. JPMorgan\'s 15% haircut is the market\'s verdict. Senegal is heading for restructuring or default in Q4 2026.',
+    conclusion: 'SONKO\'S DECLARATION OF OPPOSITION TO FAYE\'S GOVERNMENT IS THE FINAL CONFIRMATION THAT SENEGAL\'S IMF RE-ENGAGEMENT IS STRUCTURALLY IMPOSSIBLE UNDER CURRENT POLITICAL MECHANICS. DEFAULT OR RESTRUCTURING IN Q4 2026 IS THE BASE CASE.',
   },
 
   brief: {
     week: '23',
-    title: 'WEEK 23: RAMAPHOSA IMPEACHMENT PANEL SITS, BAFANA VISA BLUNDER, KENYA EBOLA ALL-CLEAR, SENEGAL 6 DAYS TO IMF',
-    body: 'Week 23 second day delivers South Africa\'s most consequential governance convergence since the GNU formation. The Ramaphosa impeachment panel sits for the first time in democratic history — Constitutional Court compelled parliament in May after the 2022 block. Removal unlikely given ANC seat arithmetic but the process compounds every other GNU pressure. Bafana Bafana\'s World Cup departure was delayed by a SAFA visa administrative failure — the sports minister publicly called it embarrassing, the deputy minister demanded heads roll, the US embassy delay adding a diplomatic dimension. Kenya confirmed all 16 Ebola suspects are negative — the one clear positive from the week. Senegal\'s IMF visit is 6 days away with €53.75m coupon due the same day. Ethiopia\'s post-election war window is live — results June 11. South Africa\'s June 30 dual-movement deadline is 28 days away. Ghana remains the continental benchmark.',
+    title: 'WEEK 23: 5 MOZAMBICANS KILLED SA, 2 DEAD KENYA EBOLA PROTESTS, SONKO BLOCKS FAYE, GUINEA ELECTIONS COMPROMISED',
+    body: 'Week 23 mid-point delivers the most dangerous single day in African sovereign risk this decade. South Africa has its first confirmed xenophobia deaths — five Mozambicans killed in Mossel Bay, 55 shacks torched, 800 nationals displaced, 28 days before June 30. In Kenya two people were shot dead protesting against the US Ebola facility — even after the court had already suspended it — US-Kenya relations now severely strained entering the Finance Bill and Eurobond window. Sonko has declared Pastef will not join Faye\'s government — converting the Senegal constitutional rupture into permanent deadlock six days before the IMF arrives with €53.75m coupon due. Guinea held elections after dissolving 40 opposition parties — democratic legitimacy void. Ethiopia\'s post-election war window on Tigray remains live with results due June 11. Ghana remains the sole large African sovereign with an unambiguously positive trajectory. June 2026 is the most dangerous sovereign risk month Africa has faced in this decade — and it is only two days old.',
   },
 
   fxRates: {
-    NGN: '1,370.24',
+    NGN: '1,364.68',
     GHS: '10.70',
     KES: '129.41',
     EGP: '52.22',
@@ -85,29 +85,29 @@ export const content = {
   },
 
   signals: [
-    { time: '09:30:00', signal: 'SA: Ramaphosa impeachment panel sits for first time in democratic history — 31-member committee elects chairperson. ConCourt compelled parliament in May. ANC retains 1/3+ seats — removal unlikely. But process compounds June 30 deadline, SANDF contradiction, Bafana blunder and xenophobia simultaneously.', detail: 'HIGH', type: 'ALERT', tag: 'POLITICAL RISK', country: 'ZAR' },
-    { time: '09:15:00', signal: 'SA: Bafana Bafana World Cup departure delayed — SAFA visa blunder left 20+ players without US visas. McKenzie: "We are being made to look like fools." Deputy minister: "heads must roll." Most visas resolved — chartered flight to Mexico today. First game vs Mexico June 11 Estadio Azteca.', detail: 'HIGH', type: 'ALERT', tag: 'POLITICAL RISK', country: 'ZAR' },
-    { time: '09:00:00', signal: 'Kenya POSITIVE: All 16 Ebola suspected cases confirmed NEGATIVE as of May 29. PS Muthoni: "We do not have any confirmed cases within our borders." Active surveillance ongoing. Kenya borders Uganda (8-9 confirmed). Ebola all-clear removes one major compound risk — Finance Bill June 30 remains dominant.', detail: 'LOW', type: 'INFO', tag: 'HEALTH RISK', country: 'KES' },
-    { time: '08:45:00', signal: 'Senegal: 6 days to June 8 IMF visit + €53.75m coupon. $38.75m June 10. JPMorgan 15% haircut + 5yr extension + 75% coupon priced. 2033 bonds at 50.6c. PM Lo "state of emergency." Debt 132% GDP. Sonko controls legislature. Dakar protests live. Default window Q4 2026–Q1 2027.', detail: 'HIGH', type: 'ALERT', tag: 'CREDIT STRESS', country: 'XOF' },
-    { time: '08:30:00', signal: 'Ethiopia: Post-election war window on Tigray LIVE — 9 days to June 11 results. PP sweep expected. TPLF reinstated Debretsion in violation of Pretoria Agreement. All major analysts flag post-election military operations as expected. Egypt, UAE, Saudi, Turkey, Israel positioning for Horn influence.', detail: 'HIGH', type: 'ALERT', tag: 'SECURITY RISK', country: 'ETB' },
-    { time: '08:15:00', signal: 'South Africa: June 30 — 28 days. Impeachment panel + Bafana blunder + SANDF contradiction + xenophobia dual movement all active simultaneously. GNU managing most compound domestic crisis of any African government. ZAR at 16.30 — holding despite political stress on dollar weakness.', detail: 'HIGH', type: 'ALERT', tag: 'POLITICAL RISK', country: 'ZAR' },
-    { time: '08:00:00', signal: 'MCB (Mauritius Commercial Bank) launches $1bn trade finance facility June 1 — targeted at AfCFTA implementation, SMEs in agriculture, manufacturing, logistics. India-Africa Business Dialogue closed. AfDB Annual Meetings governors endorse reform of Africa financial architecture. Positive structural signals amid acute risk environment.', detail: 'LOW', type: 'INFO', tag: 'MARKET FLOW', country: 'AFRICA' },
-    { time: '07:45:00', signal: 'LIVE FX June 2: NGN 1,370.24 | GHS 10.70 | KES 129.41 | EGP 52.22 | ZAR 16.30 | UGX 3,770 | ZMW 19.02. NGN slight weakening from 1,354 last week — naira volatility returning. GHS holding at 10.70 — cedi up 19.32% YoY. ZAR firm. Ghana benchmark intact.', detail: 'LOW', type: 'INFO', tag: 'FX UPDATE', country: 'AFRICA' },
+    { time: '09:30:00', signal: 'SA: 5 Mozambicans killed in xenophobic attacks in Mossel Bay — first deaths officially linked to anti-migrant protests. 55 shacks torched some with people inside. 800 Mozambicans displaced. SA teenager also killed. Mayor: "people murdered, houses burned." Mozambique formal condemnation. Repatriation underway. June 30: 28 days.', detail: 'HIGH', type: 'ALERT', tag: 'POLITICAL RISK', country: 'ZAR' },
+    { time: '09:15:00', signal: 'Kenya: 2 people shot dead in protests against US Ebola facility — even after High Court suspended plan. Kenyan doctors: "biosecurity trade-off for foreign aid." CDC recommended against plan. US-Kenya relations severely strained entering Finance Bill June 30 + Eurobond $2bn Q2 rollover window.', detail: 'HIGH', type: 'ALERT', tag: 'POLITICAL RISK', country: 'KES' },
+    { time: '09:00:00', signal: 'Senegal: Sonko declares Pastef will NOT join Faye government — permanent political deadlock. Pastef 130/165 seats. Sonko controls legislature as Speaker in open opposition to president. IMF arrives in 6 days. JPMorgan: 15% haircut priced. No path to IMF re-engagement. Default window Q4 2026–Q1 2027.', detail: 'HIGH', type: 'ALERT', tag: 'CREDIT STRESS', country: 'XOF' },
+    { time: '08:45:00', signal: 'Guinea: Parliamentary + municipal elections June 1 — 40 opposition parties dissolved pre-vote. UFDG, RPG, UFR all dissolved. Opposition boycotted. Poor turnout. ECOWAS monitoring. Doumbouya allies expected to sweep. Democratic legitimacy void. West Africa: Guinea joins Mali + Burkina Faso in authoritarian consolidation.', detail: 'HIGH', type: 'ALERT', tag: 'POLITICAL RISK', country: 'AFRICA' },
+    { time: '08:30:00', signal: 'Ethiopia: Post-election war window live — 9 days to June 11 results. PP sweep confirmed from June 1 vote. TPLF reinstated Debretsion. All major analysts: post-election operations against TPLF expected. Egypt, UAE, Saudi, Turkey, Israel positioning. Most dangerous Horn window since Nov 2020.', detail: 'HIGH', type: 'ALERT', tag: 'SECURITY RISK', country: 'ETB' },
+    { time: '08:15:00', signal: 'Ebola: DRC case count revised downward as testing improved — confirmed cases better distinguished from suspected. Four nurses recovered. Bundibugyo fatality rate up to 50%. No vaccine, no treatment. Kenya all-16 suspects negative. Uganda 8 confirmed. Italy scare negative. ECDC: EU/EEA risk very low.', detail: 'MEDIUM', type: 'INFO', tag: 'HEALTH RISK', country: 'AFRICA' },
+    { time: '08:00:00', signal: 'Ramaphosa impeachment panel: Rise Mzansi MP Makashule Gana elected chairperson — first sitting in SA democratic history. ANC retains 1/3+ seats — removal unlikely. But process compounds June 30 deadline, Mossel Bay deaths, Bafana visa blunder and SANDF-minister contradiction simultaneously.', detail: 'HIGH', type: 'ALERT', tag: 'POLITICAL RISK', country: 'ZAR' },
+    { time: '07:45:00', signal: 'LIVE FX June 2: NGN 1,364.68 (CBN official) | GHS 10.70 | KES 129.41 | EGP 52.22 | ZAR 16.30 | UGX 3,770 | ZMW 19.02. NGN strengthened from 1,371 — naira holding. GHS 10.70 — cedi up 19.3% YoY. ZAR firm on dollar weakness despite SA political crisis.', detail: 'LOW', type: 'INFO', tag: 'FX UPDATE', country: 'AFRICA' },
   ],
 
   heatMap: [
-    { country: 'Nigeria', flag: '🇳🇬', score: 70, fiscal: 60, fx: 52, debt: 60, political: 88, external: 62 },
+    { country: 'Nigeria', flag: '🇳🇬', score: 70, fiscal: 60, fx: 50, debt: 60, political: 88, external: 62 },
     { country: 'Ghana', flag: '🇬🇭', score: 36, fiscal: 38, fx: 28, debt: 40, political: 34, external: 42 },
-    { country: 'Kenya', flag: '🇰🇪', score: 90, fiscal: 84, fx: 74, debt: 90, political: 96, external: 90 },
+    { country: 'Kenya', flag: '🇰🇪', score: 94, fiscal: 84, fx: 74, debt: 90, political: 99, external: 96 },
     { country: 'Egypt', flag: '🇪🇬', score: 66, fiscal: 68, fx: 64, debt: 66, political: 65, external: 68 },
-    { country: 'South Africa', flag: '🇿🇦', score: 96, fiscal: 68, fx: 46, debt: 62, political: 99, external: 90 },
+    { country: 'South Africa', flag: '🇿🇦', score: 98, fiscal: 68, fx: 46, debt: 62, political: 99, external: 96 },
     { country: 'Senegal', flag: '🇸🇳', score: 99, fiscal: 99, fx: 88, debt: 99, political: 99, external: 94 },
     { country: 'Mali', flag: '🇲🇱', score: 96, fiscal: 88, fx: 85, debt: 85, political: 99, external: 92 },
     { country: 'Uganda', flag: '🇺🇬', score: 94, fiscal: 70, fx: 78, debt: 74, political: 68, external: 99 },
   ],
 
   currencyStress: [
-    { code: 'NGN', country: 'Nigeria', rate: '1,370.24', change: '-13.56%', stress: 'MODERATE', ytd: '-3.80%', color: '#f5a623' },
+    { code: 'NGN', country: 'Nigeria', rate: '1,364.68', change: '-13.34%', stress: 'MODERATE', ytd: '-3.50%', color: '#f5a623' },
     { code: 'GHS', country: 'Ghana', rate: '10.70', change: '+1.65%', stress: 'LOW', ytd: '+19.32%', color: '#00c48c' },
     { code: 'KES', country: 'Kenya', rate: '129.41', change: '+0.16%', stress: 'ELEVATED', ytd: '-1.10%', color: '#ff3b3b' },
     { code: 'EGP', country: 'Egypt', rate: '52.22', change: '-4.32%', stress: 'HIGH', ytd: '-4.51%', color: '#ff3b3b' },
@@ -118,12 +118,13 @@ export const content = {
   ],
 
   elections: [
-    { country: 'Ethiopia', flag: '🇪🇹', date: 'Voted June 1 — Results June 11', type: 'General Election', risk: 'CRITICAL', note: 'PP sweep expected. Tigray excluded. TPLF reinstated Debretsion. Post-election war window on Tigray LIVE — 9 days to results. Regional powers positioning. Most dangerous Horn window since Nov 2020.', color: '#ff3b3b' },
+    { country: 'Ethiopia', flag: '🇪🇹', date: 'Voted June 1 — Results June 11', type: 'General Election', risk: 'CRITICAL', note: 'PP sweep confirmed. Tigray excluded. TPLF reinstated Debretsion. Post-election war window LIVE — 9 days. Regional powers positioning. Most dangerous Horn window since Nov 2020.', color: '#ff3b3b' },
+    { country: 'Guinea', flag: '🇬🇳', date: 'June 1, 2026', type: 'Parliamentary + Municipal', risk: 'HIGH', note: '40 opposition parties dissolved pre-vote. UFDG, RPG, UFR all dissolved. Opposition boycotted. ECOWAS monitoring. Doumbouya allies expected to sweep. Democratic legitimacy void.', color: '#ff3b3b' },
     { country: 'Somalia', flag: '🇸🇴', date: 'Extended to 2027', type: 'Presidential Election', risk: 'CRITICAL', note: 'Mohamud term expired May 15. Parallel government threat. Al-Shabaab exploiting vacuum.', color: '#ff3b3b' },
     { country: 'Zambia', flag: '🇿🇲', date: 'August 13, 2026', type: 'General Election', risk: 'HIGH', note: 'Hichilema under pressure. Slow reform, 3hrs power/day. Opposition consolidating. Outcome uncertain.', color: '#ff3b3b' },
-    { country: 'South Africa', flag: '🇿🇦', date: 'Fall 2026', type: 'Municipal Elections', risk: 'CRITICAL', note: 'June 30 — 28 days. Ramaphosa impeachment panel sits. Bafana visa blunder. SANDF contradiction. TWO movements. GNU most compound-stressed government in Africa.', color: '#ff3b3b' },
-    { country: 'Nigeria', flag: '🇳🇬', date: 'Early 2027', type: 'General Election', risk: 'CRITICAL', note: '300+ civilian airstrike deaths. ISWAP activity. Airstrike crisis unaddressed. Tier-1 election liability.', color: '#ff3b3b' },
-    { country: 'Kenya', flag: '🇰🇪', date: '2027', type: 'General Election', risk: 'CRITICAL', note: 'Finance Bill June 30 — Gen-Z ghost. Ebola all-clear positive. Eurobond Q2 rollover. US-Kenya strained. Ruto managing five crises simultaneously.', color: '#ff3b3b' },
+    { country: 'South Africa', flag: '🇿🇦', date: 'Fall 2026', type: 'Municipal Elections', risk: 'CRITICAL', note: 'June 30 — 28 days. 5 Mozambicans killed Mossel Bay. Ramaphosa impeachment panel sits. SANDF contradiction. TWO movements. GNU coherence failing.', color: '#ff3b3b' },
+    { country: 'Nigeria', flag: '🇳🇬', date: 'Early 2027', type: 'General Election', risk: 'CRITICAL', note: '300+ civilian airstrike deaths. ISWAP activity. Civilian crisis unaddressed. Tier-1 election liability.', color: '#ff3b3b' },
+    { country: 'Kenya', flag: '🇰🇪', date: '2027', type: 'General Election', risk: 'CRITICAL', note: '2 killed in Ebola facility protests. Finance Bill June 30. US-Kenya strained. Eurobond Q2 rollover. Ruto managing five crises simultaneously.', color: '#ff3b3b' },
   ],
 
   debtMaturities: [
@@ -148,10 +149,10 @@ export const content = {
   ],
 
   riskTable: [
-    { country: 'SENEGAL', cds: 950, delta: '+100', bond: '-5.6pts', fx: '-0.8%', signal: 'JPMORGAN 15% HAIRCUT — IMF 6 DAYS', color: '#ff3b3b' },
-    { country: 'SOUTH AFRICA', cds: 198, delta: '+38', bond: '-1.9pts', fx: '+3.5%', signal: 'IMPEACHMENT + JUNE 30 — 28 DAYS', color: '#ff3b3b' },
+    { country: 'SENEGAL', cds: 950, delta: '+100', bond: '-5.6pts', fx: '-0.8%', signal: 'SONKO BLOCKS GOVT — IMF 6 DAYS', color: '#ff3b3b' },
+    { country: 'SOUTH AFRICA', cds: 198, delta: '+42', bond: '-2.1pts', fx: '+3.5%', signal: '5 DEAD MOSSEL BAY — JUNE 30 28 DAYS', color: '#ff3b3b' },
+    { country: 'KENYA', cds: 192, delta: '+48', bond: '-2.4pts', fx: '-0.4%', signal: '2 DEAD EBOLA PROTESTS — FINANCE BILL', color: '#ff3b3b' },
     { country: 'ETHIOPIA', cds: 520, delta: '+50', bond: '-2.5pts', fx: '-0.9%', signal: 'POST-ELECTION WAR WINDOW LIVE', color: '#ff3b3b' },
-    { country: 'KENYA', cds: 192, delta: '+40', bond: '-2.0pts', fx: '-0.4%', signal: 'FINANCE BILL JUNE 30 — EBOLA CLEAR', color: '#ff3b3b' },
     { country: 'MALI', cds: 920, delta: '+65', bond: '-3.0pts', fx: '-1.5%', signal: 'SECURITY COLLAPSE', color: '#ff3b3b' },
     { country: 'NIGERIA', cds: 415, delta: '+18', bond: '-0.8pts', fx: '-0.2%', signal: 'AIRSTRIKE + 2027 ELECTION RISK', color: '#ff3b3b' },
     { country: 'EGYPT', cds: 568, delta: '+5', bond: '-0.2pts', fx: '+4.3%', signal: 'OIL EXPORT BENEFIT', color: '#f5a623' },
@@ -159,70 +160,18 @@ export const content = {
   ],
 
   fxHistory: [
-    {
-      date: 'May 19',
-      NGN: 1370.31, GHS: 13.27, KES: 129.50, EGP: 54.69,
-      ZAR: 18.20, UGX: 3710, ZMW: 19.11, XOF: 610
-    },
-    {
-      date: 'May 20',
-      NGN: 1370.31, GHS: 13.10, KES: 129.50, EGP: 53.90,
-      ZAR: 18.45, UGX: 3710, ZMW: 19.11, XOF: 610
-    },
-    {
-      date: 'May 22',
-      NGN: 1370.31, GHS: 12.80, KES: 129.50, EGP: 53.50,
-      ZAR: 18.40, UGX: 3710, ZMW: 19.11, XOF: 610
-    },
-    {
-      date: 'May 23',
-      NGN: 1370.31, GHS: 12.50, KES: 129.50, EGP: 53.20,
-      ZAR: 18.35, UGX: 3710, ZMW: 19.11, XOF: 610
-    },
-    {
-      date: 'May 25',
-      NGN: 1370.31, GHS: 12.20, KES: 129.50, EGP: 53.12,
-      ZAR: 18.30, UGX: 3710, ZMW: 19.11, XOF: 610
-    },
-    {
-      date: 'May 26',
-      NGN: 1371.98, GHS: 11.90, KES: 129.50, EGP: 53.00,
-      ZAR: 18.10, UGX: 3730, ZMW: 19.08, XOF: 612
-    },
-    {
-      date: 'May 27',
-      NGN: 1371.98, GHS: 11.66, KES: 129.50, EGP: 52.80,
-      ZAR: 17.80, UGX: 3745, ZMW: 19.05, XOF: 613
-    },
-    {
-      date: 'May 28',
-      NGN: 1371.98, GHS: 11.40, KES: 129.20, EGP: 52.50,
-      ZAR: 17.20, UGX: 3758, ZMW: 19.04, XOF: 615
-    },
-    {
-      date: 'May 29',
-      NGN: 1371.85, GHS: 11.10, KES: 129.10, EGP: 52.35,
-      ZAR: 16.80, UGX: 3765, ZMW: 19.03, XOF: 615
-    },
-    {
-      date: 'May 30',
-      NGN: 1354.23, GHS: 10.70, KES: 129.03, EGP: 52.22,
-      ZAR: 16.30, UGX: 3770, ZMW: 19.02, XOF: 615
-    },
-    {
-      date: 'May 31',
-      NGN: 1354.23, GHS: 10.70, KES: 129.03, EGP: 52.22,
-      ZAR: 16.30, UGX: 3770, ZMW: 19.02, XOF: 615
-    },
-    {
-      date: 'Jun 1',
-      NGN: 1354.23, GHS: 10.70, KES: 129.41, EGP: 52.22,
-      ZAR: 16.30, UGX: 3770, ZMW: 19.02, XOF: 615
-    },
-    {
-      date: 'Jun 2',
-      NGN: 1370.24, GHS: 10.70, KES: 129.41, EGP: 52.22,
-      ZAR: 16.30, UGX: 3770, ZMW: 19.02, XOF: 615
-    },
+    { date: 'May 19', NGN: 1370.31, GHS: 13.27, KES: 129.50, EGP: 54.69, ZAR: 18.20, UGX: 3710, ZMW: 19.11, XOF: 610 },
+    { date: 'May 20', NGN: 1370.31, GHS: 13.10, KES: 129.50, EGP: 53.90, ZAR: 18.45, UGX: 3710, ZMW: 19.11, XOF: 610 },
+    { date: 'May 22', NGN: 1370.31, GHS: 12.80, KES: 129.50, EGP: 53.50, ZAR: 18.40, UGX: 3710, ZMW: 19.11, XOF: 610 },
+    { date: 'May 23', NGN: 1370.31, GHS: 12.50, KES: 129.50, EGP: 53.20, ZAR: 18.35, UGX: 3710, ZMW: 19.11, XOF: 610 },
+    { date: 'May 25', NGN: 1370.31, GHS: 12.20, KES: 129.50, EGP: 53.12, ZAR: 18.30, UGX: 3710, ZMW: 19.11, XOF: 610 },
+    { date: 'May 26', NGN: 1371.98, GHS: 11.90, KES: 129.50, EGP: 53.00, ZAR: 18.10, UGX: 3730, ZMW: 19.08, XOF: 612 },
+    { date: 'May 27', NGN: 1371.98, GHS: 11.66, KES: 129.50, EGP: 52.80, ZAR: 17.80, UGX: 3745, ZMW: 19.05, XOF: 613 },
+    { date: 'May 28', NGN: 1371.98, GHS: 11.40, KES: 129.20, EGP: 52.50, ZAR: 17.20, UGX: 3758, ZMW: 19.04, XOF: 615 },
+    { date: 'May 29', NGN: 1371.85, GHS: 11.10, KES: 129.10, EGP: 52.35, ZAR: 16.80, UGX: 3765, ZMW: 19.03, XOF: 615 },
+    { date: 'May 30', NGN: 1354.23, GHS: 10.70, KES: 129.03, EGP: 52.22, ZAR: 16.30, UGX: 3770, ZMW: 19.02, XOF: 615 },
+    { date: 'May 31', NGN: 1354.23, GHS: 10.70, KES: 129.03, EGP: 52.22, ZAR: 16.30, UGX: 3770, ZMW: 19.02, XOF: 615 },
+    { date: 'Jun 1', NGN: 1354.23, GHS: 10.70, KES: 129.41, EGP: 52.22, ZAR: 16.30, UGX: 3770, ZMW: 19.02, XOF: 615 },
+    { date: 'Jun 2', NGN: 1364.68, GHS: 10.70, KES: 129.41, EGP: 52.22, ZAR: 16.30, UGX: 3770, ZMW: 19.02, XOF: 615 },
   ],
 }
