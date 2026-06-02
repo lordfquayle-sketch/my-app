@@ -14,13 +14,13 @@ export default function Insights() {
   const [selectedCurrency, setSelectedCurrency] = useState('GHS')
 
   useEffect(() => {
-    const fetchHistory = async () => {
-      const res = await fetch('/api/history?currency=' + selectedCurrency)
-      const data = await res.json()
-      setHistory(data)
-    }
-    fetchHistory()
-  }, [selectedCurrency])
+   useEffect(() => {
+  const data = (content.fxHistory as any[]).map((entry) => ({
+    date: entry.date,
+    value: entry[selectedCurrency],
+  }))
+  setHistory(data)
+}, [selectedCurrency])
 
   const fxData = [
     { country: 'NGN', rate: Number(content.fxRates.NGN) },
