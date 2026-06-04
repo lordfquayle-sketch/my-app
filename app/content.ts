@@ -3,10 +3,10 @@ export const content = {
   riskStatus: 'CRITICAL',
 
   riskMonitor: {
-    updated: 'June 3, 2026 09:00 UTC',
+    updated: 'June 4, 2026 09:00 UTC',
     overallScore: 98,
     trend: 'WORSENING',
-    drivers: ['SA Petrol Tax R1.50/litre Hike TODAY — Xenophobia Deaths + Fuel Cost Compound', 'Mossel Bay Suspect Arrested — Teen Killer Named — Repatriation Underway', 'Senegal IMF Visit 5 Days — JPMorgan: $9.7bn Obligations This Year', 'GHS Reversal — Cedi Weakens to 11.75 From 10.70 — Stress Upgraded'],
+    drivers: ['US Slashes Africa Visa Processing Centres 50→20 — Structural US-Africa Rupture', 'SA Household Debt Crisis — R237bn Overdue, 41% Credit-Active in Default — SARB Hikes', 'Ebola 321 Confirmed Cases — Fortress Strategy Will Fail Per WHO — 4 Days to IMF Senegal', 'AfDB Governors Endorse Accelerated Reform of Africa Financial Architecture'],
     regions: [
       { region: 'East Africa', score: 98, trend: '↑', color: '#ff3b3b' },
       { region: 'West Africa', score: 95, trend: '→', color: '#ff3b3b' },
@@ -17,20 +17,20 @@ export const content = {
   },
 
   sovereignAlerts: [
-    { country: 'South Africa', flag: '🇿🇦', alert: 'COMPOUND CRISIS DEEPENS. Petrol tax hike R1.50/litre effective TODAY June 3 — fuel levy up from R1.10 to R2.60. Petrol 93 up ~R1.04/litre. Diesel relief partially offsets. Xenophobia: 23-year-old suspect arrested for stabbing death of teen Nhlamulo Sambo in Mossel Bay Kwanonqaba township. Mozambique repatriation of 500+ nationals underway. SA Western Cape storms hitting — additional disruption to logistics. June 30 deadline: 27 days. GNU managing fuel hike + xenophobia deaths + impeachment panel + storms simultaneously.', severity: 'CRITICAL', color: '#ff3b3b' },
-    { country: 'Senegal', flag: '🇸🇳', alert: 'IMF visit in 5 days — June 8. JPMorgan: Senegal owes $9.7bn in interest and amortisation THIS YEAR, $7.8bn in 2027, $8.7bn in 2028. Total 3-year obligation: $26.2bn. March payment of €380m + $33m made ahead of deadline — track record of payment intact. But June 8 €53.75m coupon + June 10 $38.75m are next tests. Sonko blocks Faye government. Pastef 130/165 seats. No IMF re-engagement path. Default window Q4 2026–Q1 2027.', severity: 'CRITICAL', color: '#ff3b3b' },
-    { country: 'Kenya', flag: '🇰🇪', alert: 'Ruto: Kenya screening 3,000 travellers daily for Ebola — no confirmed cases. Finance Bill 2026 public hearings continuing — due June 30. US-Kenya relations strained after 2 killed in Ebola facility protests. Eurobond $2bn Q2 rollover critical. Court case on Ebola facility back next week. KES at 129.41. Ruto managing five simultaneous crises.', severity: 'CRITICAL', color: '#ff3b3b' },
-    { country: 'Ethiopia', flag: '🇪🇹', alert: 'Post-election war window live — 8 days to June 11 results. PP sweep confirmed from June 1 vote. TPLF reinstated Debretsion in violation of Pretoria Agreement. All major analysts: post-election military operations against TPLF expected. US Ambassador says Ethiopian Airlines no longer a regional airline — now a global competitor. Regional powers: Egypt, UAE, Saudi, Turkey, Israel positioning for Horn influence.', severity: 'CRITICAL', color: '#ff3b3b' },
-    { country: 'DRC/Uganda', flag: '🇨🇩', alert: 'Four DRC nurses who had Ebola recovered — positive signal. But outbreak ongoing in Ituri, Nord-Kivu, Sud-Kivu and Kampala. Ebola case count revised downward as testing improved — better distinction of confirmed vs suspected. Bundibugyo strain — no vaccine, no treatment. WHO: community trust key to containment. Tedros called for ceasefire. Spreading faster than response.', severity: 'CRITICAL', color: '#ff3b3b' },
+    { country: 'South Africa', flag: '🇿🇦', alert: 'HOUSEHOLD DEBT CRISIS CONFIRMED. Eighty20 Q1 2026: overdue debt R237bn (+5.6% QoQ), 35.5% of loans in arrears, 41% of credit-active consumers in default on at least one loan. GDP growth 1.6%, unemployment 32.7%. SARB hiked rates 25bps — warns three further hikes possible. Q2 bringing oil above $100/bbl and two of SA\'s largest ever fuel hikes. June 30 xenophobia deadline 26 days. Mozambican repatriation ongoing. Impeachment panel sitting. June is shaping as the worst month for SA household finances in a decade.', severity: 'CRITICAL', color: '#ff3b3b' },
+    { country: 'Africa (US Policy)', flag: '🌍', alert: 'US slashes Africa visa processing centres from ~50 to 20 — effective in June. 30 embassies/consulates lose full visa processing capability. Citizens in non-hub countries must travel to one of 20 approved sites — formidable travel costs and delays. Driven by Trump immigration crackdown + Ebola outbreak disruptions + $15,000 bond requirement already in place. Structural US-Africa engagement rupture. FDI, academic, business and diaspora flows all affected. 20 hubs include Lagos, Nairobi, Accra, Johannesburg, Dakar, Kinshasa.', severity: 'CRITICAL', color: '#ff3b3b' },
+    { country: 'Senegal', flag: '🇸🇴', alert: '4 days to June 8 — IMF visit + €53.75m coupon. $38.75m due June 10. JPMorgan: $9.7bn obligations this year. Senegal paid March bonds ahead of deadline — track record intact. But Sonko blocks Faye government, Pastef 130/165 seats, no IMF re-engagement path. Bonds at record distress. Default window Q4 2026–Q1 2027.', severity: 'CRITICAL', color: '#ff3b3b' },
+    { country: 'DRC/Uganda', flag: '🇨🇩', alert: 'CDC June 1: 321 confirmed Ebola cases in DRC. WHO warns "fortress strategy will fail — lessons from the past." Bundibugyo — no vaccine, no treatment. Ituri, Nord-Kivu, Sud-Kivu, Kampala active. US paused all visa services at embassies in hardest-hit countries — appointments cancelled. Global travel architecture around Africa tightening.', severity: 'CRITICAL', color: '#ff3b3b' },
+    { country: 'Ethiopia', flag: '🇪🇹', alert: 'Post-election war window live — 7 days to June 11 results. PP sweep confirmed. TPLF reinstated Debretsion in violation of Pretoria Agreement. US Ambassador: Ethiopian Airlines now global competitor — soft power signal. Post-election war risk on Tigray explicit in all major analyst assessments. Horn of Africa most dangerous window since 2020.', severity: 'CRITICAL', color: '#ff3b3b' },
   ],
 
   featuredSignal: {
-    title: 'SA PETROL TAX R1.50/LITRE TODAY + XENOPHOBIA DEATHS + IMPEACHMENT PANEL — GNU MANAGING MOST COMPOUND CRISIS IN AFRICA — SENEGAL $9.7BN OBLIGATIONS THIS YEAR — GHS REVERSAL',
-    body: 'June 3 opens with South Africa\'s most compound governance day in democratic history. The petrol fuel levy rises R1.50/litre today — petrol 93 up ~R1.04/litre — arriving the day after five Mozambicans were confirmed killed in Mossel Bay xenophobic attacks. The Ramaphosa impeachment panel is sitting. The SANDF has contradicted the Defence Minister. Two movements are targeting June 30 — 27 days away. Western Cape storms are hitting logistics. A 23-year-old suspect has been arrested for the stabbing of teen Nhlamulo Sambo in Mossel Bay. The repatriation of 500+ Mozambican nationals is underway. In Senegal, JPMorgan has now quantified the full debt obligation: $9.7 billion in interest and amortisation this year alone — making the March payment of €380m look small against the structural wall. Senegal\'s track record of payment is intact — but with Sonko blocking Faye\'s government and the IMF arriving in 5 days, the structural path to sustainability is closed. In a notable FX reversal, the GHS has weakened sharply from 10.70 to 11.75 — the cedi giving back recent gains, changing the currency stress picture.',
-    tag: 'JUNE 3 CRITICAL SIGNAL',
+    title: 'US SLASHES AFRICA VISA CENTRES 50→20 — SA 41% OF BORROWERS IN DEFAULT — EBOLA FORTRESS STRATEGY WILL FAIL — JUNE 4 DEFINES THE NEW US-AFRICA ARCHITECTURE',
+    body: 'June 4 delivers the structural signal that will define US-Africa relations for the decade. The Trump State Department is slashing African visa processing centres from nearly 50 to just 20 — effective in June. Citizens in 30 countries will have to travel to an approved hub to access US visa services, at formidable cost and delay. The move combines the immigration crackdown, the Ebola outbreak disruptions, and the existing $15,000 bond requirement into a single structural US-Africa disengagement signal. Simultaneously, South Africa\'s Eighty20 Q1 2026 Credit Stress Report — released yesterday — confirms the household debt crisis is accelerating: R237bn overdue, 35.5% of loans in arrears, 41% of credit-active consumers in default, SARB hiking rates with three more possible, and Q2 bringing oil above $100/bbl and two of the largest fuel hikes in history. WHO has warned that an Ebola "fortress strategy will fail" — citing lessons from past outbreaks. The AfDB governors have endorsed accelerated reform of Africa\'s financial architecture — the continent\'s own institutional response to US and Western disengagement. Senegal\'s IMF visit is 4 days away.',
+    tag: 'JUNE 4 CRITICAL SIGNAL',
     color: '#ff3b3b',
     author: 'Lord Fiifi Quayle',
-    date: 'June 3, 2026',
+    date: 'June 4, 2026',
   },
 
   pressureMap: [
@@ -38,39 +38,39 @@ export const content = {
     { country: 'Ghana', flag: '🇬🇭', outlook: 'Cautious', status: 'WATCH', statusColor: '#f5a623', cds: '232', fxPressure: 'MODERATE', liquidity: 'STABLE' },
     { country: 'Kenya', flag: '🇰🇪', outlook: 'Negative', status: 'STRESSED', statusColor: '#ff3b3b', cds: '192', fxPressure: 'ELEVATED', liquidity: 'TIGHT' },
     { country: 'Egypt', flag: '🇪🇬', outlook: 'Cautious', status: 'WATCH', statusColor: '#f5a623', cds: '568', fxPressure: 'MODERATE', liquidity: 'WATCH' },
-    { country: 'South Africa', flag: '🇿🇦', outlook: 'Negative', status: 'STRESSED', statusColor: '#ff3b3b', cds: '198', fxPressure: 'LOW', liquidity: 'WATCH' },
+    { country: 'South Africa', flag: '🇿🇦', outlook: 'Negative', status: 'STRESSED', statusColor: '#ff3b3b', cds: '198', fxPressure: 'LOW', liquidity: 'TIGHT' },
     { country: 'Senegal', flag: '🇸🇳', outlook: 'Negative', status: 'STRESSED', statusColor: '#ff3b3b', cds: '950', fxPressure: 'HIGH', liquidity: 'TIGHT' },
   ],
 
   whatMattersNow: [
-    { title: 'SA PETROL TAX R1.50/LITRE HIKE TODAY — FUEL LEVY R1.10 → R2.60 — COMPOUND TIMING', body: 'Effective June 3: South African fuel levy increases R1.50/litre as 50% of pandemic-era tax relief is withdrawn. Petrol 93 up ~R1.04/litre at the pump. Diesel gets partial relief on international oil prices — but petrol drivers face higher costs. July likely to bring another hike. This arrives 24 hours after five Mozambicans were killed in xenophobic attacks — the compound signal for consumers, transporters and the GNU is stark. The xenophobia movement cites economic frustration and foreign national employment — a petrol hike the same week adds direct economic pressure.', icon: '🔥' },
-    { title: 'MOSSEL BAY: SUSPECT ARRESTED FOR TEEN KILLING — MOZAMBICAN REPATRIATION LIVE', body: 'SA police arrested 23-year-old suspect in connection with stabbing death of teenager Nhlamulo Sambo in Mossel Bay Kwanonqaba township — killing linked to xenophobia unrest. Mozambican government repatriation of 500+ sheltered nationals in Western Cape now underway. 300 returned by own means Saturday. 7 total Mozambican deaths — 5 from attacks, 2 in road accident fleeing. Western Cape storms adding logistics disruption to repatriation process. June 30: 27 days.', icon: '🚨' },
-    { title: 'SENEGAL: $9.7BN OBLIGATIONS THIS YEAR — IMF 5 DAYS AWAY — TRACK RECORD INTACT BUT WALL IS REAL', body: 'JPMorgan quantified Senegal\'s full 2026 obligation: $9.7bn in interest and amortisation. $7.8bn in 2027. $8.7bn in 2028. Total 3-year wall: $26.2bn. March €380m + $33m payment was made ahead of deadline — Senegal has maintained payment track record throughout the crisis. June 8 €53.75m coupon is manageable. But the structural financing gap — with IMF frozen, regional market access limited, and Sonko blocking government — is unbridgeable without IMF re-engagement. IMF arrives June 8 to assess "readiness of incoming authorities."', icon: '⚖️' },
-    { title: 'GHS REVERSAL — CEDI WEAKENS TO 11.75 FROM 10.70 — STRESS UPGRADED', body: 'USD/GHS jumped from 10.70 to 11.746 as of June 3 04:55 UTC — the cedi has given back recent gains sharply. This reverses the 19.3% YoY appreciation narrative and changes Ghana\'s FX stress profile. The move may reflect repatriation of SA-based Ghanaian workers, dollar demand, or broader EM volatility. Ghana\'s fundamentals — Fitch B/positive, $12.3bn reserves, inflation 3.4% — remain intact. But the GHS spike is the most significant single-day FX move on the continent this week and must be monitored.', icon: '📉' },
+    { title: 'US SLASHES AFRICA VISA CENTRES 50→20 — STRUCTURAL US-AFRICA DISENGAGEMENT SIGNAL', body: 'Trump State Department cutting African visa processing from ~50 to 20 hubs effective June. Internal AP memo confirms: 30 embassies/consulates lose full visa processing. Citizens in non-hub countries face formidable travel costs and delays. $15,000 bond requirement already in place. Ebola disruptions already paused services at hardest-hit countries. 20 retained hubs: Lagos, Nairobi, Accra, Johannesburg, Dakar, Kinshasa, Kampala, Kigali, Addis Ababa, Luanda, Monrovia, Lomé, Abidjan, Dar es Salaam, Djibouti, Malabo, Port Louis, Praia, Cape Town, Yaoundé. FDI, academic, business and diaspora flows structurally disrupted.', icon: '🚨' },
+    { title: 'SA HOUSEHOLD DEBT CRISIS — R237BN OVERDUE — 41% IN DEFAULT — SARB HIKES RATES', body: 'Eighty20 Q1 2026 Credit Stress Report: R2.7 trillion total outstanding loans (+R41bn QoQ). Overdue debt R237bn (+5.6% QoQ, +14% YoY). 35.5% of loans in arrears. 41% of credit-active consumers in default on at least one loan. Defaulters up 400,000 people. SARB hiked 25bps — warns three further hikes possible. Q2 headwinds: oil above $100/bbl, two of SA\'s largest ever fuel hikes, electricity tariffs +8.76%, inflation climbing to 4%. Report warns: "end of a recent run of positive economic news." June petrol hike R1.50/litre compounds this.', icon: '🔥' },
+    { title: 'WHO: EBOLA FORTRESS STRATEGY WILL FAIL — 321 CONFIRMED CASES — LESSONS FROM PAST', body: 'WHO warns against an "Ebola fortress strategy" — citing lessons from past outbreaks where isolation without community engagement failed. Community trust is key. CDC June 1: 321 confirmed cases in DRC. US paused visa services at embassies in hardest-hit countries — all appointments cancelled. Applicants in DRC, Uganda, South Sudan cannot schedule interviews. Bundibugyo strain — no vaccine, no treatment. Ituri, Nord-Kivu, Sud-Kivu, Kampala all active. WHO DG Tedros called for ceasefire for humanitarian access.', icon: '⚠️' },
+    { title: 'AFDB GOVERNORS ENDORSE REFORM OF AFRICA FINANCIAL ARCHITECTURE — CONTINENT SELF-RELIANCE PUSH', body: 'AfDB 2026 Annual Meetings in Nairobi: governors endorsed the Four Cardinal Points and called for accelerated reform of Africa\'s financial architecture. AfDB President Adesina: Africa must reduce dependence on external financing systems that are being deliberately withdrawn. India-Africa Business Dialogue closed. MCB $1bn trade finance facility launched. The institutional counter to US disengagement is accelerating — but timelines are measured in years, not months.', icon: '🌍' },
   ],
 
   insight1: {
-    title: 'SOUTH AFRICA\'S JUNE 3 IS THE MOST COMPOUND GOVERNANCE DAY IN ITS DEMOCRATIC HISTORY',
-    body: 'No democratic government in Africa is managing the simultaneous combination that South Africa faces today: a petrol tax hike taking effect; xenophobic killings under active investigation; a presidential impeachment panel sitting for the first time; a dual-movement national shutdown 27 days away; a public military-minister contradiction on record; an ongoing repatriation operation for Mozambican nationals; Western Cape storm disruptions; and Bafana Bafana at the World Cup following a visa blunder that embarrassed the government globally. Each of these would be a major governance test in isolation. Together they represent the most compound domestic political environment in South Africa since 1994. The GNU was designed to provide stability — instead it has accumulated crises faster than it can manage them.',
-    conclusion: 'SOUTH AFRICA\'S GNU IS FAILING THE COMPOUND STRESS TEST OF JUNE 2026. THE ZAR IS HOLDING ON DOLLAR WEAKNESS BUT THE POLITICAL RISK SCORE IS AT MAXIMUM. WATCH GNU COHESION AS JUNE 30 APPROACHES WITH 27 DAYS REMAINING.',
+    title: 'THE US VISA CENTRE SLASH IS THE MOST CONSEQUENTIAL US-AFRICA POLICY DECISION SINCE AGOA',
+    body: 'Cutting Africa visa processing from ~50 to 20 centres is not an administrative efficiency measure — it is a structural signal that the US is withdrawing from African engagement across multiple dimensions simultaneously. Combined with the $15,000 bond requirement, Ebola travel bans, Title 42 entry restrictions, the Kenya Ebola facility controversy, deportee deals with African states, and now the visa centre slash, the pattern is clear: the Trump administration is systematically reducing the US footprint in Africa and raising the cost of African access to the US. The FDI, academic exchange, business travel and diaspora remittance flows that underpin multiple African economies — Ghana, Nigeria, Kenya, Ethiopia above all — will be structurally disrupted. The AfDB governors calling for African financial architecture reform is the institutional acknowledgement that this disengagement is permanent, not cyclical.',
+    conclusion: 'THE US VISA CENTRE SLASH COMPLETES A STRUCTURAL US-AFRICA DISENGAGEMENT PATTERN THAT HAS BEEN BUILDING SINCE JANUARY 2025. THE CONTINENT MUST NOW PRICE THE ABSENCE OF THE US AS A RELIABLE PARTNER INTO SOVEREIGN RISK MODELS.',
   },
 
   insight2: {
-    title: 'SENEGAL\'S $9.7BN 2026 OBLIGATION IS THE CLEAREST EXPRESSION OF WHY DEFAULT IS INEVITABLE WITHOUT IMF',
-    body: 'The JPMorgan figure — $9.7bn in interest and amortisation this year — contextualises everything about the Senegal crisis. The March payment of €380m + $33m was a rounding error against this wall. The June 8 coupon of €53.75m is manageable. But the full year requires $9.7bn in a country with suspended IMF access, bonds trading at 50 cents, regional market dependence for short-term paper, and a legislature controlled by a Speaker in open opposition to the president. Senegal paid its March bonds by drawing on BCEAO reserves and regional market rollovers. That strategy cannot fund $9.7bn annually for three years. The IMF\'s June 8 visit is not a negotiation — it is a diagnostic. The question is not whether Senegal can pay June coupons. The question is whether it can pay $9.7bn this year without IMF support.',
-    conclusion: 'SENEGAL\'S $9.7BN 2026 OBLIGATION MAKES THE DEFAULT OR RESTRUCTURING TIMELINE INEVITABLE WITHOUT IMF RE-ENGAGEMENT. THE JUNE 8 VISIT IS A DIAGNOSTIC, NOT A RESOLUTION. DEFAULT WINDOW Q4 2026–Q1 2027 REMAINS BASE CASE.',
+    title: 'SOUTH AFRICA\'S HOUSEHOLD DEBT CRISIS IS THE FISCAL FLOOR THAT MAKES JUNE 30 INEVITABLE',
+    body: 'The Eighty20 Q1 2026 report reveals the structural economic reality underneath the June 30 political crisis: 41% of credit-active South Africans are already in default. Overdue debt is up 14% year-on-year. SARB is hiking rates with three more possible. And Q2 brings oil above $100/bbl, the largest fuel hikes in history, and electricity tariffs up 8.76%. The March and March and ATDF-ASA movements are not simply political — they are economic desperation movements. The xenophobia narrative is the political expression of household financial collapse. Ruto\'s Kenya and Ramaphosa\'s South Africa are both managing political crises that have household debt and fuel costs as their structural economic driver. The June 30 countdown is not separable from the Eighty20 data.',
+    conclusion: 'SOUTH AFRICA\'S HOUSEHOLD DEBT CRISIS IS THE STRUCTURAL FLOOR BENEATH THE JUNE 30 POLITICAL RISK. 41% OF BORROWERS IN DEFAULT IS NOT A POLITICAL PROBLEM — IT IS A MACRO PROBLEM THAT WILL OUTLAST ANY SINGLE DEADLINE.',
   },
 
   brief: {
     week: '23',
-    title: 'WEEK 23: SA PETROL TAX HIKE + XENOPHOBIA DEATHS + IMPEACHMENT, SENEGAL $9.7BN WALL, GHS REVERSAL, ETHIOPIA 8 DAYS TO RESULTS',
-    body: 'Week 23 third day delivers South Africa\'s most compound governance moment in democratic history. Petrol fuel levy up R1.50/litre today — arriving 24 hours after five Mozambicans confirmed killed in Mossel Bay xenophobic attacks. Ramaphosa impeachment panel sitting. SANDF-minister contradiction on record. June 30 deadline 27 days away. In Senegal, JPMorgan has quantified the full structural wall: $9.7bn obligations this year, $26.2bn over three years — with IMF frozen and Sonko blocking Faye\'s government. Track record of payment is intact but the financing architecture is collapsing. GHS reversed sharply from 10.70 to 11.75 today — the most significant single-day FX move on the continent this week. Ethiopia\'s post-election war window on Tigray is live — 8 days to June 11 results. Ruto is screening 3,000 travellers daily for Ebola with no confirmed Kenya cases. Ghana\'s fundamentals remain intact despite the cedi move.',
+    title: 'WEEK 23 CLOSE: US SLASHES AFRICA VISA CENTRES, SA HOUSEHOLD DEBT CRISIS, EBOLA FORTRESS WARNING, AFDB REFORM CALL',
+    body: 'Week 23 closes with four structural signals that define the new Africa macro environment. The US is cutting African visa processing centres from ~50 to 20 — a structural US-Africa disengagement completing a pattern of withdrawals that includes travel bans, bond requirements, Ebola restrictions and deportee deals. South Africa\'s Eighty20 Q1 2026 report confirms the household debt crisis: R237bn overdue, 41% of borrowers in default, SARB hiking with more to come. WHO warns the Ebola fortress strategy will fail — 321 confirmed cases, no vaccine. The AfDB governors have endorsed accelerated reform of Africa\'s financial architecture — the institutional response to Western withdrawal. Senegal\'s IMF visit is 4 days away. Ethiopia\'s post-election war window is live with 7 days to results. South Africa has 26 days to June 30. Ghana\'s GHS has reversed sharply — 11.75 from 10.70. The macro environment entering the second week of June is the most dangerous in Africa this decade.',
   },
 
   fxRates: {
     NGN: '1,364.68',
     GHS: '11.75',
-    KES: '129.41',
+    KES: '129.53',
     EGP: '52.22',
     XOF: '615.00',
     ZAR: '16.30',
@@ -85,22 +85,22 @@ export const content = {
   },
 
   signals: [
-    { time: '09:30:00', signal: 'SA: Petrol fuel levy up R1.50/litre EFFECTIVE TODAY — levy from R1.10 to R2.60. Petrol 93 up ~R1.04/litre. Diesel partial relief. July likely further hike. Arrives 24 hours after 5 Mozambicans killed in xenophobic attacks. Compound signal for consumers, GNU and June 30 movement.', detail: 'HIGH', type: 'ALERT', tag: 'MACRO SIGNAL', country: 'ZAR' },
-    { time: '09:15:00', signal: 'SA: 23-year-old suspect arrested for stabbing death of teen Nhlamulo Sambo — Mossel Bay Kwanonqaba township, linked to xenophobia unrest. Mozambican repatriation of 500+ sheltered nationals underway in Western Cape. Western Cape storms disrupting logistics. June 30: 27 days.', detail: 'HIGH', type: 'ALERT', tag: 'POLITICAL RISK', country: 'ZAR' },
-    { time: '09:00:00', signal: 'FX ALERT: GHS reverses sharply — 11.746 as of June 3 04:55 UTC vs 10.70 yesterday. Cedi gives back recent gains. Dollar demand or EM volatility driver. Ghana fundamentals intact — Fitch B/positive, $12.3bn reserves, inflation 3.4%. But GHS stress upgraded from LOW to MODERATE. Monitoring required.', detail: 'HIGH', type: 'ALERT', tag: 'FX UPDATE', country: 'GHS' },
-    { time: '08:45:00', signal: 'Senegal: JPMorgan — $9.7bn interest + amortisation obligations in 2026. $7.8bn in 2027. $8.7bn in 2028. Total 3-year wall $26.2bn. March €380m + $33m paid ahead of deadline — track record intact. June 8 IMF visit + €53.75m coupon: 5 days. Sonko blocks Faye government. No IMF re-engagement path.', detail: 'HIGH', type: 'ALERT', tag: 'CREDIT STRESS', country: 'XOF' },
-    { time: '08:30:00', signal: 'Kenya: Ruto confirms screening 3,000 travellers daily for Ebola — no confirmed cases in Kenya. Finance Bill 2026 hearings ongoing — June 30. Ebola facility court case back next week. US-Kenya strained. Eurobond Q2 $2bn rollover critical. 2 killed in Ebola facility protests remain uninvestigated.', detail: 'HIGH', type: 'ALERT', tag: 'POLITICAL RISK', country: 'KES' },
-    { time: '08:15:00', signal: 'Ethiopia: Post-election war window — 8 days to June 11 results. PP sweep confirmed. TPLF reinstated Debretsion. US Ambassador notes Ethiopian Airlines now global competitor — soft power positive amid hard security risk. Post-election TPLF operations expected per all analysts.', detail: 'HIGH', type: 'ALERT', tag: 'SECURITY RISK', country: 'ETB' },
-    { time: '08:00:00', signal: 'DRC Ebola: Four nurses recovered — positive signal. Case count revised downward as testing improved. Bundibugyo — no vaccine. Tedros: community trust key to containment. WHO risk: DRC very high, regional high, global high. Kenya screening 3,000/day. ECDC: EU/EEA very low. Uganda 8 confirmed.', detail: 'MEDIUM', type: 'INFO', tag: 'HEALTH RISK', country: 'AFRICA' },
-    { time: '07:45:00', signal: 'LIVE FX June 3: NGN 1,364.68 | GHS 11.75 (REVERSAL — was 10.70) | KES 129.41 | EGP 52.22 | ZAR 16.30 | UGX 3,770 | ZMW 19.02. GHS move is biggest single-day Africa FX story this week. ZAR holding despite SA political crisis — dollar weakness structural support.', detail: 'HIGH', type: 'ALERT', tag: 'FX UPDATE', country: 'AFRICA' },
+    { time: '09:30:00', signal: 'US cuts Africa visa processing centres ~50→20 effective June. AP memo: 20 retained hubs — Lagos, Nairobi, Accra, Joburg, Dakar, Kinshasa, Kampala, Kigali, Addis, Luanda, Monrovia, Lomé, Abidjan, Dar es Salaam, Djibouti, Malabo, Port Louis, Praia, Cape Town, Yaoundé. Citizens in 30 non-hub countries face formidable travel costs for US visa.', detail: 'HIGH', type: 'ALERT', tag: 'GEOPOLITICAL', country: 'AFRICA' },
+    { time: '09:15:00', signal: 'SA Eighty20 Q1 2026: overdue debt R237bn (+5.6% QoQ, +14% YoY). 35.5% of loans in arrears. 41% of credit-active consumers in default on at least one loan. Defaulters up 400,000. SARB hiked 25bps — warns 3 more possible. Q2: oil above $100/bbl, two largest fuel hikes in history, electricity +8.76%.', detail: 'HIGH', type: 'ALERT', tag: 'MACRO SIGNAL', country: 'ZAR' },
+    { time: '09:00:00', signal: 'WHO: "Ebola fortress strategy will fail — lessons from the past." Community trust key to containment. CDC June 1: 321 confirmed cases DRC. US paused visa services at hardest-hit country embassies — all appointments cancelled. Bundibugyo — no vaccine, no treatment. Ituri, Nord-Kivu, Sud-Kivu, Kampala active.', detail: 'HIGH', type: 'ALERT', tag: 'HEALTH RISK', country: 'AFRICA' },
+    { time: '08:45:00', signal: 'Senegal: 4 days to June 8 IMF visit + €53.75m coupon. $38.75m June 10. JPMorgan $9.7bn obligations this year. March payment made ahead of deadline — track record intact. Sonko blocks Faye government. No IMF re-engagement path. Bonds at 50.6c. Default window Q4 2026–Q1 2027.', detail: 'HIGH', type: 'ALERT', tag: 'CREDIT STRESS', country: 'XOF' },
+    { time: '08:30:00', signal: 'AfDB Annual Meetings Nairobi: governors endorse Four Cardinal Points — accelerated reform of Africa financial architecture. Adesina: Africa must reduce external financing dependence. MCB $1bn trade finance facility launched. Institutional counter to US disengagement — measured in years not months.', detail: 'MEDIUM', type: 'INFO', tag: 'GEOPOLITICAL', country: 'AFRICA' },
+    { time: '08:15:00', signal: 'Ethiopia: Post-election war window — 7 days to June 11 results. PP sweep confirmed. TPLF reinstated Debretsion. US Ambassador: Ethiopian Airlines now global competitor — soft power signal amid hard security risk. Post-election TPLF operations expected per all major analysts.', detail: 'HIGH', type: 'ALERT', tag: 'SECURITY RISK', country: 'ETB' },
+    { time: '08:00:00', signal: 'SA June 30: 26 days. Repatriation of Mozambican nationals ongoing. Petrol hike now live — R1.50/litre levy increase. Household debt crisis confirmed by Eighty20. SARB hiking. June 30 movement is economic desperation + political organisation combined. GNU under maximum compound stress.', detail: 'HIGH', type: 'ALERT', tag: 'POLITICAL RISK', country: 'ZAR' },
+    { time: '07:45:00', signal: 'LIVE FX June 4: NGN 1,364.68 | GHS 11.75 (reversed from 10.70) | KES 129.53 | EGP 52.22 | ZAR 16.30 | UGX 3,770 | ZMW 19.02. GHS reversal holds. NGN stable. KES slightly up. ZAR holding despite compound SA political and household stress. Dollar weakness structural support.', detail: 'LOW', type: 'INFO', tag: 'FX UPDATE', country: 'AFRICA' },
   ],
 
   heatMap: [
     { country: 'Nigeria', flag: '🇳🇬', score: 70, fiscal: 60, fx: 50, debt: 60, political: 88, external: 62 },
-    { country: 'Ghana', flag: '🇬🇭', score: 42, fiscal: 38, fx: 48, debt: 40, political: 34, external: 42 },
+    { country: 'Ghana', flag: '🇬🇭', score: 44, fiscal: 38, fx: 50, debt: 40, political: 34, external: 44 },
     { country: 'Kenya', flag: '🇰🇪', score: 94, fiscal: 84, fx: 74, debt: 90, political: 99, external: 96 },
     { country: 'Egypt', flag: '🇪🇬', score: 66, fiscal: 68, fx: 64, debt: 66, political: 65, external: 68 },
-    { country: 'South Africa', flag: '🇿🇦', score: 98, fiscal: 68, fx: 46, debt: 62, political: 99, external: 96 },
+    { country: 'South Africa', flag: '🇿🇦', score: 99, fiscal: 78, fx: 46, debt: 72, political: 99, external: 96 },
     { country: 'Senegal', flag: '🇸🇳', score: 99, fiscal: 99, fx: 88, debt: 99, political: 99, external: 94 },
     { country: 'Mali', flag: '🇲🇱', score: 96, fiscal: 88, fx: 85, debt: 85, political: 99, external: 92 },
     { country: 'Uganda', flag: '🇺🇬', score: 94, fiscal: 70, fx: 78, debt: 74, political: 68, external: 99 },
@@ -109,7 +109,7 @@ export const content = {
   currencyStress: [
     { code: 'NGN', country: 'Nigeria', rate: '1,364.68', change: '-13.34%', stress: 'MODERATE', ytd: '-3.50%', color: '#f5a623' },
     { code: 'GHS', country: 'Ghana', rate: '11.75', change: '+9.81%', stress: 'MODERATE', ytd: '+6.53%', color: '#f5a623' },
-    { code: 'KES', country: 'Kenya', rate: '129.41', change: '+0.16%', stress: 'ELEVATED', ytd: '-1.10%', color: '#ff3b3b' },
+    { code: 'KES', country: 'Kenya', rate: '129.53', change: '+0.31%', stress: 'ELEVATED', ytd: '-0.98%', color: '#ff3b3b' },
     { code: 'EGP', country: 'Egypt', rate: '52.22', change: '-4.32%', stress: 'HIGH', ytd: '-4.51%', color: '#ff3b3b' },
     { code: 'ZAR', country: 'South Africa', rate: '16.30', change: '+3.52%', stress: 'MODERATE', ytd: '+3.52%', color: '#f5a623' },
     { code: 'UGX', country: 'Uganda', rate: '3,770.00', change: '-1.62%', stress: 'ELEVATED', ytd: '-4.80%', color: '#ff3b3b' },
@@ -118,17 +118,17 @@ export const content = {
   ],
 
   elections: [
-    { country: 'Ethiopia', flag: '🇪🇹', date: 'Voted June 1 — Results June 11', type: 'General Election', risk: 'CRITICAL', note: 'PP sweep confirmed. Tigray excluded. TPLF reinstated Debretsion. Post-election war window LIVE — 8 days to results. Regional powers positioning.', color: '#ff3b3b' },
-    { country: 'Guinea', flag: '🇬🇳', date: 'June 1, 2026 — Results Pending', type: 'Parliamentary + Municipal', risk: 'HIGH', note: '40 opposition parties dissolved. Opposition boycotted. ECOWAS monitoring. Doumbouya allies expected to sweep. Legitimacy void.', color: '#ff3b3b' },
+    { country: 'Ethiopia', flag: '🇪🇹', date: 'Voted June 1 — Results June 11', type: 'General Election', risk: 'CRITICAL', note: 'PP sweep confirmed. Tigray excluded. TPLF reinstated Debretsion. Post-election war window LIVE — 7 days. Ethiopian Airlines named global competitor. All analysts: TPLF operations expected post-election.', color: '#ff3b3b' },
+    { country: 'Guinea', flag: '🇬🇳', date: 'June 1 — Results Pending', type: 'Parliamentary + Municipal', risk: 'HIGH', note: '40 opposition parties dissolved. Boycotted. ECOWAS monitoring. Doumbouya allies expected to sweep. Democratic legitimacy void.', color: '#ff3b3b' },
     { country: 'Somalia', flag: '🇸🇴', date: 'Extended to 2027', type: 'Presidential Election', risk: 'CRITICAL', note: 'Mohamud term expired May 15. Parallel government threat. Al-Shabaab exploiting vacuum.', color: '#ff3b3b' },
     { country: 'Zambia', flag: '🇿🇲', date: 'August 13, 2026', type: 'General Election', risk: 'HIGH', note: 'Hichilema under pressure. Slow reform, 3hrs power/day. Opposition consolidating. Outcome uncertain.', color: '#ff3b3b' },
-    { country: 'South Africa', flag: '🇿🇦', date: 'Fall 2026', type: 'Municipal Elections', risk: 'CRITICAL', note: 'June 30 — 27 days. Petrol hike today. 5 Mozambicans killed. Suspect arrested. Repatriation underway. GNU at maximum compound stress.', color: '#ff3b3b' },
-    { country: 'Nigeria', flag: '🇳🇬', date: 'Early 2027', type: 'General Election', risk: 'CRITICAL', note: '300+ civilian airstrike deaths. ISWAP activity. Civilian crisis unaddressed. Tier-1 election liability.', color: '#ff3b3b' },
-    { country: 'Kenya', flag: '🇰🇪', date: '2027', type: 'General Election', risk: 'CRITICAL', note: 'Finance Bill June 30. 2 killed in Ebola protests. US-Kenya strained. Eurobond Q2 rollover. Ruto managing five crises.', color: '#ff3b3b' },
+    { country: 'South Africa', flag: '🇿🇦', date: 'Fall 2026', type: 'Municipal Elections', risk: 'CRITICAL', note: 'June 30 — 26 days. Household debt crisis confirmed. Petrol hike live. 41% borrowers in default. SARB hiking. Two movements. GNU coherence failing.', color: '#ff3b3b' },
+    { country: 'Nigeria', flag: '🇳🇬', date: 'Early 2027', type: 'General Election', risk: 'CRITICAL', note: '300+ civilian airstrike deaths. ISWAP activity. Civilian crisis unaddressed. State police bill pending. Tier-1 election liability.', color: '#ff3b3b' },
+    { country: 'Kenya', flag: '🇰🇪', date: '2027', type: 'General Election', risk: 'CRITICAL', note: 'Finance Bill June 30. 2 dead in Ebola protests. US-Kenya strained. US visa centres slashed — 20 hubs. Eurobond Q2 rollover. Five simultaneous crises.', color: '#ff3b3b' },
   ],
 
   debtMaturities: [
-    { country: 'Senegal', flag: '🇸🇳', amount: '€53.75m + $38.75m', instrument: 'Bond Coupons', maturity: 'June 8-10 2026 — 5 DAYS', risk: 'CRITICAL', color: '#ff3b3b' },
+    { country: 'Senegal', flag: '🇸🇳', amount: '€53.75m + $38.75m', instrument: 'Bond Coupons', maturity: 'June 8-10 2026 — 4 DAYS', risk: 'CRITICAL', color: '#ff3b3b' },
     { country: 'Kenya', flag: '🇰🇪', amount: '$2.0bn', instrument: 'Eurobond', maturity: 'Q2 2026', risk: 'CRITICAL', color: '#ff3b3b' },
     { country: 'Egypt', flag: '🇪🇬', amount: '$2.1bn', instrument: 'Eurobond', maturity: 'Q2 2026', risk: 'HIGH', color: '#ff3b3b' },
     { country: 'Egypt', flag: '🇪🇬', amount: '$1.4bn', instrument: 'IMF Repurchase', maturity: 'Q3 2026', risk: 'HIGH', color: '#ff3b3b' },
@@ -149,14 +149,14 @@ export const content = {
   ],
 
   riskTable: [
-    { country: 'SENEGAL', cds: 950, delta: '+100', bond: '-5.6pts', fx: '-0.8%', signal: '$9.7BN 2026 WALL — IMF 5 DAYS', color: '#ff3b3b' },
-    { country: 'SOUTH AFRICA', cds: 198, delta: '+42', bond: '-2.1pts', fx: '+3.5%', signal: 'PETROL HIKE TODAY + JUNE 30 27 DAYS', color: '#ff3b3b' },
-    { country: 'KENYA', cds: 192, delta: '+48', bond: '-2.4pts', fx: '-0.4%', signal: '2 DEAD EBOLA PROTESTS — FINANCE BILL', color: '#ff3b3b' },
-    { country: 'ETHIOPIA', cds: 520, delta: '+50', bond: '-2.5pts', fx: '-0.9%', signal: 'POST-ELECTION WAR WINDOW — 8 DAYS', color: '#ff3b3b' },
+    { country: 'SENEGAL', cds: 950, delta: '+100', bond: '-5.6pts', fx: '-0.8%', signal: '$9.7BN WALL — IMF 4 DAYS', color: '#ff3b3b' },
+    { country: 'SOUTH AFRICA', cds: 198, delta: '+45', bond: '-2.3pts', fx: '+3.5%', signal: '41% BORROWERS DEFAULT — JUNE 30 26D', color: '#ff3b3b' },
+    { country: 'KENYA', cds: 192, delta: '+48', bond: '-2.4pts', fx: '-0.3%', signal: 'FINANCE BILL + US VISA SLASH', color: '#ff3b3b' },
+    { country: 'ETHIOPIA', cds: 520, delta: '+50', bond: '-2.5pts', fx: '-0.9%', signal: 'POST-ELECTION WAR WINDOW 7 DAYS', color: '#ff3b3b' },
     { country: 'MALI', cds: 920, delta: '+65', bond: '-3.0pts', fx: '-1.5%', signal: 'SECURITY COLLAPSE', color: '#ff3b3b' },
     { country: 'NIGERIA', cds: 415, delta: '+18', bond: '-0.8pts', fx: '-0.2%', signal: 'AIRSTRIKE + 2027 ELECTION RISK', color: '#ff3b3b' },
     { country: 'EGYPT', cds: 568, delta: '+5', bond: '-0.2pts', fx: '+4.3%', signal: 'OIL EXPORT BENEFIT', color: '#f5a623' },
-    { country: 'GHANA', cds: 232, delta: '-8', bond: '+0.5pts', fx: '+9.8%', signal: 'GHS REVERSAL — MONITOR', color: '#f5a623' },
+    { country: 'GHANA', cds: 232, delta: '-5', bond: '+0.6pts', fx: '+6.5%', signal: 'GHS REVERSAL — MONITOR', color: '#f5a623' },
   ],
 
   fxHistory: [
@@ -174,5 +174,6 @@ export const content = {
     { date: 'Jun 1', NGN: 1354.23, GHS: 10.70, KES: 129.41, EGP: 52.22, ZAR: 16.30, UGX: 3770, ZMW: 19.02, XOF: 615 },
     { date: 'Jun 2', NGN: 1364.68, GHS: 10.70, KES: 129.41, EGP: 52.22, ZAR: 16.30, UGX: 3770, ZMW: 19.02, XOF: 615 },
     { date: 'Jun 3', NGN: 1364.68, GHS: 11.75, KES: 129.41, EGP: 52.22, ZAR: 16.30, UGX: 3770, ZMW: 19.02, XOF: 615 },
+    { date: 'Jun 4', NGN: 1364.68, GHS: 11.75, KES: 129.53, EGP: 52.22, ZAR: 16.30, UGX: 3770, ZMW: 19.02, XOF: 615 },
   ],
 }
