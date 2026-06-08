@@ -1,36 +1,36 @@
 export const content = {
-  riskIndex: '97',
+  riskIndex: '96',
   riskStatus: 'CRITICAL',
 
   riskMonitor: {
-    updated: 'June 7, 2026 09:00 UTC',
-    overallScore: 97,
-    trend: 'WORSENING',
-    drivers: ['Somalia: Heavy Fighting Erupts Mogadishu — Election Crisis Turns Violent', 'PEPFAR Cuts Already Costing Lives — SA Faces 150,000-295,000 Extra HIV Infections by 2028', 'World Cup Opens Thursday June 11 — Ethiopia Results Same Day — Horn Convergence', 'Senegal Bonds Rally on Early Payment — IMF Visit June 15 — June 30 Agreement Target'],
+    updated: 'June 8, 2026 09:00 UTC',
+    overallScore: 96,
+    trend: 'STABLE',
+    drivers: ['Ramaphosa Announces 5-Point Immigration Crackdown — Biometric Population Register — June 30 22 Days', 'Kenya Opposition Formally Rejects Finance Bill 2026 — Kalonzo: "Ruto Learnt Nothing"', 'Somalia Mogadishu Fighting Ongoing — UK Deeply Concerned — Al-Shabaab Exploiting Vacuum', 'World Cup Opens Thursday June 11 + Ethiopia Results Same Day — 3 Days'],
     regions: [
       { region: 'East Africa', score: 99, trend: '↑', color: '#ff3b3b' },
       { region: 'West Africa', score: 90, trend: '→', color: '#ff3b3b' },
       { region: 'North Africa', score: 72, trend: '→', color: '#ff3b3b' },
-      { region: 'Southern Africa', score: 98, trend: '→', color: '#ff3b3b' },
-      { region: 'Central Africa', score: 99, trend: '↑', color: '#ff3b3b' },
+      { region: 'Southern Africa', score: 97, trend: '↓', color: '#ff3b3b' },
+      { region: 'Central Africa', score: 99, trend: '→', color: '#ff3b3b' },
     ]
   },
 
   sovereignAlerts: [
-    { country: 'Somalia', flag: '🇸🇴', alert: 'ACTIVE COMBAT IN MOGADISHU. Heavy gunfire and explosions erupted Wednesday evening — government security forces vs opposition-allied militias in Howlwadaag and Abdiasis districts. Mortars, anti-tank weapons, small arms. Critical infrastructure damaged. Residential blocks burning. Thousands of residents fled. UK: "deeply concerned by reports of violence." International donors alarmed. Crisis driven by constitutional amendments extending Mohamud\'s term — opponents call it illegal. Al-Shabaab exploiting political vacuum. Most severe Mogadishu political violence since parliamentary changes enacted.', severity: 'CRITICAL', color: '#ff3b3b' },
-    { country: 'South Africa', flag: '🇿🇦', alert: 'PEPFAR cuts already costing lives per NPR June 7. UCT/Wits model: 150,000-295,000 additional HIV infections by 2028 without PEPFAR replacement, 56,000+ additional deaths. PEPFAR-CDC funding retained but may only last until September. National Health Department commissioned study. SA government must decide whether to cover $620m-$1.4bn in PEPFAR services 2025-2028. June 30 deadline: 23 days. Household debt crisis. Petrol hike live. GNU compound stress at maximum.', severity: 'CRITICAL', color: '#ff3b3b' },
-    { country: 'Ethiopia', flag: '🇪🇹', alert: 'Election results due June 11 — same day World Cup opens. PP landslide expected. Pretoria Agreement "on verge of collapse." TPLF reinstated Debretsion. Eritrea tensions spiking over Red Sea access push. Mogadishu fighting deepens Horn of Africa compound risk — Ethiopia, Somalia, and Ebola all simultaneously active. Most dangerous Horn window since 2020.', severity: 'CRITICAL', color: '#ff3b3b' },
-    { country: 'Senegal', flag: '🇸🇳', alert: 'POSITIVE: Bonds rallied on early coupon payment news — 2033 notes moved up from 50.6c record low. IMF visit now week of June 15. Finance Minister Diba targeting agreement on key points by June 30. Three Pastef members joined Lo government despite Sonko\'s declaration. Track record of payment intact. Structural risk remains: debt 132% GDP, $9.7bn obligations this year. IMF agreement by June 30 is the key milestone.', severity: 'HIGH', color: '#f5a623' },
-    { country: 'DRC/Uganda', flag: '🇨🇩', alert: 'WHO $518m plan operational. DRC: 381 confirmed, 64 deaths. Uganda: 16 confirmed, 1 death. Ebola vaccines fast-tracked in trials — Bundibugyo strain. World Cup begins June 11 — DRC Leopards in Belgium isolation bubble, first game vs Portugal Houston June 17. DRC fans banned from US travel. $518m plan brings UNICEF, UNHCR, WFP, IFRC, FIND under One Response framework. Containment depends on community trust and ceasefire.', severity: 'CRITICAL', color: '#ff3b3b' },
+    { country: 'South Africa', flag: '🇿🇦', alert: 'RAMAPHOSA RESPONDS. Five-point immigration crackdown announced Sunday night: (1) Jail employers hiring undocumented workers. (2) Dedicated immigration courts for faster deportations. (3) Biometric Intelligent Population Register for every person in SA — foundation for Digital ID. (4) Phase out green ID book — enabled identity theft. (5) Traffic Registration Number loophole closed — Transport to issue new regs within 3 months. Employment Services Amendment Bill approved by Cabinet — quotas on foreign nationals in sectors. Warned: "only authorised officials may act." June 30: 22 days. March and March + ATDF-ASA watching.', severity: 'HIGH', color: '#f5a623' },
+    { country: 'Kenya', flag: '🇰🇪', alert: 'Opposition formally rejects Finance Bill 2026. Kalonzo Musyoka: "The Finance Bill 2026 is further proof that the Ruto regime has learnt nothing and forgotten everything from the June 25 Revolution that nearly overthrew his regime." Coalition: "tax more, borrow more." Finance Bill 2026 has fewer increases than 2024 but reintroduces phone excise duty and taxes digital economy — crypto, content creators, card payments. Due June 30. Excise duty on phones applies regardless of VAT exemption retained. Gen-Z watching.', severity: 'CRITICAL', color: '#ff3b3b' },
+    { country: 'Somalia', flag: '🇸🇴', alert: 'Mogadishu fighting ongoing — heavy gunfire, mortars, anti-tank fire between government and opposition militias in Howlwadaag and Abdiasis districts. UK "deeply concerned." International donors alarmed. Al-Shabaab exploiting political vacuum — retook territory in 2024-2025 during previous political crises. Constitutional crisis: Mohamud term extension opposed as illegal. Opposition threatening parallel government process.', severity: 'CRITICAL', color: '#ff3b3b' },
+    { country: 'Ethiopia', flag: '🇪🇹', alert: 'Results Thursday June 11 — 3 days. Same day World Cup opens. PP landslide expected. Pretoria Agreement "on verge of collapse." TPLF reinstated Debretsion. Eritrea tensions — Red Sea access dispute. Triangular conflict scenario: Ethiopia vs TPLF + Ethiopia vs Eritrea. Most dangerous Horn window since 2020. Results June 11 will trigger post-election posture assessment.', severity: 'CRITICAL', color: '#ff3b3b' },
+    { country: 'Senegal', flag: '🇸🇳', alert: 'Bonds rallied on early coupon payment. IMF visit week of June 15. Finance Minister Diba targeting agreement June 30. Three Pastef members joined Lo government despite Sonko\'s declaration. Structural risk remains: 132% debt/GDP, $9.7bn obligations 2026. IMF agreement by June 30 is the key milestone — Oxford Economics Venezuela/Lebanon classification stands until programme is restored.', severity: 'HIGH', color: '#f5a623' },
   ],
 
   featuredSignal: {
-    title: 'MOGADISHU ERUPTS — HEAVY FIGHTING GOVERNMENT VS OPPOSITION — PEPFAR CUTS ALREADY KILLING PEOPLE IN SA — JUNE 11 WORLD CUP PLUS ETHIOPIA RESULTS PLUS HORN CONVERGENCE',
-    body: 'June 7 opens with the Horn of Africa\'s most dangerous 24-hour period since the 2020 Tigray War launch. Mogadishu has erupted — heavy gunfire, mortars and anti-tank fire between government forces and opposition militias in Howlwadaag and Abdiasis districts. Critical infrastructure damaged, residential blocks burning, thousands fled. The UK has expressed deep concern. International donors are alarmed. The constitutional crisis over Mohamud\'s term extension — which opponents call a coup — has turned into active urban combat. Al-Shabaab is positioned to exploit the vacuum. In South Africa, NPR today confirmed PEPFAR cuts are already costing lives — and a UCT/Wits model commissioned by the National Health Department confirms between 150,000 and 295,000 additional HIV infections by 2028 without replacement funding, plus at least 56,000 additional deaths. PEPFAR-CDC funding may only last until September. On Thursday June 11, the World Cup opens and Ethiopia\'s election results are announced simultaneously — the Horn\'s most consequential convergence this decade.',
-    tag: 'JUNE 7 CRITICAL SIGNAL',
-    color: '#ff3b3b',
+    title: 'RAMAPHOSA ANNOUNCES 5-POINT IMMIGRATION CRACKDOWN — BIOMETRIC REGISTER FOR EVERY SA RESIDENT — 22 DAYS TO JUNE 30 — KENYA OPPOSITION FORMALLY REJECTS FINANCE BILL',
+    body: 'June 8 marks the GNU\'s formal response to the June 30 crisis. Ramaphosa addressed the nation Sunday night with a five-point immigration crackdown: jail employers hiring undocumented workers; dedicated deportation courts; a biometric Intelligent Population Register for every person in South Africa as the foundation for a Digital ID; phase out the green ID book which enabled identity theft; and close the Traffic Registration Number loophole. He warned that only authorised officials may act — directly addressing March and March vigilantism. The Employment Services Amendment Bill approved by Cabinet will empower the labour minister to set sector quotas on foreign national employment. This is the most comprehensive immigration policy response South Africa has announced in decades. Whether it arrives in time — and is credible enough — to defuse June 30 is the question. In Kenya, opposition leader Kalonzo formally rejected the Finance Bill 2026, calling it proof the Ruto regime "learnt nothing" from the 2024 uprising. The Finance Bill 2026 has fewer tax increases than 2024 but reintroduces the phone excise duty and taxes the digital economy — crypto, content creators, card payments. Due June 30 — same day as South Africa\'s xenophobia deadline.',
+    tag: 'JUNE 8 CRITICAL SIGNAL',
+    color: '#f5a623',
     author: 'Lord Fiifi Quayle',
-    date: 'June 7, 2026',
+    date: 'June 8, 2026',
   },
 
   pressureMap: [
@@ -38,38 +38,38 @@ export const content = {
     { country: 'Ghana', flag: '🇬🇭', outlook: 'Positive', status: 'STABLE', statusColor: '#00c48c', cds: '232', fxPressure: 'MODERATE', liquidity: 'STABLE' },
     { country: 'Kenya', flag: '🇰🇪', outlook: 'Negative', status: 'STRESSED', statusColor: '#ff3b3b', cds: '192', fxPressure: 'ELEVATED', liquidity: 'TIGHT' },
     { country: 'Egypt', flag: '🇪🇬', outlook: 'Cautious', status: 'WATCH', statusColor: '#f5a623', cds: '568', fxPressure: 'MODERATE', liquidity: 'WATCH' },
-    { country: 'South Africa', flag: '🇿🇦', outlook: 'Negative', status: 'STRESSED', statusColor: '#ff3b3b', cds: '198', fxPressure: 'LOW', liquidity: 'TIGHT' },
+    { country: 'South Africa', flag: '🇿🇦', outlook: 'Cautious', status: 'WATCH', statusColor: '#f5a623', cds: '198', fxPressure: 'LOW', liquidity: 'WATCH' },
     { country: 'Senegal', flag: '🇸🇳', outlook: 'Negative', status: 'WATCH', statusColor: '#f5a623', cds: '820', fxPressure: 'HIGH', liquidity: 'TIGHT' },
   ],
 
   whatMattersNow: [
-    { title: 'MOGADISHU COMBAT — GOVERNMENT VS OPPOSITION MILITIAS — MORTARS AND ANTI-TANK FIRE', body: 'Heavy fighting erupted Wednesday evening in Mogadishu\'s Howlwadaag and Abdiasis districts — government security forces vs opposition-allied militias. Mortars, anti-tank weapons, small arms fire. Critical infrastructure damaged. Residential blocks burning. Thousands fled. UK: "deeply concerned." International donors alarmed. ICG had warned this was coming: constitutional amendments extending Mohamud\'s term have now triggered armed resistance. Al-Shabaab — which retook territory from the government in 2024-2025 — is positioned to exploit the political vacuum. Most severe Mogadishu political violence since the parliamentary changes.', icon: '🚨' },
-    { title: 'PEPFAR CUTS ALREADY KILLING PEOPLE IN SA AND MOZAMBIQUE — 295,000 EXTRA HIV INFECTIONS BY 2028', body: 'NPR June 7: health care providers in South Africa and Mozambique say PEPFAR cancellations/redirections have already endangered vulnerable people and cost lives. UCT/Wits model commissioned by SA National Health Department: 150,000-295,000 additional HIV infections by 2028 without PEPFAR replacement, 56,000+ additional deaths. PEPFAR-USAID funding cancelled. PEPFAR-CDC funding retained but may only last until September. SA government must cover $620m-$1.4bn to fill gap. This compounds the household debt crisis, petrol hike, xenophobia and June 30 deadline.', icon: '🔴' },
-    { title: 'JUNE 11 TRIPLE CONVERGENCE — WORLD CUP OPENS + ETHIOPIA RESULTS + HORN RISK PEAK', body: 'Thursday June 11 is the most consequential day on the African risk calendar this decade. World Cup 2026 opens in Mexico City at 17:00 local — first game Mexico vs Canada. Ethiopia election results announced — PP landslide expected, post-election war risk on TPLF and Eritrea goes live. DRC Leopards arrive in Houston ahead of June 17 game vs Portugal — in isolation bubble. Mogadishu fighting active. Ebola containment ongoing. Somalia, Ethiopia, and DRC all in active crisis on the same day the world\'s biggest sporting event begins.', icon: '⚽' },
-    { title: 'SENEGAL BOND RALLY ON EARLY PAYMENT — IMF JUNE 15 — AGREEMENT TARGET JUNE 30', body: 'Senegal 2033 bonds rallied from 50.6c record low after early coupon payment confirmed. Acute default risk partially defused. IMF visit confirmed for week of June 15. Finance Minister Diba: agreement on key points by June 30 is the target. Three Pastef members joined Lo government despite Sonko\'s declaration — political picture more nuanced than feared. Structural risk remains: 132% debt/GDP, $9.7bn obligations 2026. But June acute crisis managed. Watch Senegal bond prices Monday open for sustained rally signal.', icon: '📈' },
+    { title: 'RAMAPHOSA 5-POINT CRACKDOWN — BIOMETRIC REGISTER — EMPLOYER JAILING — GREEN ID PHASED OUT', body: 'Sunday night national address: (1) Jail employers who hire undocumented workers — Employment Services Amendment Bill approved by Cabinet. (2) Dedicated immigration courts for faster deportations — phased relocation of refugee reception centres to border posts starting Tshwane this year. (3) Biometric Intelligent Population Register for every SA resident — Digital ID foundation. (4) Phase out green barcoded ID book — enabled identity theft and criminal syndicates. (5) Traffic Registration Number loophole closed — Transport regs within 3 months. Sector quotas on foreign national employment in specific sectors. Warned vigilante action illegal.', icon: '🇿🇦' },
+    { title: 'KENYA OPPOSITION FORMALLY REJECTS FINANCE BILL 2026 — "RUTO LEARNT NOTHING"', body: 'Kalonzo Musyoka Wiper Democratic Movement: "The Finance Bill 2026 is further proof that the Ruto regime has learnt nothing and forgotten everything from the June 25 Revolution that nearly overthrew his regime." Coalition statement: "tax more, borrow more" policy. Finance Bill 2026 reintroduces phone excise duty (VAT exemption retained but separate from excise duty), taxes crypto users, digital marketplace earners, content creators, card payment transactions. Extends residential rental income tax 7.5% → 10%. Due June 30 — 22 days. Gen-Z mobilisation risk building.', icon: '🔥' },
+    { title: 'SOMALIA: MOGADISHU ACTIVE COMBAT — AL-SHABAAB EXPLOITING VACUUM', body: 'Mogadishu fighting between government and opposition militias ongoing — heavy gunfire, mortars, anti-tank weapons. UK "deeply concerned." International donors alarmed. Al-Shabaab retook territory during 2024-2025 political crises — positioned to exploit this vacuum again. AUSSOM mandate under pressure. Constitutional crisis: Mohamud term extension called illegal by opposition. Opposition threatening parallel government. Five Zimbabwean nationals swept off Addo bridge in Eastern Cape — separate incident underscoring migration vulnerability.', icon: '🚨' },
+    { title: 'JUNE 11 IN 3 DAYS — WORLD CUP OPENS + ETHIOPIA RESULTS — HORN CONVERGENCE', body: 'Thursday June 11: World Cup 2026 opens Mexico City — first game Mexico vs Canada. Ethiopia election results announced — PP landslide expected, post-election war risk on TPLF and Eritrea goes live. DRC Leopards arrive Houston for June 17 opener vs Portugal — in isolation bubble, fans still banned. Mogadishu fighting active. Somalia, Ethiopia, DRC all in active crisis same day World Cup opens. The geopolitical significance of Africa in the 2026 World Cup moment is being defined by Ebola, conflict and constitutional crisis — not football alone.', icon: '⚽' },
   ],
 
   insight1: {
-    title: 'MOGADISHU COMBAT IS THE SIGNAL THAT SOMALIA\'S CONSTITUTIONAL CRISIS HAS ENTERED ITS MOST DANGEROUS PHASE',
-    body: 'Somalia\'s political crises have a pattern: they begin with constitutional disputes, escalate through parliamentary manoeuvring, and eventually find expression in armed confrontation between rival security units in Mogadishu. The December 2024 clash between federal forces and Jubaland troops near the Kenyan border was a warning. The June 4-5 fighting in Howlwadaag and Abdiasis is the escalation. The constitutional amendments extending Mohamud\'s term — which opponents describe as illegal — have now triggered active urban combat. Al-Shabaab reversed its territorial losses in 2024-2025 precisely because the government was distracted by political disputes. The international donors funding AUSSOM — the AU mission fighting Al-Shabaab — are already alarmed. The UK has expressed deep concern. If the political violence continues, AUSSOM\'s mandate becomes harder to sustain and Al-Shabaab\'s operational space expands.',
-    conclusion: 'MOGADISHU COMBAT MARKS SOMALIA\'S CONSTITUTIONAL CRISIS ENTERING ITS ARMED PHASE. THE RISK TO AUSSOM MANDATE, AL-SHABAAB EXPLOITATION AND REGIONAL STABILITY IS NOW ACUTE. WATCH UK AND INTERNATIONAL DONOR RESPONSE IN THE COMING 48 HOURS.',
+    title: 'RAMAPHOSA\'S 5-POINT PLAN IS THE GNU\'S MOST CREDIBLE RESPONSE TO DATE — BUT IT ARRIVES WITH 22 DAYS TO GO',
+    body: 'The substance of Ramaphosa\'s announcement is more comprehensive than analysts expected. The biometric Intelligent Population Register — effectively a digital ID for every person in South Africa — is a structural solution to the identity fraud problem that underlies much of the immigration exploitation. Jailing employers is a demand that March and March has made explicitly. Dedicated courts for faster deportations addresses the backlog directly. The phasing out of the green ID book closes a genuine loophole. The Employment Services Amendment Bill with sector quotas on foreign nationals addresses the core labour market grievance. The question is not whether these measures are right — they are — but whether a government with 41% of its borrowers in default, a household debt crisis, a PEPFAR emergency, a presidential impeachment panel, and a petrol hike can execute all five simultaneously in 22 days. The credibility of the announcement will be tested by execution speed, not by policy design.',
+    conclusion: 'RAMAPHOSA\'S 5-POINT PLAN IS STRUCTURALLY CREDIBLE — THE MOST COMPREHENSIVE IMMIGRATION POLICY RESPONSE IN DECADES. BUT EXECUTION SPEED IN 22 DAYS DETERMINES WHETHER JUNE 30 IS DEFUSED OR IGNITES. WATCH MARCH AND MARCH\'S FORMAL RESPONSE.',
   },
 
   insight2: {
-    title: 'THE PEPFAR CRISIS IN SOUTH AFRICA IS THE SLOW-MOVING SOVEREIGN HEALTH EMERGENCY THAT WILL OUTLAST JUNE 30',
-    body: 'The June 30 xenophobia deadline is getting all the political attention — but the PEPFAR crisis is the more structurally consequential threat to South Africa\'s long-term sovereign health architecture. UCT and Wits researchers have now quantified what the National Health Department commissioned them to find: PEPFAR cancellation means 150,000-295,000 additional HIV infections by 2028 and 56,000+ additional deaths. The cost to replace these services: $620m-$1.4bn. South Africa, which already has 41% of credit-active borrowers in default and household debt at R237bn overdue, must now decide whether to absorb this fiscal burden. PEPFAR-CDC funding may only last until September — meaning the government has three months to find a replacement architecture. This is a compound health-fiscal crisis that will run long after June 30.',
-    conclusion: 'THE PEPFAR CRISIS IN SOUTH AFRICA IS A SLOW-MOVING HEALTH EMERGENCY THAT WILL OUTLAST THE JUNE 30 POLITICAL DEADLINE. THE $620M-$1.4BN REPLACEMENT COST ARRIVES AT THE WORST POSSIBLE MOMENT FOR SA HOUSEHOLD AND SOVEREIGN FINANCES.',
+    title: 'KENYA\'S FINANCE BILL 2026 OPPOSITION REJECTION FOLLOWS THE EXACT PATTERN OF 2024 — THE JUNE 30 PARALLEL IS NOT COINCIDENTAL',
+    body: 'In 2024, the Finance Bill was introduced in May, opposed by civil society and opposition through June, and triggered mass protests that stormed parliament on June 25 — two days before the June 30 fiscal deadline. In 2026, the Finance Bill was released April 30, the opposition has now formally rejected it, Kalonzo is using the language of "revolution," and the deadline is June 30 — the same day as South Africa\'s xenophobia deadline. The 2026 Bill has fewer tax increases than 2024 — Bowmans legal analysis notes this reflects Ruto\'s intention to ease concerns ahead of 2027 elections. But the reintroduction of the phone excise duty and the digital economy taxes are politically identical to 2024. The Gen-Z movement — which produced the 2024 protests — is watching. Two years and six days after the parliament storming, the same dynamics are building.',
+    conclusion: 'KENYA\'S FINANCE BILL 2026 IS FOLLOWING THE EXACT POLITICAL PATTERN OF 2024. THE JUNE 30 DEADLINE IS THE CRITICAL DATE. WATCH GEN-Z MOBILISATION IN THE COMING 22 DAYS — THE PARLIAMENTARY STORMING ANNIVERSARY IS JUNE 25.',
   },
 
   brief: {
     week: '24',
-    title: 'WEEK 24 DAY 1: MOGADISHU COMBAT, PEPFAR KILLS ALREADY IN SA, JUNE 11 WORLD CUP + ETHIOPIA RESULTS + HORN PEAK',
-    body: 'Week 24 opens with Mogadishu in active combat — government forces vs opposition militias with mortars and anti-tank fire, the worst Mogadishu political violence since the parliamentary changes. NPR confirms PEPFAR cuts are already costing lives in South Africa and Mozambique — UCT/Wits modelling commissioned by the National Health Department projects 150,000-295,000 additional HIV infections by 2028 and 56,000+ deaths. Thursday June 11 is the week\'s focal point: World Cup opens, Ethiopia election results announced, DRC Leopards arrive in Houston — the Horn of Africa\'s most dangerous convergence since 2020. Senegal\'s bonds rallied on early coupon payment — the acute June default risk partially defused, IMF visit June 15, agreement target June 30. South Africa has 23 days to June 30. Ghana completed its IMF programme and remains the continental benchmark.',
+    title: 'WEEK 24 DAY 2: RAMAPHOSA 5-POINT CRACKDOWN, KENYA OPPOSITION REJECTS FINANCE BILL, SOMALIA ONGOING, JUNE 11 IN 3 DAYS',
+    body: 'Week 24\'s second day opens with South Africa\'s most comprehensive immigration policy response in decades. Ramaphosa announced five measures Sunday night: jail employers, deportation courts, biometric population register, phase out green ID, close traffic number loophole. June 30 is 22 days away. Kenya\'s opposition formally rejected the Finance Bill 2026 — Kalonzo called it proof Ruto "learnt nothing" from the 2024 revolution. Somalia\'s Mogadishu combat is ongoing with Al-Shabaab exploiting the vacuum. June 11 is three days away: World Cup opens, Ethiopia results announced, DRC Leopards arrive Houston — the Horn\'s most consequential convergence this decade. Senegal\'s bonds are rallying — IMF visit June 15, agreement target June 30. Live FX: NGN holding 1,360, GHS at 11.815, ZAR firm.',
   },
 
   fxRates: {
-    NGN: '1,361.39',
-    GHS: '11.75',
+    NGN: '1,360.73',
+    GHS: '11.82',
     KES: '129.53',
     EGP: '52.22',
     XOF: '615.00',
@@ -85,14 +85,14 @@ export const content = {
   },
 
   signals: [
-    { time: '09:30:00', signal: 'Somalia ACTIVE COMBAT: Heavy fighting erupted Mogadishu — Howlwadaag and Abdiasis districts. Government security forces vs opposition militias. Mortars, anti-tank weapons, small arms. Critical infrastructure damaged. Residential blocks burning. Thousands fled. UK: "deeply concerned." Donors alarmed. Al-Shabaab positioned to exploit vacuum.', detail: 'HIGH', type: 'ALERT', tag: 'SECURITY RISK', country: 'AFRICA' },
-    { time: '09:15:00', signal: 'PEPFAR: NPR June 7 confirms cuts already costing lives in SA and Mozambique. UCT/Wits model: 150,000-295,000 additional HIV infections SA by 2028, 56,000+ deaths. PEPFAR-USAID cancelled. PEPFAR-CDC may only last until September. Replacement cost: $620m-$1.4bn. SA must decide within 3 months.', detail: 'HIGH', type: 'ALERT', tag: 'MACRO SIGNAL', country: 'ZAR' },
-    { time: '09:00:00', signal: 'June 11 CONVERGENCE: World Cup opens Mexico City 17:00. Ethiopia election results announced — PP landslide + post-election war risk goes live. DRC Leopards arrive Houston ahead of June 17 vs Portugal. Somalia, Ethiopia, DRC all in active crisis same day as World Cup opening.', detail: 'HIGH', type: 'ALERT', tag: 'GEOPOLITICAL', country: 'AFRICA' },
-    { time: '08:45:00', signal: 'Senegal: Bonds rally from 50.6c record low on early coupon payment news. IMF visit June 15. Diba targets agreement June 30. Three Pastef members joined Lo government. Acute default risk partially defused. Structural risk remains: 132% debt/GDP, $9.7bn obligations 2026.', detail: 'MEDIUM', type: 'INFO', tag: 'CREDIT UPDATE', country: 'XOF' },
-    { time: '08:30:00', signal: 'South Africa: June 30 — 23 days. PEPFAR crisis adds compound health-fiscal emergency to xenophobia + household debt + petrol hike + impeachment panel. PEPFAR-CDC may only last until September. GNU must decide on $620m-$1.4bn replacement. ZAR holding at 16.29 on dollar weakness.', detail: 'HIGH', type: 'ALERT', tag: 'POLITICAL RISK', country: 'ZAR' },
-    { time: '08:15:00', signal: 'Ethiopia: Results June 11. PP landslide confirmed. Pretoria Agreement "on verge of collapse." Eritrea tensions spiking over Red Sea access. Mogadishu fighting adds Horn compound risk. Most dangerous Horn of Africa window since November 2020. Convergence with World Cup opening creates global attention moment.', detail: 'HIGH', type: 'ALERT', tag: 'SECURITY RISK', country: 'ETB' },
-    { time: '08:00:00', signal: 'Ivory Coast beat France 2-1 in World Cup warm-up — Amad Diallo and Guéla Doué scored. Kenya Finance Bill 2026: public hearings ongoing, June 30 deadline. Court case on US Ebola facility back this week. Eurobond Q2 $2bn rollover critical. Ruto managing five simultaneous crises.', detail: 'LOW', type: 'INFO', tag: 'MACRO SIGNAL', country: 'KES' },
-    { time: '07:45:00', signal: 'LIVE FX June 7 (weekend): NGN 1,361.39 | GHS 11.75 | KES 129.53 | EGP 52.22 | ZAR 16.29 | UGX 3,770 | ZMW 19.02. Weekend rates carrying. Markets open Monday — watch Senegal bond spreads for sustained rally on early coupon payment. ZAR 2026 YTD average: 16.43 — currently below, indicating relative rand strength.', detail: 'LOW', type: 'INFO', tag: 'FX UPDATE', country: 'AFRICA' },
+    { time: '09:30:00', signal: 'Ramaphosa 5-point immigration crackdown — Sunday night national address. (1) Jail employers hiring undocumented workers. (2) Dedicated deportation courts. (3) Biometric Intelligent Population Register — Digital ID foundation. (4) Phase out green ID book. (5) Traffic Registration Number loophole closed within 3 months. Sector employment quotas. Warned vigilantism illegal. June 30: 22 days.', detail: 'HIGH', type: 'ALERT', tag: 'POLITICAL RISK', country: 'ZAR' },
+    { time: '09:15:00', signal: 'Kenya: Opposition formally rejects Finance Bill 2026. Kalonzo: "Ruto learnt nothing from June 25 Revolution." Bill reintroduces phone excise duty, taxes crypto, content creators, card payments, extends rental tax 7.5%→10%. Due June 30. 2024 pattern: bill introduced May → opposed June → protests June 25 → storming June 25 → withdrawal June 28. 2026 calendar identical.', detail: 'HIGH', type: 'ALERT', tag: 'POLITICAL RISK', country: 'KES' },
+    { time: '09:00:00', signal: 'Somalia: Mogadishu combat ongoing — government vs opposition militias. UK "deeply concerned." Al-Shabaab exploiting vacuum. AUSSOM mandate under pressure. Constitutional crisis: Mohamud term extension called illegal. Donors alarmed. Five Zimbabwean nationals swept off Addo bridge Eastern Cape — migration vulnerability on multiple fronts.', detail: 'HIGH', type: 'ALERT', tag: 'SECURITY RISK', country: 'AFRICA' },
+    { time: '08:45:00', signal: 'June 11 — 3 days: World Cup opens Mexico City. Ethiopia election results. DRC Leopards arrive Houston. PP landslide + post-election war risk vs TPLF and Eritrea goes live. Mogadishu fighting active. Ebola ongoing. Horn of Africa compound risk at maximum same day World Cup begins.', detail: 'HIGH', type: 'ALERT', tag: 'GEOPOLITICAL', country: 'AFRICA' },
+    { time: '08:30:00', signal: 'Senegal: Bonds rallying from 50.6c record low. IMF visit week of June 15. Diba targets agreement June 30. Three Pastef members joined Lo government. Acute default risk partially defused. Structural risk remains: 132% debt/GDP, $9.7bn obligations 2026. Oxford Economics Venezuela/Lebanon classification stands until IMF programme restored.', detail: 'MEDIUM', type: 'INFO', tag: 'CREDIT UPDATE', country: 'XOF' },
+    { time: '08:15:00', signal: 'SA: PEPFAR-CDC funding may only last until September. UCT/Wits model: 150,000-295,000 additional HIV infections by 2028. SA must cover $620m-$1.4bn. Compound health-fiscal emergency running parallel to June 30 political crisis. GNU managing six simultaneous crises.', detail: 'HIGH', type: 'ALERT', tag: 'MACRO SIGNAL', country: 'ZAR' },
+    { time: '08:00:00', signal: 'Kenya Finance Bill 2026 — Bowmans legal analysis: fewer increases than 2024 reflects Ruto\'s intent to ease concerns ahead of 2027. But phone excise duty reintroduced — VAT exemption retained but excise duty is separate instrument. Digital economy taxes: crypto, content creators, freelancers, card swipes. Gen-Z watching. June 25 storming anniversary in 17 days.', detail: 'HIGH', type: 'ALERT', tag: 'POLITICAL RISK', country: 'KES' },
+    { time: '07:45:00', signal: 'LIVE FX June 8: NGN 1,360.73 | GHS 11.82 (slight weakening from 11.75) | KES 129.53 | EGP 52.22 | ZAR 16.29 | UGX 3,770 | ZMW 19.02. NGN down -13.02% YoY — strengthening trend from 1,564 peak June 2025 intact. GHS slightly softer. ZAR firm on dollar weakness. Markets open — watch Senegal bond spreads for sustained rally.', detail: 'LOW', type: 'INFO', tag: 'FX UPDATE', country: 'AFRICA' },
   ],
 
   heatMap: [
@@ -100,15 +100,15 @@ export const content = {
     { country: 'Ghana', flag: '🇬🇭', score: 40, fiscal: 36, fx: 46, debt: 36, political: 32, external: 42 },
     { country: 'Kenya', flag: '🇰🇪', score: 94, fiscal: 84, fx: 74, debt: 90, political: 99, external: 96 },
     { country: 'Egypt', flag: '🇪🇬', score: 66, fiscal: 68, fx: 64, debt: 66, political: 65, external: 68 },
-    { country: 'South Africa', flag: '🇿🇦', score: 98, fiscal: 80, fx: 46, debt: 72, political: 99, external: 96 },
-    { country: 'Senegal', flag: '🇸🇳', score: 88, fiscal: 90, fx: 78, debt: 92, political: 86, external: 84 },
+    { country: 'South Africa', flag: '🇿🇦', score: 96, fiscal: 78, fx: 46, debt: 72, political: 96, external: 94 },
+    { country: 'Senegal', flag: '🇸🇳', score: 86, fiscal: 88, fx: 76, debt: 90, political: 84, external: 82 },
     { country: 'Mali', flag: '🇲🇱', score: 97, fiscal: 88, fx: 85, debt: 85, political: 99, external: 94 },
     { country: 'Uganda', flag: '🇺🇬', score: 95, fiscal: 70, fx: 78, debt: 74, political: 68, external: 99 },
   ],
 
   currencyStress: [
-    { code: 'NGN', country: 'Nigeria', rate: '1,361.39', change: '-13.79%', stress: 'LOW', ytd: '-3.20%', color: '#00c48c' },
-    { code: 'GHS', country: 'Ghana', rate: '11.75', change: '+9.81%', stress: 'MODERATE', ytd: '+6.53%', color: '#f5a623' },
+    { code: 'NGN', country: 'Nigeria', rate: '1,360.73', change: '-13.02%', stress: 'LOW', ytd: '-3.10%', color: '#00c48c' },
+    { code: 'GHS', country: 'Ghana', rate: '11.82', change: '+15.83%', stress: 'MODERATE', ytd: '+5.47%', color: '#f5a623' },
     { code: 'KES', country: 'Kenya', rate: '129.53', change: '+0.31%', stress: 'ELEVATED', ytd: '-0.98%', color: '#ff3b3b' },
     { code: 'EGP', country: 'Egypt', rate: '52.22', change: '-4.32%', stress: 'HIGH', ytd: '-4.51%', color: '#ff3b3b' },
     { code: 'ZAR', country: 'South Africa', rate: '16.29', change: '+3.58%', stress: 'MODERATE', ytd: '+3.58%', color: '#f5a623' },
@@ -118,17 +118,17 @@ export const content = {
   ],
 
   elections: [
-    { country: 'Ethiopia', flag: '🇪🇹', date: 'Results June 11 — THURSDAY', type: 'General Election', risk: 'CRITICAL', note: 'PP landslide. Results same day World Cup opens. Pretoria Agreement "on verge of collapse." Eritrea tensions. Mogadishu combat adds Horn compound risk. Post-election triangular conflict risk live.', color: '#ff3b3b' },
-    { country: 'Somalia', flag: '🇸🇴', date: 'Constitutional Crisis — ACTIVE COMBAT', type: 'Presidential Election', risk: 'CRITICAL', note: 'Mogadishu combat June 4-5 — mortars, anti-tank, small arms. UK concerned. Donors alarmed. Al-Shabaab exploiting vacuum. Constitutional crisis turned armed. Most severe Mogadishu violence since parliamentary changes.', color: '#ff3b3b' },
-    { country: 'Guinea', flag: '🇬🇳', date: 'June 1 — Results Pending', type: 'Parliamentary + Municipal', risk: 'HIGH', note: '40 opposition parties dissolved. Boycotted. Doumbouya allies expected to sweep. Legitimacy void.', color: '#ff3b3b' },
+    { country: 'Ethiopia', flag: '🇪🇹', date: 'Results June 11 — 3 DAYS', type: 'General Election', risk: 'CRITICAL', note: 'PP landslide expected. Results same day World Cup opens. Pretoria Agreement collapsing. Eritrea tensions. Post-election triangular conflict risk. Most dangerous Horn window since 2020.', color: '#ff3b3b' },
+    { country: 'Somalia', flag: '🇸🇴', date: 'Active Crisis — Mogadishu Combat', type: 'Constitutional Crisis', risk: 'CRITICAL', note: 'Active combat Mogadishu — government vs opposition militias. UK concerned. Al-Shabaab exploiting vacuum. Mohamud term extension called illegal. Donors alarmed.', color: '#ff3b3b' },
+    { country: 'Guinea', flag: '🇬🇳', date: 'June 1 — Results Pending', type: 'Parliamentary + Municipal', risk: 'HIGH', note: '40 opposition parties dissolved. Boycotted. Doumbouya allies sweep expected. Legitimacy void.', color: '#ff3b3b' },
     { country: 'Zambia', flag: '🇿🇲', date: 'August 13, 2026', type: 'General Election', risk: 'HIGH', note: 'Hichilema under pressure. Slow reform, 3hrs power/day. Opposition consolidating. Outcome uncertain.', color: '#ff3b3b' },
-    { country: 'South Africa', flag: '🇿🇦', date: 'Fall 2026', type: 'Municipal Elections', risk: 'CRITICAL', note: 'June 30 — 23 days. PEPFAR crisis adds compound health-fiscal emergency. Xenophobia. Petrol hike. Household debt. GNU maximum stress. PEPFAR-CDC expires September.', color: '#ff3b3b' },
+    { country: 'South Africa', flag: '🇿🇦', date: 'Fall 2026', type: 'Municipal Elections', risk: 'HIGH', note: 'Ramaphosa 5-point crackdown announced. June 30 — 22 days. Biometric register announced. Green ID phased out. Employer jailing. March and March watching.', color: '#ff3b3b' },
     { country: 'Nigeria', flag: '🇳🇬', date: 'Early 2027', type: 'General Election', risk: 'HIGH', note: 'Tinubu wins APC nomination. Dangote 700k bpd. Inflows +83.8%. Airstrike crisis unresolved. 2027 risk building.', color: '#ff3b3b' },
-    { country: 'Kenya', flag: '🇰🇪', date: '2027', type: 'General Election', risk: 'CRITICAL', note: 'Finance Bill June 30. Court on Ebola facility this week. Eurobond Q2 rollover. Five crises simultaneously.', color: '#ff3b3b' },
+    { country: 'Kenya', flag: '🇰🇪', date: '2027', type: 'General Election', risk: 'CRITICAL', note: 'Finance Bill 2026 June 30. Opposition formally rejected — "Ruto learnt nothing." June 25 storming anniversary in 17 days. Gen-Z watching. Eurobond Q2 rollover critical.', color: '#ff3b3b' },
   ],
 
   debtMaturities: [
-    { country: 'Senegal', flag: '🇸🇳', amount: '€53.75m + $38.8m PAID EARLY', instrument: 'Bond Coupons', maturity: 'PAID — RALLY IN PROGRESS', risk: 'HIGH', color: '#f5a623' },
+    { country: 'Senegal', flag: '🇸🇳', amount: '€53.75m + $38.8m PAID EARLY', instrument: 'Bond Coupons', maturity: 'PAID — BONDS RALLYING', risk: 'HIGH', color: '#f5a623' },
     { country: 'Senegal', flag: '🇸🇳', amount: '$1.8bn', instrument: 'IMF Programme', maturity: 'Disbursement Frozen — IMF June 15', risk: 'CRITICAL', color: '#ff3b3b' },
     { country: 'Kenya', flag: '🇰🇪', amount: '$2.0bn', instrument: 'Eurobond', maturity: 'Q2 2026', risk: 'CRITICAL', color: '#ff3b3b' },
     { country: 'Egypt', flag: '🇪🇬', amount: '$2.1bn', instrument: 'Eurobond', maturity: 'Q2 2026', risk: 'HIGH', color: '#ff3b3b' },
@@ -150,13 +150,13 @@ export const content = {
 
   riskTable: [
     { country: 'SOMALIA', cds: 0, delta: 'N/A', bond: 'N/A', fx: 'N/A', signal: 'ACTIVE COMBAT MOGADISHU', color: '#ff3b3b' },
-    { country: 'SOUTH AFRICA', cds: 198, delta: '+45', bond: '-2.3pts', fx: '+3.6%', signal: 'PEPFAR CRISIS + JUNE 30 — 23 DAYS', color: '#ff3b3b' },
-    { country: 'ETHIOPIA', cds: 520, delta: '+50', bond: '-2.5pts', fx: '-0.9%', signal: 'RESULTS JUNE 11 + WAR RISK', color: '#ff3b3b' },
-    { country: 'KENYA', cds: 192, delta: '+48', bond: '-2.4pts', fx: '-0.3%', signal: 'FINANCE BILL JUNE 30', color: '#ff3b3b' },
+    { country: 'KENYA', cds: 192, delta: '+48', bond: '-2.4pts', fx: '-0.3%', signal: 'OPPOSITION REJECTS FINANCE BILL', color: '#ff3b3b' },
+    { country: 'SOUTH AFRICA', cds: 198, delta: '+40', bond: '-2.0pts', fx: '+3.6%', signal: 'RAMAPHOSA 5-POINT PLAN — JUNE 30 22D', color: '#f5a623' },
+    { country: 'ETHIOPIA', cds: 520, delta: '+50', bond: '-2.5pts', fx: '-0.9%', signal: 'RESULTS JUNE 11 — WAR RISK 3 DAYS', color: '#ff3b3b' },
     { country: 'SENEGAL', cds: 820, delta: '-130', bond: '+1.5pts', fx: '-0.5%', signal: 'BONDS RALLY — IMF JUNE 15', color: '#f5a623' },
     { country: 'MALI', cds: 920, delta: '+65', bond: '-3.0pts', fx: '-1.5%', signal: 'SECURITY COLLAPSE', color: '#ff3b3b' },
-    { country: 'NIGERIA', cds: 380, delta: '-35', bond: '+1.2pts', fx: '-13.8%', signal: 'DANGOTE 700K — APC NOMINATION', color: '#00c48c' },
-    { country: 'GHANA', cds: 232, delta: '-5', bond: '+0.6pts', fx: '+6.5%', signal: 'IMF PROGRAMME COMPLETE — BENCHMARK', color: '#00c48c' },
+    { country: 'NIGERIA', cds: 380, delta: '-35', bond: '+1.2pts', fx: '-13.0%', signal: 'DANGOTE 700K — APC NOMINATION', color: '#00c48c' },
+    { country: 'GHANA', cds: 232, delta: '-5', bond: '+0.6pts', fx: '+5.5%', signal: 'IMF PROGRAMME COMPLETE — BENCHMARK', color: '#00c48c' },
   ],
 
   fxHistory: [
@@ -178,5 +178,6 @@ export const content = {
     { date: 'Jun 5', NGN: 1361.39, GHS: 11.75, KES: 129.53, EGP: 52.22, ZAR: 16.29, UGX: 3770, ZMW: 19.02, XOF: 615 },
     { date: 'Jun 6', NGN: 1361.39, GHS: 11.75, KES: 129.53, EGP: 52.22, ZAR: 16.29, UGX: 3770, ZMW: 19.02, XOF: 615 },
     { date: 'Jun 7', NGN: 1361.39, GHS: 11.75, KES: 129.53, EGP: 52.22, ZAR: 16.29, UGX: 3770, ZMW: 19.02, XOF: 615 },
+    { date: 'Jun 8', NGN: 1360.73, GHS: 11.82, KES: 129.53, EGP: 52.22, ZAR: 16.29, UGX: 3770, ZMW: 19.02, XOF: 615 },
   ],
 }
