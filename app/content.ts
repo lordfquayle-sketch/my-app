@@ -1,36 +1,36 @@
 export const content = {
-  riskIndex: '96',
+  riskIndex: '95',
   riskStatus: 'CRITICAL',
 
   riskMonitor: {
-    updated: 'June 8, 2026 09:00 UTC',
-    overallScore: 96,
+    updated: 'June 9, 2026 09:00 UTC',
+    overallScore: 95,
     trend: 'STABLE',
-    drivers: ['Ramaphosa Announces 5-Point Immigration Crackdown — Biometric Population Register — June 30 22 Days', 'Kenya Opposition Formally Rejects Finance Bill 2026 — Kalonzo: "Ruto Learnt Nothing"', 'Somalia Mogadishu Fighting Ongoing — UK Deeply Concerned — Al-Shabaab Exploiting Vacuum', 'World Cup Opens Thursday June 11 + Ethiopia Results Same Day — 3 Days'],
+    drivers: ['Nigeria Rescues 360 Boko Haram Hostages — Mandara Mountains — 2 Infants Dead', 'Ebola ECDC June 5: Uganda 19 Confirmed 8 in Kampala — DRC 381 Confirmed 64 Dead', 'March and March: Wants to Arrest Migrants but Law Says No — June 30 21 Days', 'World Cup Opens THURSDAY — Ethiopia Results THURSDAY — Horn Convergence 2 Days'],
     regions: [
       { region: 'East Africa', score: 99, trend: '↑', color: '#ff3b3b' },
-      { region: 'West Africa', score: 90, trend: '→', color: '#ff3b3b' },
+      { region: 'West Africa', score: 88, trend: '↓', color: '#ff3b3b' },
       { region: 'North Africa', score: 72, trend: '→', color: '#ff3b3b' },
-      { region: 'Southern Africa', score: 97, trend: '↓', color: '#ff3b3b' },
+      { region: 'Southern Africa', score: 96, trend: '↓', color: '#ff3b3b' },
       { region: 'Central Africa', score: 99, trend: '→', color: '#ff3b3b' },
     ]
   },
 
   sovereignAlerts: [
-    { country: 'South Africa', flag: '🇿🇦', alert: 'RAMAPHOSA RESPONDS. Five-point immigration crackdown announced Sunday night: (1) Jail employers hiring undocumented workers. (2) Dedicated immigration courts for faster deportations. (3) Biometric Intelligent Population Register for every person in SA — foundation for Digital ID. (4) Phase out green ID book — enabled identity theft. (5) Traffic Registration Number loophole closed — Transport to issue new regs within 3 months. Employment Services Amendment Bill approved by Cabinet — quotas on foreign nationals in sectors. Warned: "only authorised officials may act." June 30: 22 days. March and March + ATDF-ASA watching.', severity: 'HIGH', color: '#f5a623' },
-    { country: 'Kenya', flag: '🇰🇪', alert: 'Opposition formally rejects Finance Bill 2026. Kalonzo Musyoka: "The Finance Bill 2026 is further proof that the Ruto regime has learnt nothing and forgotten everything from the June 25 Revolution that nearly overthrew his regime." Coalition: "tax more, borrow more." Finance Bill 2026 has fewer increases than 2024 but reintroduces phone excise duty and taxes digital economy — crypto, content creators, card payments. Due June 30. Excise duty on phones applies regardless of VAT exemption retained. Gen-Z watching.', severity: 'CRITICAL', color: '#ff3b3b' },
-    { country: 'Somalia', flag: '🇸🇴', alert: 'Mogadishu fighting ongoing — heavy gunfire, mortars, anti-tank fire between government and opposition militias in Howlwadaag and Abdiasis districts. UK "deeply concerned." International donors alarmed. Al-Shabaab exploiting political vacuum — retook territory in 2024-2025 during previous political crises. Constitutional crisis: Mohamud term extension opposed as illegal. Opposition threatening parallel government process.', severity: 'CRITICAL', color: '#ff3b3b' },
-    { country: 'Ethiopia', flag: '🇪🇹', alert: 'Results Thursday June 11 — 3 days. Same day World Cup opens. PP landslide expected. Pretoria Agreement "on verge of collapse." TPLF reinstated Debretsion. Eritrea tensions — Red Sea access dispute. Triangular conflict scenario: Ethiopia vs TPLF + Ethiopia vs Eritrea. Most dangerous Horn window since 2020. Results June 11 will trigger post-election posture assessment.', severity: 'CRITICAL', color: '#ff3b3b' },
-    { country: 'Senegal', flag: '🇸🇳', alert: 'Bonds rallied on early coupon payment. IMF visit week of June 15. Finance Minister Diba targeting agreement June 30. Three Pastef members joined Lo government despite Sonko\'s declaration. Structural risk remains: 132% debt/GDP, $9.7bn obligations 2026. IMF agreement by June 30 is the key milestone — Oxford Economics Venezuela/Lebanon classification stands until programme is restored.', severity: 'HIGH', color: '#f5a623' },
+    { country: 'Nigeria', flag: '🇳🇬', alert: 'Nigeria army rescues 360 Boko Haram hostages — men, women, children — from Mandara Mountains, southern Borno State. Intelligence-led operation, Joint Task Force Operation HADIN KAI, Special Forces, Sector 1. Victims seized from Ngoshe axis and multiple communities. Two infants "succumbed to exhaustion" due to terrain difficulty. Atiku commended rescue. Peter Obi condemned ethnic profiling. Separate school abduction in Oyo State — gunmen seized dozens of students and teachers from Baptist Nursery and Primary School June 2. Nigeria security crisis is multi-vector and escalating.', severity: 'HIGH', color: '#ff3b3b' },
+    { country: 'DRC/Uganda', flag: '🇨🇩', alert: 'ECDC June 5: DRC 381 confirmed 64 deaths, Uganda 19 confirmed 2 deaths. Eight Uganda cases in Kampala, one in Wakiso. Three new Uganda cases June 5 — all contacts of confirmed cases. Ituri: 359 confirmed from 17 health zones. North Kivu: 19 confirmed from 7 health zones. South Kivu: 3 confirmed. WHO $518m plan operational. Contact tracing at 45% — needs 90%+ to stay ahead. Vaccine candidates in fast-track production. DRC Leopards arrive Houston Thursday for June 17 opener.', severity: 'CRITICAL', color: '#ff3b3b' },
+    { country: 'South Africa', flag: '🇿🇦', alert: 'March and March: wants to arrest migrants but law says no — legal constraints on June 30 actions being exposed. Ramaphosa 5-point crackdown announced Sunday — biometric register, employer jailing, deportation courts, green ID phase-out, Traffic Registration Number closure. SARB hiked rates 25bps to 7% May 28 — first hike since 2023. ZAR at 16.30 — highest since March. June 30: 21 days.', severity: 'HIGH', color: '#f5a623' },
+    { country: 'Ethiopia', flag: '🇪🇹', alert: 'Results THURSDAY June 11 — 2 days. Same day World Cup opens. PP landslide expected. Pretoria Agreement "on verge of collapse." TPLF reinstated Debretsion. Eritrea tensions — Red Sea access. Triangular conflict scenario. Post-election war risk window opens Thursday. Most dangerous Horn window since 2020.', severity: 'CRITICAL', color: '#ff3b3b' },
+    { country: 'Senegal', flag: '🇸🇳', alert: 'Bonds rallying from 50.6c record low. IMF visit week of June 15. Finance Minister Diba targeting agreement June 30. Three Pastef members joined Lo government. Acute default risk partially defused. $9.7bn obligations 2026. Structural risk remains. IMF agreement by June 30 is the key milestone.', severity: 'HIGH', color: '#f5a623' },
   ],
 
   featuredSignal: {
-    title: 'RAMAPHOSA ANNOUNCES 5-POINT IMMIGRATION CRACKDOWN — BIOMETRIC REGISTER FOR EVERY SA RESIDENT — 22 DAYS TO JUNE 30 — KENYA OPPOSITION FORMALLY REJECTS FINANCE BILL',
-    body: 'June 8 marks the GNU\'s formal response to the June 30 crisis. Ramaphosa addressed the nation Sunday night with a five-point immigration crackdown: jail employers hiring undocumented workers; dedicated deportation courts; a biometric Intelligent Population Register for every person in South Africa as the foundation for a Digital ID; phase out the green ID book which enabled identity theft; and close the Traffic Registration Number loophole. He warned that only authorised officials may act — directly addressing March and March vigilantism. The Employment Services Amendment Bill approved by Cabinet will empower the labour minister to set sector quotas on foreign national employment. This is the most comprehensive immigration policy response South Africa has announced in decades. Whether it arrives in time — and is credible enough — to defuse June 30 is the question. In Kenya, opposition leader Kalonzo formally rejected the Finance Bill 2026, calling it proof the Ruto regime "learnt nothing" from the 2024 uprising. The Finance Bill 2026 has fewer tax increases than 2024 but reintroduces the phone excise duty and taxes the digital economy — crypto, content creators, card payments. Due June 30 — same day as South Africa\'s xenophobia deadline.',
-    tag: 'JUNE 8 CRITICAL SIGNAL',
-    color: '#f5a623',
+    title: 'NIGERIA RESCUES 360 BOKO HARAM HOSTAGES — EBOLA REACHES KAMPALA DISTRICT OF WAKISO — MARCH AND MARCH FACES LEGAL CONSTRAINTS — WORLD CUP + ETHIOPIA IN 2 DAYS',
+    body: 'June 9 opens with Nigeria\'s most significant counter-terrorism hostage rescue in years. The army freed 360 men, women and children from a Boko Haram hideout in the Mandara Mountains of Borno State — but two infants died of exhaustion during the extraction. The operation was intelligence-led using unmanned aerial systems, SIGINT, HUMINT and long-range reconnaissance. Separately, gunmen abducted students and teachers from a Baptist school in Oyo State on June 2 — the multi-vector security crisis continues. In Ebola news, the ECDC June 5 update shows Uganda at 19 confirmed cases with 8 in Kampala and 1 in Wakiso district — the spread within Uganda is intensifying. South Africa\'s March and March is discovering its June 30 agenda faces legal constraints — it wants to arrest migrants but lacks legal authority. Ramaphosa\'s 5-point plan is actively narrowing the vigilante space. The World Cup and Ethiopia\'s election results are both Thursday — two days away.',
+    tag: 'JUNE 9 CRITICAL SIGNAL',
+    color: '#ff3b3b',
     author: 'Lord Fiifi Quayle',
-    date: 'June 8, 2026',
+    date: 'June 9, 2026',
   },
 
   pressureMap: [
@@ -43,28 +43,28 @@ export const content = {
   ],
 
   whatMattersNow: [
-    { title: 'RAMAPHOSA 5-POINT CRACKDOWN — BIOMETRIC REGISTER — EMPLOYER JAILING — GREEN ID PHASED OUT', body: 'Sunday night national address: (1) Jail employers who hire undocumented workers — Employment Services Amendment Bill approved by Cabinet. (2) Dedicated immigration courts for faster deportations — phased relocation of refugee reception centres to border posts starting Tshwane this year. (3) Biometric Intelligent Population Register for every SA resident — Digital ID foundation. (4) Phase out green barcoded ID book — enabled identity theft and criminal syndicates. (5) Traffic Registration Number loophole closed — Transport regs within 3 months. Sector quotas on foreign national employment in specific sectors. Warned vigilante action illegal.', icon: '🇿🇦' },
-    { title: 'KENYA OPPOSITION FORMALLY REJECTS FINANCE BILL 2026 — "RUTO LEARNT NOTHING"', body: 'Kalonzo Musyoka Wiper Democratic Movement: "The Finance Bill 2026 is further proof that the Ruto regime has learnt nothing and forgotten everything from the June 25 Revolution that nearly overthrew his regime." Coalition statement: "tax more, borrow more" policy. Finance Bill 2026 reintroduces phone excise duty (VAT exemption retained but separate from excise duty), taxes crypto users, digital marketplace earners, content creators, card payment transactions. Extends residential rental income tax 7.5% → 10%. Due June 30 — 22 days. Gen-Z mobilisation risk building.', icon: '🔥' },
-    { title: 'SOMALIA: MOGADISHU ACTIVE COMBAT — AL-SHABAAB EXPLOITING VACUUM', body: 'Mogadishu fighting between government and opposition militias ongoing — heavy gunfire, mortars, anti-tank weapons. UK "deeply concerned." International donors alarmed. Al-Shabaab retook territory during 2024-2025 political crises — positioned to exploit this vacuum again. AUSSOM mandate under pressure. Constitutional crisis: Mohamud term extension called illegal by opposition. Opposition threatening parallel government. Five Zimbabwean nationals swept off Addo bridge in Eastern Cape — separate incident underscoring migration vulnerability.', icon: '🚨' },
-    { title: 'JUNE 11 IN 3 DAYS — WORLD CUP OPENS + ETHIOPIA RESULTS — HORN CONVERGENCE', body: 'Thursday June 11: World Cup 2026 opens Mexico City — first game Mexico vs Canada. Ethiopia election results announced — PP landslide expected, post-election war risk on TPLF and Eritrea goes live. DRC Leopards arrive Houston for June 17 opener vs Portugal — in isolation bubble, fans still banned. Mogadishu fighting active. Somalia, Ethiopia, DRC all in active crisis same day World Cup opens. The geopolitical significance of Africa in the 2026 World Cup moment is being defined by Ebola, conflict and constitutional crisis — not football alone.', icon: '⚽' },
+    { title: 'NIGERIA: 360 BOKO HARAM HOSTAGES RESCUED — 2 INFANTS DEAD — MANDARA MOUNTAINS', body: 'Nigerian Army announces rescue of 360 men, women and children from Boko Haram JAS faction hideout in Mandara Mountains, southern Borno. Operation HADIN KAI + Special Forces + Sector 1. UAV systems, SIGINT, HUMINT, long-range reconnaissance. Two infants died of exhaustion during extraction. Atiku commended the mission. Army: "major operational success and significant setback for the terrorist group." Separate: gunmen abducted students and teachers from Baptist Nursery and Primary School, Oyo State, June 2. Nigeria\'s security crisis is multi-vector — Boko Haram north, ISWAP Lake Chad, school abductions southwest.', icon: '🛡️' },
+    { title: 'EBOLA: UGANDA 19 CONFIRMED — WAKISO DISTRICT NOW AFFECTED — KAMPALA SPREADING', body: 'ECDC June 5: Uganda 19 confirmed cases, 2 deaths. 8 cases in Kampala, 1 in Wakiso district — Kampala neighbouring. 7 cases local transmission, 5 travel-linked to DRC. Three new cases June 5 — all contacts of confirmed cases. DRC: 381 confirmed, 64 deaths. Ituri 359 confirmed 17 health zones. Contact tracing at 45% — needs 90%+ to stay ahead of transmission. WHO $518m plan operational. Vaccine candidates fast-tracked. DRC Leopards arrive Houston Thursday.', icon: '🔴' },
+    { title: 'SA: MARCH AND MARCH FACES LEGAL CONSTRAINTS — LAW SAYS NO TO CITIZEN ARRESTS', body: 'Scrolla: "March and March wants to arrest migrants but the law says no." Ramaphosa explicitly warned Sunday: "Only authorised government officials may act against violations of immigration law. No other person is allowed to confront someone in the street to demand proof of nationality." The Ramaphosa crackdown is systematically narrowing the legal space for vigilante action. June 30: 21 days. Movement now faces choice: comply within law (limited impact) or act illegally (trigger state response). ZAR at 16.30 — SARB 7% rate, highest since March.', icon: '⚖️' },
+    { title: 'WORLD CUP + ETHIOPIA RESULTS IN 2 DAYS — THURSDAY JUNE 11 — HORN CONVERGENCE', body: 'Thursday June 11: World Cup 2026 opens Mexico City — first game Mexico vs Canada 17:00 local. Ethiopia election results — PP landslide, post-election war risk on TPLF and Eritrea goes live. DRC Leopards arrive Houston ahead of June 17 game vs Portugal. Contact tracing at 45% in DRC — Ebola containment fragile. Somalia combat ongoing. The world\'s biggest sporting event begins on the same day East Africa\'s most dangerous political week opens. The contrast between sport and crisis is Africa\'s 2026 global moment.', icon: '⚽' },
   ],
 
   insight1: {
-    title: 'RAMAPHOSA\'S 5-POINT PLAN IS THE GNU\'S MOST CREDIBLE RESPONSE TO DATE — BUT IT ARRIVES WITH 22 DAYS TO GO',
-    body: 'The substance of Ramaphosa\'s announcement is more comprehensive than analysts expected. The biometric Intelligent Population Register — effectively a digital ID for every person in South Africa — is a structural solution to the identity fraud problem that underlies much of the immigration exploitation. Jailing employers is a demand that March and March has made explicitly. Dedicated courts for faster deportations addresses the backlog directly. The phasing out of the green ID book closes a genuine loophole. The Employment Services Amendment Bill with sector quotas on foreign nationals addresses the core labour market grievance. The question is not whether these measures are right — they are — but whether a government with 41% of its borrowers in default, a household debt crisis, a PEPFAR emergency, a presidential impeachment panel, and a petrol hike can execute all five simultaneously in 22 days. The credibility of the announcement will be tested by execution speed, not by policy design.',
-    conclusion: 'RAMAPHOSA\'S 5-POINT PLAN IS STRUCTURALLY CREDIBLE — THE MOST COMPREHENSIVE IMMIGRATION POLICY RESPONSE IN DECADES. BUT EXECUTION SPEED IN 22 DAYS DETERMINES WHETHER JUNE 30 IS DEFUSED OR IGNITES. WATCH MARCH AND MARCH\'S FORMAL RESPONSE.',
+    title: 'NIGERIA\'S BOKO HARAM RESCUE AND OGUN SCHOOL ABDUCTION ON THE SAME WEEK IS THE SECURITY PARADOX OF 2026',
+    body: 'The 360-person Boko Haram rescue from the Mandara Mountains is the Nigerian army\'s most significant counter-terrorism success in years — intelligence-led, multi-capability, technically sophisticated. It demonstrates real operational capacity. But on the same week, gunmen abducted dozens of students and teachers from a Baptist school in Oyo State — a different threat vector, a different geography, a different armed actor. Nigeria\'s security crisis is not one crisis — it is multiple simultaneous crises: Boko Haram in Borno, ISWAP in Lake Chad, banditry in the northwest, school abductions in the southwest, civilian airstrike deaths in Zamfara and Yobe. The Dangote structural positive and the 360-person rescue are real. But they exist alongside a security environment that is fragmenting across multiple vectors simultaneously as the 2027 election cycle approaches.',
+    conclusion: 'NIGERIA\'S 360-PERSON RESCUE IS REAL AND SIGNIFICANT — BUT IT COEXISTS WITH A MULTI-VECTOR SECURITY CRISIS THAT IS SIMULTANEOUSLY EXPANDING ACROSS FIVE DIFFERENT CONFLICT THEATRES. THE 2027 ELECTION RISK REMAINS TIER-1.',
   },
 
   insight2: {
-    title: 'KENYA\'S FINANCE BILL 2026 OPPOSITION REJECTION FOLLOWS THE EXACT PATTERN OF 2024 — THE JUNE 30 PARALLEL IS NOT COINCIDENTAL',
-    body: 'In 2024, the Finance Bill was introduced in May, opposed by civil society and opposition through June, and triggered mass protests that stormed parliament on June 25 — two days before the June 30 fiscal deadline. In 2026, the Finance Bill was released April 30, the opposition has now formally rejected it, Kalonzo is using the language of "revolution," and the deadline is June 30 — the same day as South Africa\'s xenophobia deadline. The 2026 Bill has fewer tax increases than 2024 — Bowmans legal analysis notes this reflects Ruto\'s intention to ease concerns ahead of 2027 elections. But the reintroduction of the phone excise duty and the digital economy taxes are politically identical to 2024. The Gen-Z movement — which produced the 2024 protests — is watching. Two years and six days after the parliament storming, the same dynamics are building.',
-    conclusion: 'KENYA\'S FINANCE BILL 2026 IS FOLLOWING THE EXACT POLITICAL PATTERN OF 2024. THE JUNE 30 DEADLINE IS THE CRITICAL DATE. WATCH GEN-Z MOBILISATION IN THE COMING 22 DAYS — THE PARLIAMENTARY STORMING ANNIVERSARY IS JUNE 25.',
+    title: 'MARCH AND MARCH\'S LEGAL CONSTRAINTS ARE RAMAPHOSA\'S BEST TOOL FOR DEFUSING JUNE 30',
+    body: 'The Ramaphosa crackdown is cleverly designed: by establishing that only authorised state officials may enforce immigration law, it makes any March and March attempt to physically detain or confront migrants illegal — punishable under the same laws Ramaphosa is pledging to enforce. The movement is now in a bind: it can march and demonstrate (legal, political pressure), but it cannot arrest or detain (illegal, triggers state response). The five-point plan gives the movement something to hold the government to — biometric register, employer jailing, deportation courts. These are precisely what the movement has demanded. If Ramaphosa moves visibly on implementation before June 30, the movement\'s argument for street action weakens. The 21-day window is tight but not impossible.',
+    conclusion: 'RAMAPHOSA\'S LEGAL FRAMEWORK — "ONLY OFFICIALS MAY ACT" — IS THE KEY TOOL FOR DEFUSING JUNE 30. IF THE GOVERNMENT DEMONSTRATES VISIBLE IMPLEMENTATION OF THE 5-POINT PLAN, MARCH AND MARCH\'S CASE FOR STREET ACTION WEAKENS. THE 21-DAY EXECUTION TEST BEGINS NOW.',
   },
 
   brief: {
     week: '24',
-    title: 'WEEK 24 DAY 2: RAMAPHOSA 5-POINT CRACKDOWN, KENYA OPPOSITION REJECTS FINANCE BILL, SOMALIA ONGOING, JUNE 11 IN 3 DAYS',
-    body: 'Week 24\'s second day opens with South Africa\'s most comprehensive immigration policy response in decades. Ramaphosa announced five measures Sunday night: jail employers, deportation courts, biometric population register, phase out green ID, close traffic number loophole. June 30 is 22 days away. Kenya\'s opposition formally rejected the Finance Bill 2026 — Kalonzo called it proof Ruto "learnt nothing" from the 2024 revolution. Somalia\'s Mogadishu combat is ongoing with Al-Shabaab exploiting the vacuum. June 11 is three days away: World Cup opens, Ethiopia results announced, DRC Leopards arrive Houston — the Horn\'s most consequential convergence this decade. Senegal\'s bonds are rallying — IMF visit June 15, agreement target June 30. Live FX: NGN holding 1,360, GHS at 11.815, ZAR firm.',
+    title: 'WEEK 24 DAY 3: NIGERIA 360 HOSTAGES RESCUED, EBOLA WAKISO, MARCH AND MARCH LEGAL CONSTRAINTS, WORLD CUP + ETHIOPIA THURSDAY',
+    body: 'Week 24\'s third day brings Nigeria\'s biggest counter-terrorism rescue of 2026 — 360 Boko Haram hostages freed from the Mandara Mountains, two infants died in the operation. Ebola has spread to Wakiso district adjacent to Kampala — Uganda at 19 confirmed, contact tracing at 45%. March and March is discovering its June 30 agenda faces legal constraints — citizen arrests are illegal under SA law. Ramaphosa\'s 5-point plan is narrowing the vigilante space. ZAR at 16.30 — SARB rate hike to 7% providing support. Thursday is the continent\'s most consequential day in years: World Cup opens Mexico City, Ethiopia election results announced, DRC Leopards arrive Houston. Senegal bonds continue to rally. Ghana remains the continental benchmark. Two days to go.',
   },
 
   fxRates: {
@@ -73,7 +73,7 @@ export const content = {
     KES: '129.53',
     EGP: '52.22',
     XOF: '615.00',
-    ZAR: '16.29',
+    ZAR: '16.30',
     ETB: '132.00',
     TZS: '2,650.00',
     UGX: '3,770.00',
@@ -85,25 +85,25 @@ export const content = {
   },
 
   signals: [
-    { time: '09:30:00', signal: 'Ramaphosa 5-point immigration crackdown — Sunday night national address. (1) Jail employers hiring undocumented workers. (2) Dedicated deportation courts. (3) Biometric Intelligent Population Register — Digital ID foundation. (4) Phase out green ID book. (5) Traffic Registration Number loophole closed within 3 months. Sector employment quotas. Warned vigilantism illegal. June 30: 22 days.', detail: 'HIGH', type: 'ALERT', tag: 'POLITICAL RISK', country: 'ZAR' },
-    { time: '09:15:00', signal: 'Kenya: Opposition formally rejects Finance Bill 2026. Kalonzo: "Ruto learnt nothing from June 25 Revolution." Bill reintroduces phone excise duty, taxes crypto, content creators, card payments, extends rental tax 7.5%→10%. Due June 30. 2024 pattern: bill introduced May → opposed June → protests June 25 → storming June 25 → withdrawal June 28. 2026 calendar identical.', detail: 'HIGH', type: 'ALERT', tag: 'POLITICAL RISK', country: 'KES' },
-    { time: '09:00:00', signal: 'Somalia: Mogadishu combat ongoing — government vs opposition militias. UK "deeply concerned." Al-Shabaab exploiting vacuum. AUSSOM mandate under pressure. Constitutional crisis: Mohamud term extension called illegal. Donors alarmed. Five Zimbabwean nationals swept off Addo bridge Eastern Cape — migration vulnerability on multiple fronts.', detail: 'HIGH', type: 'ALERT', tag: 'SECURITY RISK', country: 'AFRICA' },
-    { time: '08:45:00', signal: 'June 11 — 3 days: World Cup opens Mexico City. Ethiopia election results. DRC Leopards arrive Houston. PP landslide + post-election war risk vs TPLF and Eritrea goes live. Mogadishu fighting active. Ebola ongoing. Horn of Africa compound risk at maximum same day World Cup begins.', detail: 'HIGH', type: 'ALERT', tag: 'GEOPOLITICAL', country: 'AFRICA' },
-    { time: '08:30:00', signal: 'Senegal: Bonds rallying from 50.6c record low. IMF visit week of June 15. Diba targets agreement June 30. Three Pastef members joined Lo government. Acute default risk partially defused. Structural risk remains: 132% debt/GDP, $9.7bn obligations 2026. Oxford Economics Venezuela/Lebanon classification stands until IMF programme restored.', detail: 'MEDIUM', type: 'INFO', tag: 'CREDIT UPDATE', country: 'XOF' },
-    { time: '08:15:00', signal: 'SA: PEPFAR-CDC funding may only last until September. UCT/Wits model: 150,000-295,000 additional HIV infections by 2028. SA must cover $620m-$1.4bn. Compound health-fiscal emergency running parallel to June 30 political crisis. GNU managing six simultaneous crises.', detail: 'HIGH', type: 'ALERT', tag: 'MACRO SIGNAL', country: 'ZAR' },
-    { time: '08:00:00', signal: 'Kenya Finance Bill 2026 — Bowmans legal analysis: fewer increases than 2024 reflects Ruto\'s intent to ease concerns ahead of 2027. But phone excise duty reintroduced — VAT exemption retained but excise duty is separate instrument. Digital economy taxes: crypto, content creators, freelancers, card swipes. Gen-Z watching. June 25 storming anniversary in 17 days.', detail: 'HIGH', type: 'ALERT', tag: 'POLITICAL RISK', country: 'KES' },
-    { time: '07:45:00', signal: 'LIVE FX June 8: NGN 1,360.73 | GHS 11.82 (slight weakening from 11.75) | KES 129.53 | EGP 52.22 | ZAR 16.29 | UGX 3,770 | ZMW 19.02. NGN down -13.02% YoY — strengthening trend from 1,564 peak June 2025 intact. GHS slightly softer. ZAR firm on dollar weakness. Markets open — watch Senegal bond spreads for sustained rally.', detail: 'LOW', type: 'INFO', tag: 'FX UPDATE', country: 'AFRICA' },
+    { time: '09:30:00', signal: 'Nigeria: Army rescues 360 Boko Haram hostages — Mandara Mountains, southern Borno. JAS faction. UAV, SIGINT, HUMINT, long-range recon. 2 infants died of exhaustion during extraction. Atiku commended. Separate: school abduction Oyo State June 2. Multi-vector security crisis: Borno, Lake Chad, NW banditry, SW abductions, Zamfara civilian airstrikes.', detail: 'HIGH', type: 'ALERT', tag: 'SECURITY RISK', country: 'NGN' },
+    { time: '09:15:00', signal: 'Ebola ECDC June 5: Uganda 19 confirmed 2 deaths — 8 Kampala, 1 Wakiso (neighbouring district). 3 new cases June 5 all contacts of confirmed. DRC: 381 confirmed 64 deaths. Ituri 359 from 17 health zones. Contact tracing 45% — needs 90%+. WHO $518m operational. Vaccine candidates fast-tracked.', detail: 'HIGH', type: 'ALERT', tag: 'HEALTH RISK', country: 'AFRICA' },
+    { time: '09:00:00', signal: 'SA: March and March wants to arrest migrants but law says no — Ramaphosa warned only officials may act, citizen arrests illegal. Movement faces choice: legal demonstration (limited) or illegal action (triggers state response). 5-point plan narrows vigilante space. June 30: 21 days. ZAR at 16.30 — SARB 7% rate.', detail: 'MEDIUM', type: 'INFO', tag: 'POLITICAL RISK', country: 'ZAR' },
+    { time: '08:45:00', signal: 'THURSDAY JUNE 11 — 2 DAYS: World Cup opens Mexico City 17:00 local — Mexico vs Canada. Ethiopia results — PP landslide + post-election war risk live. DRC Leopards arrive Houston ahead of June 17 vs Portugal. Somalia combat ongoing. Horn of Africa compound risk at maximum same day World Cup begins.', detail: 'HIGH', type: 'ALERT', tag: 'GEOPOLITICAL', country: 'AFRICA' },
+    { time: '08:30:00', signal: 'Kenya: Finance Bill 2026 — June 25 storming anniversary in 16 days. Opposition formally rejected. Kalonzo: "Ruto learnt nothing." Gen-Z watching. Finance Bill June 30 deadline same as SA xenophobia. Eurobond Q2 $2bn rollover critical. KES 129.53. US-Kenya strained. Five crises simultaneously.', detail: 'HIGH', type: 'ALERT', tag: 'POLITICAL RISK', country: 'KES' },
+    { time: '08:15:00', signal: 'Senegal: Bonds continue rallying. IMF visit week June 15. Diba targets agreement June 30. Acute default risk defused. Structural risk remains: 132% debt/GDP, $9.7bn obligations. Oxford Economics Venezuela/Lebanon classification stands until programme restored. Royal Air Maroc launches nonstop Casablanca-LA route ahead of World Cup.', detail: 'MEDIUM', type: 'INFO', tag: 'CREDIT UPDATE', country: 'XOF' },
+    { time: '08:00:00', signal: 'Somalia: Mogadishu combat between government and opposition militias ongoing. Al-Shabaab Somali Special Forces raiding Bay Region positions separately. Double-front security challenge: political violence in Mogadishu + Al-Shabaab in Bay Region simultaneously. UK donors alarmed. AUSSOM mandate under pressure.', detail: 'HIGH', type: 'ALERT', tag: 'SECURITY RISK', country: 'AFRICA' },
+    { time: '07:45:00', signal: 'LIVE FX June 9: NGN 1,360.73 | GHS 11.82 | KES 129.53 | EGP 52.22 | ZAR 16.30 | UGX 3,770 | ZMW 19.02. ZAR 16.30 — near highest since March, supported by SARB 25bps hike to 7% May 28, strong PGM/gold export revenues, fiscal discipline. NGN strengthening trend continues. GHS stable.', detail: 'LOW', type: 'INFO', tag: 'FX UPDATE', country: 'AFRICA' },
   ],
 
   heatMap: [
-    { country: 'Nigeria', flag: '🇳🇬', score: 62, fiscal: 56, fx: 42, debt: 58, political: 82, external: 56 },
+    { country: 'Nigeria', flag: '🇳🇬', score: 65, fiscal: 56, fx: 42, debt: 58, political: 85, external: 60 },
     { country: 'Ghana', flag: '🇬🇭', score: 40, fiscal: 36, fx: 46, debt: 36, political: 32, external: 42 },
     { country: 'Kenya', flag: '🇰🇪', score: 94, fiscal: 84, fx: 74, debt: 90, political: 99, external: 96 },
     { country: 'Egypt', flag: '🇪🇬', score: 66, fiscal: 68, fx: 64, debt: 66, political: 65, external: 68 },
-    { country: 'South Africa', flag: '🇿🇦', score: 96, fiscal: 78, fx: 46, debt: 72, political: 96, external: 94 },
-    { country: 'Senegal', flag: '🇸🇳', score: 86, fiscal: 88, fx: 76, debt: 90, political: 84, external: 82 },
+    { country: 'South Africa', flag: '🇿🇦', score: 94, fiscal: 76, fx: 44, debt: 70, political: 94, external: 92 },
+    { country: 'Senegal', flag: '🇸🇳', score: 84, fiscal: 86, fx: 74, debt: 88, political: 82, external: 80 },
     { country: 'Mali', flag: '🇲🇱', score: 97, fiscal: 88, fx: 85, debt: 85, political: 99, external: 94 },
-    { country: 'Uganda', flag: '🇺🇬', score: 95, fiscal: 70, fx: 78, debt: 74, political: 68, external: 99 },
+    { country: 'Uganda', flag: '🇺🇬', score: 96, fiscal: 70, fx: 78, debt: 74, political: 68, external: 99 },
   ],
 
   currencyStress: [
@@ -111,20 +111,20 @@ export const content = {
     { code: 'GHS', country: 'Ghana', rate: '11.82', change: '+15.83%', stress: 'MODERATE', ytd: '+5.47%', color: '#f5a623' },
     { code: 'KES', country: 'Kenya', rate: '129.53', change: '+0.31%', stress: 'ELEVATED', ytd: '-0.98%', color: '#ff3b3b' },
     { code: 'EGP', country: 'Egypt', rate: '52.22', change: '-4.32%', stress: 'HIGH', ytd: '-4.51%', color: '#ff3b3b' },
-    { code: 'ZAR', country: 'South Africa', rate: '16.29', change: '+3.58%', stress: 'MODERATE', ytd: '+3.58%', color: '#f5a623' },
+    { code: 'ZAR', country: 'South Africa', rate: '16.30', change: '+3.52%', stress: 'MODERATE', ytd: '+3.52%', color: '#f5a623' },
     { code: 'UGX', country: 'Uganda', rate: '3,770.00', change: '-1.62%', stress: 'ELEVATED', ytd: '-4.80%', color: '#ff3b3b' },
     { code: 'ZMW', country: 'Zambia', rate: '19.02', change: '-32.91%', stress: 'HIGH', ytd: '-32.91%', color: '#ff3b3b' },
     { code: 'XOF', country: 'Mali/Senegal', rate: '615.00', change: '-0.82%', stress: 'ELEVATED', ytd: '-0.82%', color: '#f5a623' },
   ],
 
   elections: [
-    { country: 'Ethiopia', flag: '🇪🇹', date: 'Results June 11 — 3 DAYS', type: 'General Election', risk: 'CRITICAL', note: 'PP landslide expected. Results same day World Cup opens. Pretoria Agreement collapsing. Eritrea tensions. Post-election triangular conflict risk. Most dangerous Horn window since 2020.', color: '#ff3b3b' },
-    { country: 'Somalia', flag: '🇸🇴', date: 'Active Crisis — Mogadishu Combat', type: 'Constitutional Crisis', risk: 'CRITICAL', note: 'Active combat Mogadishu — government vs opposition militias. UK concerned. Al-Shabaab exploiting vacuum. Mohamud term extension called illegal. Donors alarmed.', color: '#ff3b3b' },
-    { country: 'Guinea', flag: '🇬🇳', date: 'June 1 — Results Pending', type: 'Parliamentary + Municipal', risk: 'HIGH', note: '40 opposition parties dissolved. Boycotted. Doumbouya allies sweep expected. Legitimacy void.', color: '#ff3b3b' },
-    { country: 'Zambia', flag: '🇿🇲', date: 'August 13, 2026', type: 'General Election', risk: 'HIGH', note: 'Hichilema under pressure. Slow reform, 3hrs power/day. Opposition consolidating. Outcome uncertain.', color: '#ff3b3b' },
-    { country: 'South Africa', flag: '🇿🇦', date: 'Fall 2026', type: 'Municipal Elections', risk: 'HIGH', note: 'Ramaphosa 5-point crackdown announced. June 30 — 22 days. Biometric register announced. Green ID phased out. Employer jailing. March and March watching.', color: '#ff3b3b' },
-    { country: 'Nigeria', flag: '🇳🇬', date: 'Early 2027', type: 'General Election', risk: 'HIGH', note: 'Tinubu wins APC nomination. Dangote 700k bpd. Inflows +83.8%. Airstrike crisis unresolved. 2027 risk building.', color: '#ff3b3b' },
-    { country: 'Kenya', flag: '🇰🇪', date: '2027', type: 'General Election', risk: 'CRITICAL', note: 'Finance Bill 2026 June 30. Opposition formally rejected — "Ruto learnt nothing." June 25 storming anniversary in 17 days. Gen-Z watching. Eurobond Q2 rollover critical.', color: '#ff3b3b' },
+    { country: 'Ethiopia', flag: '🇪🇹', date: 'Results THURSDAY June 11', type: 'General Election', risk: 'CRITICAL', note: 'PP landslide. Results same day World Cup opens. Pretoria Agreement collapsing. Eritrea tensions. Post-election war window opens Thursday. Most dangerous Horn window since 2020. 2 days away.', color: '#ff3b3b' },
+    { country: 'Somalia', flag: '🇸🇴', date: 'Active Crisis — Mogadishu Combat', type: 'Constitutional Crisis', risk: 'CRITICAL', note: 'Mogadishu combat ongoing. Al-Shabaab Bay Region raids. Double-front security crisis. UK donors alarmed. AUSSOM under pressure.', color: '#ff3b3b' },
+    { country: 'Guinea', flag: '🇬🇳', date: 'June 1 — Results Pending', type: 'Parliamentary + Municipal', risk: 'HIGH', note: '40 opposition parties dissolved. Boycotted. Legitimacy void.', color: '#ff3b3b' },
+    { country: 'Zambia', flag: '🇿🇲', date: 'August 13, 2026', type: 'General Election', risk: 'HIGH', note: 'Hichilema under pressure. Slow reform, 3hrs power/day. Opposition consolidating.', color: '#ff3b3b' },
+    { country: 'South Africa', flag: '🇿🇦', date: 'Fall 2026', type: 'Municipal Elections', risk: 'HIGH', note: 'June 30 — 21 days. March and March faces legal constraints. Ramaphosa 5-point plan narrowing vigilante space. SARB 7%. ZAR near March high.', color: '#ff3b3b' },
+    { country: 'Nigeria', flag: '🇳🇬', date: 'Early 2027', type: 'General Election', risk: 'HIGH', note: '360 hostages rescued. But school abduction Oyo June 2. Multi-vector security crisis. Dangote 700k bpd positive. 2027 risk building from all directions.', color: '#ff3b3b' },
+    { country: 'Kenya', flag: '🇰🇪', date: '2027', type: 'General Election', risk: 'CRITICAL', note: 'Finance Bill June 30. June 25 storming anniversary in 16 days. Opposition rejected bill — "Ruto learnt nothing." Eurobond Q2 rollover critical.', color: '#ff3b3b' },
   ],
 
   debtMaturities: [
@@ -149,13 +149,13 @@ export const content = {
   ],
 
   riskTable: [
-    { country: 'SOMALIA', cds: 0, delta: 'N/A', bond: 'N/A', fx: 'N/A', signal: 'ACTIVE COMBAT MOGADISHU', color: '#ff3b3b' },
-    { country: 'KENYA', cds: 192, delta: '+48', bond: '-2.4pts', fx: '-0.3%', signal: 'OPPOSITION REJECTS FINANCE BILL', color: '#ff3b3b' },
-    { country: 'SOUTH AFRICA', cds: 198, delta: '+40', bond: '-2.0pts', fx: '+3.6%', signal: 'RAMAPHOSA 5-POINT PLAN — JUNE 30 22D', color: '#f5a623' },
-    { country: 'ETHIOPIA', cds: 520, delta: '+50', bond: '-2.5pts', fx: '-0.9%', signal: 'RESULTS JUNE 11 — WAR RISK 3 DAYS', color: '#ff3b3b' },
+    { country: 'SOMALIA', cds: 0, delta: 'N/A', bond: 'N/A', fx: 'N/A', signal: 'MOGADISHU COMBAT + AL-SHABAAB BAY', color: '#ff3b3b' },
+    { country: 'ETHIOPIA', cds: 520, delta: '+50', bond: '-2.5pts', fx: '-0.9%', signal: 'RESULTS THURSDAY — WAR RISK 2 DAYS', color: '#ff3b3b' },
+    { country: 'KENYA', cds: 192, delta: '+48', bond: '-2.4pts', fx: '-0.3%', signal: 'FINANCE BILL JUNE 30 — 16 DAYS TO ANN.', color: '#ff3b3b' },
+    { country: 'SOUTH AFRICA', cds: 198, delta: '+38', bond: '-1.9pts', fx: '+3.5%', signal: 'JUNE 30 — 21 DAYS — LEGAL CONSTRAINTS', color: '#f5a623' },
     { country: 'SENEGAL', cds: 820, delta: '-130', bond: '+1.5pts', fx: '-0.5%', signal: 'BONDS RALLY — IMF JUNE 15', color: '#f5a623' },
     { country: 'MALI', cds: 920, delta: '+65', bond: '-3.0pts', fx: '-1.5%', signal: 'SECURITY COLLAPSE', color: '#ff3b3b' },
-    { country: 'NIGERIA', cds: 380, delta: '-35', bond: '+1.2pts', fx: '-13.0%', signal: 'DANGOTE 700K — APC NOMINATION', color: '#00c48c' },
+    { country: 'NIGERIA', cds: 380, delta: '-35', bond: '+1.2pts', fx: '-13.0%', signal: '360 RESCUED — MULTI-VECTOR SECURITY', color: '#f5a623' },
     { country: 'GHANA', cds: 232, delta: '-5', bond: '+0.6pts', fx: '+5.5%', signal: 'IMF PROGRAMME COMPLETE — BENCHMARK', color: '#00c48c' },
   ],
 
@@ -178,6 +178,7 @@ export const content = {
     { date: 'Jun 5', NGN: 1361.39, GHS: 11.75, KES: 129.53, EGP: 52.22, ZAR: 16.29, UGX: 3770, ZMW: 19.02, XOF: 615 },
     { date: 'Jun 6', NGN: 1361.39, GHS: 11.75, KES: 129.53, EGP: 52.22, ZAR: 16.29, UGX: 3770, ZMW: 19.02, XOF: 615 },
     { date: 'Jun 7', NGN: 1361.39, GHS: 11.75, KES: 129.53, EGP: 52.22, ZAR: 16.29, UGX: 3770, ZMW: 19.02, XOF: 615 },
-    { date: 'Jun 8', NGN: 1360.73, GHS: 11.82, KES: 129.53, EGP: 52.22, ZAR: 16.29, UGX: 3770, ZMW: 19.02, XOF: 615 },
+    { date: 'Jun 8', NGN: 1360.73, GHS: 11.82, KES: 129.53, EGP: 52.22, ZAR: 16.30, UGX: 3770, ZMW: 19.02, XOF: 615 },
+    { date: 'Jun 9', NGN: 1360.73, GHS: 11.82, KES: 129.53, EGP: 52.22, ZAR: 16.30, UGX: 3770, ZMW: 19.02, XOF: 615 },
   ],
 }
