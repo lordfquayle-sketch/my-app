@@ -3,10 +3,10 @@ export const content = {
   riskStatus: 'CRITICAL',
 
   riskMonitor: {
-    updated: 'June 10, 2026 09:00 UTC',
+    updated: 'June 11, 2026 09:00 UTC',
     overallScore: 96,
     trend: 'WORSENING',
-    drivers: ['Ebola DRC 550 Confirmed 101 Deaths — 35 New Cases in 24 Hours — Armed Groups Attacking Burial Teams', 'Somalia: Mogadishu Violence Subsides But Opposition Rejects Mohamud — "Former President" — Fight Continues', 'Somali Referee Dropped From World Cup After US Visa Denial — Ebola Travel Architecture Deepens', 'WORLD CUP TOMORROW + ETHIOPIA RESULTS TOMORROW — JUNE 11 HORN CONVERGENCE 1 DAY'],
+    drivers: ['Ethiopia PP Wins 457/547 Seats — Abiy Confirmed Third Term — Post-Election War Risk Live', 'World Cup Opens TODAY — South Africa vs Mexico Mexico City — Bafana vs El Tri', 'ZAR Weakens to 16.56 — Rand Gives Up May Gains On Dollar Strength', 'Kenya June 25 Anniversary In 14 Days — Finance Bill Gen-Z Clock Ticking'],
     regions: [
       { region: 'East Africa', score: 99, trend: '↑', color: '#ff3b3b' },
       { region: 'West Africa', score: 88, trend: '→', color: '#ff3b3b' },
@@ -17,20 +17,20 @@ export const content = {
   },
 
   sovereignAlerts: [
-    { country: 'DRC/Uganda', flag: '🇨🇩', alert: 'ECDC June 9: DRC 550 confirmed cases, 101 confirmed deaths. 35 new confirmed cases in previous 24 hours, 10 new deaths. Ituri: 518 confirmed from 17 health zones. North Kivu: 29 confirmed from 7 health zones. South Kivu: 3 confirmed. Uganda: 19 confirmed, 2 deaths. Burial team attacked at Nyamurongo cemetery in Bunia — 2 people seriously injured, 2 vehicles damaged. DRC government: armed groups actively hindering response in Ituri. 309 hospitalised in isolation. Contact tracing still below 90% threshold. Vaccine candidates in trials.', severity: 'CRITICAL', color: '#ff3b3b' },
-    { country: 'Somalia', flag: '🇸🇴', alert: 'Mogadishu violence subsided after 2 days — government declared Abdiaziz and Hawlwadag districts calm. But opposition formally rejects Mohamud\'s rule and vows to fight on — calling him "former president." No constitutional court to resolve dispute. Two federal states (Jubaland, Puntland) reject constitutional amendments. Somali referee Omar Artan dropped from World Cup after US visa denied — Ebola entry restrictions affecting all Somali nationals. Opposition rejected Mohamud\'s dialogue offer twice. Structural crisis ongoing.', severity: 'CRITICAL', color: '#ff3b3b' },
-    { country: 'Ethiopia', flag: '🇪🇹', alert: 'RESULTS TOMORROW June 11 — same day World Cup opens. PP landslide expected. Post-election war window goes live tomorrow. Pretoria Agreement "on verge of collapse." TPLF reinstated Debretsion. Eritrea tensions — Red Sea access. Triangular conflict scenario: TPLF + Eritrea. Abiy expected to launch operations against TPLF post-election as in 2020. Most dangerous Horn window since November 2020.', severity: 'CRITICAL', color: '#ff3b3b' },
-    { country: 'Kenya', flag: '🇰🇪', alert: 'Finance Bill 2026 — June 25 storming anniversary in 15 days. June 30 deadline in 20 days. Opposition rejected bill — Kalonzo: "Ruto learnt nothing." Gen-Z mobilisation building. Eurobond $2bn Q2 rollover critical. KES at 129.53. US-Kenya strained. Finance Bill 2026 includes phone excise duty, crypto taxes, digital economy levies — politically identical profile to 2024.', severity: 'CRITICAL', color: '#ff3b3b' },
-    { country: 'South Africa', flag: '🇿🇦', alert: 'June 30 — 20 days. Ramaphosa 5-point crackdown announced. March and March faces legal constraints — cannot arrest migrants. ZAR at 16.30 — near highest since March, SARB 7%. Household debt: 41% in default, R237bn overdue. PEPFAR crisis: $620m-$1.4bn gap, PEPFAR-CDC expires September. Petrol hike live. Biometric register announced but implementation months away.', severity: 'HIGH', color: '#f5a623' },
+    { country: 'Ethiopia', flag: '🇪🇹', alert: 'RESULTS: PP wins all 24 constituencies declared so far. NEBE confirms PP secured 457 of 547 seats — commanding majority. Abiy confirmed third term. Tigray excluded — 38 districts. TPLF reinstated Debretsion in violation of Pretoria Agreement. Post-election war risk on Tigray and Eritrea now live. Foreign Policy: "Pretoria Agreement on verge of collapse." All major analysts: Abiy expected to launch operations against TPLF post-election. AU observer mission noted improvements but highlighted ongoing security challenges.', severity: 'CRITICAL', color: '#ff3b3b' },
+    { country: 'South Africa', flag: '🇿🇦', alert: 'BAFANA BAFANA OPEN THE WORLD CUP TODAY vs Mexico, Mexico City — 16 years after 2010. Hugo Broos\' squad arrives as underdogs. Stale 0-0 vs Nicaragua, 1-1 draw with Jamaica in warm-ups. ZAR weakened to 16.56 — rand gives up May gains on dollar strength. June 30: 19 days. Ramaphosa 5-point crackdown announced. March and March faces legal constraints. SARB hiked to 7%. Household debt crisis: 41% in default.', severity: 'HIGH', color: '#f5a623' },
+    { country: 'Kenya', flag: '🇰🇪', alert: 'June 25 storming anniversary in 14 days. Finance Bill 2026 June 30 deadline in 19 days. Opposition formally rejected — Kalonzo: "Ruto learnt nothing." Gen-Z mobilisation building. Finance Bill 2026: phone excise duty, crypto taxes, digital economy levies, rental income tax hike. KES at 129.41. Eurobond $2bn Q2 rollover critical. Nanyuki Ebola facility protests: 1 dead June 9 (Al Jazeera), 2 dead previously.', severity: 'CRITICAL', color: '#ff3b3b' },
+    { country: 'DRC/Uganda', flag: '🇨🇩', alert: 'DRC Leopards arrive Houston ahead of June 17 opener vs Portugal. Fans banned from US travel. Ebola: 550 confirmed, 101 deaths. 35 new cases in 24 hours. Armed groups attacking burial teams in Bunia. Ituri: 518 confirmed from 17 health zones. Uganda: 19 confirmed, Kampala and Wakiso affected. WHO $518m plan operational. Contact tracing still below 90% threshold.', severity: 'CRITICAL', color: '#ff3b3b' },
+    { country: 'Senegal', flag: '🇸🇳', alert: 'IMF visit THIS WEEK — June 15. Bonds rallied from 50.6c record low. Finance Minister Diba targeting agreement June 30. Three Pastef members in Lo government. Early coupon payment confirmed — track record intact. Structural risk remains: 132% debt/GDP, $9.7bn obligations 2026. Oxford Economics Venezuela/Lebanon classification stands until programme restored.', severity: 'HIGH', color: '#f5a623' },
   ],
 
   featuredSignal: {
-    title: 'EBOLA 550 CONFIRMED 101 DEAD — ARMED GROUPS ATTACK BURIAL TEAMS — SOMALI REFEREE BANNED FROM WORLD CUP — JUNE 11 IS THE MOST CONSEQUENTIAL DAY IN AFRICA THIS DECADE',
-    body: 'June 10 — one day before the most consequential convergence in African geopolitics this decade. Ebola has reached 550 confirmed cases and 101 deaths with 35 new cases in 24 hours — the DRC government is explicitly naming armed groups as actively hindering the response, including an attack on a burial team in Bunia that seriously injured two responders. A Somali referee, Omar Artan, has been dropped from the World Cup after being denied a US entry visa — the Ebola travel architecture is now shaping who can participate in the world\'s biggest sporting event from Africa. Tomorrow June 11: the World Cup opens in Mexico City, Ethiopia\'s election results are announced, DRC Leopards arrive in Houston. Somalia\'s Mogadishu violence has subsided but the opposition formally rejects Mohamud\'s presidency and vows to continue the fight — calling him "former president," with no constitutional court to resolve the dispute. Kenya\'s Finance Bill anniversary clock is ticking — 15 days to the June 25 storming anniversary. South Africa has 20 days to June 30.',
-    tag: 'JUNE 10 CRITICAL SIGNAL',
+    title: 'ETHIOPIA PP WINS 457 SEATS — ABIY CONFIRMED — POST-ELECTION WAR RISK LIVE — WORLD CUP OPENS — BAFANA BAFANA VS MEXICO TODAY — JUNE 11 IS AFRICA\'S DEFINING DAY OF 2026',
+    body: 'June 11 is Africa\'s defining day of 2026. Ethiopia\'s National Election Board confirms the Prosperity Party has won 457 of 547 seats — Abiy Ahmed is confirmed for a third term. Tigray was excluded, the Pretoria Agreement is on the verge of collapse, and the TPLF has reinstated Debretsion. The post-election war risk on Tigray and Eritrea is now live. Every major analyst has flagged military operations against the TPLF as the expected post-election outcome. On the same day, South Africa opens the 2026 World Cup against Mexico in Mexico City — 16 years after Tshabalala\'s screamer in 2010. Bafana Bafana arrive as underdogs with Hugo Broos frustrated by warm-up results. The ZAR has weakened from 16.30 to 16.56 on dollar strength. DRC\'s Leopards have arrived in Houston for their first World Cup since 1974. Kenya\'s Finance Bill clock is ticking — 14 days to the June 25 anniversary. Africa has never had its geopolitical and sporting moments converge so sharply in a single day.',
+    tag: 'JUNE 11 CRITICAL SIGNAL',
     color: '#ff3b3b',
     author: 'Lord Fiifi Quayle',
-    date: 'June 10, 2026',
+    date: 'June 11, 2026',
   },
 
   pressureMap: [
@@ -38,42 +38,42 @@ export const content = {
     { country: 'Ghana', flag: '🇬🇭', outlook: 'Positive', status: 'STABLE', statusColor: '#00c48c', cds: '232', fxPressure: 'MODERATE', liquidity: 'STABLE' },
     { country: 'Kenya', flag: '🇰🇪', outlook: 'Negative', status: 'STRESSED', statusColor: '#ff3b3b', cds: '192', fxPressure: 'ELEVATED', liquidity: 'TIGHT' },
     { country: 'Egypt', flag: '🇪🇬', outlook: 'Cautious', status: 'WATCH', statusColor: '#f5a623', cds: '568', fxPressure: 'MODERATE', liquidity: 'WATCH' },
-    { country: 'South Africa', flag: '🇿🇦', outlook: 'Cautious', status: 'WATCH', statusColor: '#f5a623', cds: '198', fxPressure: 'LOW', liquidity: 'WATCH' },
+    { country: 'South Africa', flag: '🇿🇦', outlook: 'Cautious', status: 'WATCH', statusColor: '#f5a623', cds: '198', fxPressure: 'MODERATE', liquidity: 'WATCH' },
     { country: 'Senegal', flag: '🇸🇳', outlook: 'Negative', status: 'WATCH', statusColor: '#f5a623', cds: '820', fxPressure: 'HIGH', liquidity: 'TIGHT' },
   ],
 
   whatMattersNow: [
-    { title: 'EBOLA: 550 CONFIRMED 101 DEATHS — ARMED GROUPS ATTACKING BURIAL TEAMS IN BUNIA', body: 'DRC Ministry of Health June 8 update: 550 confirmed cases, 101 confirmed deaths. 35 new cases in previous 24 hours, 10 new deaths. Ituri: 518 confirmed from 17 health zones — most affected province. North Kivu: 29 confirmed, 7 health zones. South Kivu: 3 confirmed. 309 in isolation. Uganda: 19 confirmed, 2 deaths. Armed groups actively hindering response — burial team attacked at Nyamurongo cemetery, Bunia: 2 responders seriously injured, 2 vehicles destroyed. DRC government "expressed concern over armed groups hindering health response." Mistrust and resistance hampering Ebola response per Reuters.', icon: '🚨' },
-    { title: 'SOMALIA: VIOLENCE SUBSIDES BUT OPPOSITION REJECTS MOHAMUD — "FORMER PRESIDENT"', body: 'Mogadishu fighting ended after 2 days — government declared order restored. But: opposition formally rejects Mohamud\'s rule and vows to fight on. Opposition leaders call him "former president." No constitutional court to resolve dispute. Jubaland and Puntland federal states reject amendments. Mohamud formed new political party — Jubaland and Puntland absent. Opposition rejected dialogue offer twice. Structural crisis: Mohamud says provisional constitution "era set yesterday" — opposition says May 15 was his last day. Ceasefire is not resolution.', icon: '⚔️' },
-    { title: 'SOMALI REFEREE DROPPED FROM WORLD CUP — US VISA DENIED — EBOLA SHAPES SPORT', body: 'FIFA confirmed Somali referee Omar Artan dropped from the 2026 World Cup after US entry denied — linked to Ebola-related travel restrictions on East African nationals. This is the second Africa-specific World Cup casualty of the Ebola crisis — after Spain\'s ban on DRC\'s warm-up match in La Línea. The US travel architecture is now actively removing African officials from a tournament co-hosted by the US. The soft power cost of the Ebola response to the African continent is accumulating in real time.', icon: '⚽' },
-    { title: 'JUNE 11 TOMORROW — WORLD CUP + ETHIOPIA RESULTS — HORN OF AFRICA AT ZERO HOUR', body: 'June 11: World Cup 2026 opens Mexico City 17:00 local — Mexico vs Canada. Ethiopia election results announced — PP landslide confirmed, post-election war risk on TPLF and Eritrea goes live. DRC Leopards arrive Houston for June 17 first game vs Portugal. Somalia opposition vows continued fight. Ebola containment fragile — 35 new cases yesterday. The world\'s biggest sporting event opens as the Horn of Africa enters its most dangerous political week since 2020. The contrast is Africa\'s defining geopolitical image of 2026.', icon: '🌍' },
+    { title: 'ETHIOPIA: PP WINS 457/547 SEATS — ABIY THIRD TERM CONFIRMED — POST-ELECTION WAR RISK LIVE', body: 'NEBE: PP won all 24 constituencies declared in early count. Final tally: 457 of 547 seats. Abiy Ahmed confirmed for third five-year term. Parliament officially confirmed him as PM. Tigray excluded — 38 districts. AU observer mission noted improvements in electoral administration but highlighted ongoing security challenges. TPLF reinstated Debretsion in violation of Pretoria Agreement. Eritrea tensions over Red Sea access. Foreign Policy: "Pretoria Agreement on verge of collapse." Post-election war risk on TPLF is now the live watch signal. Watch Abiy\'s posture in the coming 72 hours.', icon: '⚔️' },
+    { title: 'WORLD CUP OPENS — BAFANA BAFANA VS MEXICO — SOUTH AFRICA\'S MOMENT', body: 'South Africa faces Mexico in Mexico City today — 9PM CAT kick-off — the opening match of the 2026 World Cup, exactly 16 years after Tshabalala\'s goal in Johannesburg. Hugo Broos\' side arrives as underdogs: 3 draws and 2 defeats in warm-ups, stale 0-0 vs Nicaragua, 1-1 behind closed doors vs Jamaica. Mexico unbeaten in 8 friendlies in 2026. DRC Leopards in Houston for June 17 vs Portugal. Africa has 6 teams in the 48-team expanded tournament — the continent\'s biggest World Cup presence in history. Bafana Bafana\'s squad features mainly domestic-based players with Lyle Foster leading attack.', icon: '⚽' },
+    { title: 'ZAR WEAKENS TO 16.56 — RAND GIVES UP MAY GAINS ON DOLLAR STRENGTH', body: 'USD/ZAR moved to 16.563 as of June 10 10:55 UTC — from 16.30 held through most of June. The rand is giving up gains made on dollar weakness as the USD strengthens. 2026 ZAR average: 16.43. High: 18.22 (July 2025). Low: 15.73 (Jan 2026). The SARB 7% rate provides structural support. June 30 xenophobia deadline in 19 days — any escalation risk adds political pressure on the currency. Household debt crisis: 41% in default, R237bn overdue.', icon: '📉' },
+    { title: 'KENYA JUNE 25 IN 14 DAYS — FINANCE BILL GEN-Z CLOCK TICKING — EUROBOND ROLLOVER CRITICAL', body: 'June 25 is the second anniversary of the 2024 parliament storming — the most politically charged date on Kenya\'s calendar. The Finance Bill 2026 is due June 30. Opposition rejected it formally. Kalonzo: "Ruto learnt nothing." In 2024: bill introduced May → protests June → storming June 25 → withdrawal June 28. In 2026: identical calendar. Nanyuki Ebola facility protests already showed willingness to confront police. Gen-Z mobilisation building. Eurobond $2bn Q2 rollover simultaneous pressure. Ruto managing five crises.', icon: '🔥' },
   ],
 
   insight1: {
-    title: 'EBOLA AT 550 CONFIRMED WITH ARMED GROUPS ATTACKING RESPONDERS IS THE WHO\'S WORST-CASE SCENARIO',
-    body: 'The 2018-2020 North Kivu Ebola outbreak — which killed 2,286 people over two years — was defined by exactly this dynamic: armed groups attacking health workers, community resistance to body-handling protocols, and contact tracing that never reached the 90% threshold needed to stay ahead of transmission. The Bundibugyo strain is different — more transmissible in some contexts, no approved vaccine — but the structural containment failures are identical. A burial team attacked in Bunia with two responders seriously injured and vehicles destroyed is not an isolated incident: it is a pattern. The DRC government naming armed groups as actively hindering the response is significant — it is an official acknowledgement that the security environment is incompatible with conventional outbreak response. The WHO\'s $518m plan cannot buy security. The ceasefire appeal has not been heeded. Contact tracing is still below 90%. Thirty-five new cases in 24 hours is acceleration, not containment.',
-    conclusion: 'EBOLA AT 550 CONFIRMED WITH ARMED GROUP ATTACKS ON RESPONDERS REPLICATES THE STRUCTURAL CONDITIONS OF THE 2018-2020 OUTBREAK THAT KILLED 2,286. THE DIFFERENCE IS NO VACCINE. THE TRAJECTORY IS NOT CONTAINMENT. WATCH FOR WHO RISK LEVEL UPGRADE.',
+    title: 'ABIY\'S THIRD TERM MANDATE IS THE PLATFORM FOR POST-ELECTION TIGRAY OPERATIONS — WATCH THE NEXT 72 HOURS',
+    body: 'The pattern from 2020 is precise: Abiy won the election, secured his mandate, and within months launched the Tigray War that killed an estimated 600,000 people. The TPLF has provided every precondition for a repeat: reinstating the pre-Pretoria government, reappointing Debretsion, consolidating authority in 38 districts where NEBE suspended polling. The Eritrea dimension adds a new axis — Abiy\'s Red Sea ambitions create tensions with Asmara that could produce a three-way conflict. Foreign Policy has described the Pretoria Agreement as "on the verge of collapse." The 72 hours after the results announcement are the highest-risk window. What Abiy says about Tigray in his first post-election public statement will determine the immediate trajectory. Any military positioning signal from federal forces near Tigray in the coming days is the escalation indicator.',
+    conclusion: 'THE 72 HOURS AFTER ABIY\'S THIRD TERM CONFIRMATION ARE THE HORN OF AFRICA\'S MOST DANGEROUS SINCE NOVEMBER 2020. WATCH ABIY\'S FIRST POST-ELECTION STATEMENT ON TIGRAY — AND ANY FEDERAL FORCE MOVEMENTS NEAR THE TIGRAY BORDER.',
   },
 
   insight2: {
-    title: 'THE SOMALI REFEREE BAN AND THE DRC FAN BAN ARE THE TWO MOST CONSEQUENTIAL SOFT POWER MOMENTS OF AFRICA\'S WORLD CUP',
-    body: 'The 2026 World Cup was supposed to be Africa\'s moment — Morocco\'s semi-final in 2022 had raised expectations for a sub-Saharan breakthrough, DRC qualified for their first tournament since 1974, and the continent had six teams in the tournament. Instead: DRC\'s fans cannot travel to the US. A Somali referee has been barred from officiating. DRC\'s warm-up match was banned in Spain. The tournament begins tomorrow and the dominant Africa narrative is not football — it is Ebola, travel bans, and the US\'s immigration enforcement architecture intersecting with sport. This is the soft power cost that does not appear in sovereign risk models but is being absorbed into global perceptions of Africa\'s institutional reliability, political stability, and accessibility as an investment destination.',
-    conclusion: 'THE SOMALI REFEREE BAN AND DRC FAN BAN ARE NOT FOOTBALL STORIES — THEY ARE SOVEREIGN RISK STORIES. THE GLOBAL PERCEPTION OF AFRICA BEING SHAPED BY THE 2026 WORLD CUP IS DEFINED BY EXCLUSION AND CRISIS, NOT FOOTBALL PERFORMANCE.',
+    title: 'SOUTH AFRICA OPENING THE WORLD CUP ON THE SAME DAY AS ITS JUNE 30 COUNTDOWN — THE POLITICAL ECONOMY OF BAFANA\'S MOMENT',
+    body: 'The symbolism is acute. South Africa — which is managing a xenophobia crisis, a presidential impeachment panel, a household debt emergency, a PEPFAR health crisis, and a dual-movement June 30 deadline — opens the world\'s biggest sporting event today. The World Cup is the GNU\'s most powerful soft power asset: a unified national narrative that crosses political lines. A good Bafana result tonight could briefly move the political weather. But the structural problems — 41% of borrowers in default, PEPFAR-CDC expiring September, 19 days to June 30 — are not changed by a football result. The ZAR at 16.56, slightly weaker than its May levels, reflects the political risk premium building as June 30 approaches. The game matters. But the calendar matters more.',
+    conclusion: 'BAFANA\'S WORLD CUP CAMPAIGN IS THE GNU\'S MOST IMPORTANT SOFT POWER MOMENT OF 2026. A STRONG RESULT TONIGHT COULD SHIFT THE POLITICAL WEATHER. BUT THE JUNE 30 STRUCTURAL CRISIS RUNS INDEPENDENT OF FOOTBALL. WATCH BOTH THE SCORE AND THE RAND.',
   },
 
   brief: {
     week: '24',
-    title: 'WEEK 24 EVE: EBOLA 550 CONFIRMED 101 DEAD ARMED GROUPS ATTACKING, SOMALIA CEASEFIRE BUT CRISIS DEEPENS, SOMALI REFEREE WORLD CUP BANNED, JUNE 11 TOMORROW',
-    body: 'The eve of the continent\'s most consequential day delivers maximum risk density. Ebola has 550 confirmed cases and 101 deaths — 35 new in 24 hours, armed groups attacking burial teams in Bunia, contact tracing below threshold. Somalia\'s Mogadishu ceasefire is not a resolution — the opposition calls Mohamud "former president" and vows to fight on, Jubaland and Puntland reject his rule, there is no constitutional court to adjudicate. A Somali referee has been dropped from the World Cup after US visa denial — the second Africa-specific casualty of the Ebola travel architecture after the DRC fan ban. Tomorrow June 11: World Cup opens Mexico City, Ethiopia results announced, DRC Leopards arrive Houston. Kenya\'s Finance Bill clock — 15 days to the June 25 2024 storming anniversary. South Africa\'s June 30 countdown: 20 days. Senegal\'s IMF visit this week. Ghana remains the continental benchmark.',
+    title: 'WEEK 24 THURSDAY: ETHIOPIA ABIY THIRD TERM CONFIRMED, WORLD CUP OPENS, BAFANA VS MEXICO, ZAR 16.56',
+    body: 'June 11 — Africa\'s defining day of 2026. Ethiopia\'s PP has won 457 of 547 seats — Abiy confirmed for a third term, post-election war risk on Tigray and Eritrea is live. The World Cup opens in Mexico City today — South Africa vs Mexico at 9PM CAT, 16 years after Tshabalala\'s goal. DRC Leopards arrive Houston for June 17. ZAR has weakened to 16.56 from 16.30 on dollar strength. Kenya\'s Finance Bill deadline clock: 14 days to June 25 anniversary, 19 days to June 30. Senegal\'s IMF visit is Monday June 15. South Africa\'s June 30 xenophobia deadline is 19 days away. Ebola stands at 550 confirmed cases, 101 deaths. The continent has never had its geopolitical and sporting moments converge so sharply.',
   },
 
   fxRates: {
     NGN: '1,360.73',
     GHS: '11.82',
-    KES: '129.53',
+    KES: '129.41',
     EGP: '52.22',
     XOF: '615.00',
-    ZAR: '16.30',
+    ZAR: '16.56',
     ETB: '132.00',
     TZS: '2,650.00',
     UGX: '3,770.00',
@@ -85,14 +85,14 @@ export const content = {
   },
 
   signals: [
-    { time: '09:30:00', signal: 'Ebola ECDC June 9: DRC 550 confirmed 101 deaths. 35 new cases in 24 hours, 10 new deaths. Ituri 518 from 17 health zones. Uganda 19 confirmed, 2 deaths. Burial team attacked Nyamurongo cemetery Bunia — 2 injured, 2 vehicles destroyed. Armed groups actively hindering response. DRC government: "concern over armed groups." 309 in isolation.', detail: 'HIGH', type: 'ALERT', tag: 'HEALTH RISK', country: 'AFRICA' },
-    { time: '09:15:00', signal: 'Somalia: Mogadishu violence subsided after 2 days — government declares order restored. But opposition rejects Mohamud\'s rule, calls him "former president," vows to fight on. No constitutional court. Jubaland + Puntland reject amendments. Dialogue offer rejected twice. Structural crisis ongoing.', detail: 'HIGH', type: 'ALERT', tag: 'SECURITY RISK', country: 'AFRICA' },
-    { time: '09:00:00', signal: 'Somali referee Omar Artan dropped from World Cup 2026 after US visa denied — linked to Ebola travel restrictions. Second Africa World Cup casualty after DRC fan travel ban. US entry restrictions removing African officials from World Cup. Soft power cost accumulating in real time.', detail: 'HIGH', type: 'ALERT', tag: 'GEOPOLITICAL', country: 'AFRICA' },
-    { time: '08:45:00', signal: 'JUNE 11 TOMORROW: World Cup opens Mexico City 17:00 local — Mexico vs Canada. Ethiopia results — PP landslide + post-election war risk live. DRC Leopards arrive Houston. Somalia opposition active. Ebola containment fragile. Horn of Africa compound risk at maximum same day World Cup begins.', detail: 'HIGH', type: 'ALERT', tag: 'GEOPOLITICAL', country: 'AFRICA' },
-    { time: '08:30:00', signal: 'Kenya Finance Bill 2026: June 25 storming anniversary in 15 days. June 30 deadline in 20 days. Opposition Kalonzo: "Ruto learnt nothing." Gen-Z watching. Bill includes phone excise, crypto taxes, digital economy levies. Eurobond Q2 $2bn rollover critical. KES 129.53. Five simultaneous crises.', detail: 'HIGH', type: 'ALERT', tag: 'POLITICAL RISK', country: 'KES' },
-    { time: '08:15:00', signal: 'Senegal: IMF visit this week — June 15. Bonds rallying from 50.6c record low. Finance Minister Diba targets agreement June 30. Three Pastef members in Lo government. Acute default risk defused. Structural risk: 132% debt/GDP, $9.7bn obligations 2026. Oxford Economics Venezuela/Lebanon classification stands.', detail: 'MEDIUM', type: 'INFO', tag: 'CREDIT UPDATE', country: 'XOF' },
-    { time: '08:00:00', signal: 'SA June 30 — 20 days. March and March cannot legally arrest migrants — Ramaphosa warned only officials may act. ZAR 16.30 near highest since March. SARB 7%. Household debt: 41% in default. PEPFAR-CDC expires September. 5-point plan announced but implementation months away.', detail: 'HIGH', type: 'ALERT', tag: 'POLITICAL RISK', country: 'ZAR' },
-    { time: '07:45:00', signal: 'LIVE FX June 10: NGN 1,360.73 | GHS 11.82 | KES 129.53 | EGP 52.22 | ZAR 16.30 | UGX 3,770 | ZMW 19.02. ZAR near highest since March — SARB 7%, PGM/gold export revenues, fiscal discipline. NGN strengthening trend. Markets open — watch Senegal bond spreads for IMF visit week rally continuation.', detail: 'LOW', type: 'INFO', tag: 'FX UPDATE', country: 'AFRICA' },
+    { time: '09:30:00', signal: 'Ethiopia RESULTS: PP wins 457/547 seats — commanding majority. Abiy confirmed third five-year term. Parliament officially confirmed. Tigray excluded. TPLF reinstated Debretsion. Post-election war risk on Tigray + Eritrea NOW LIVE. Watch Abiy\'s first statement on Tigray in next 72 hours.', detail: 'HIGH', type: 'ALERT', tag: 'SECURITY RISK', country: 'ETB' },
+    { time: '09:15:00', signal: 'WORLD CUP OPENS TODAY — South Africa vs Mexico, Mexico City, 9PM CAT. Bafana Bafana underdogs — Hugo Broos frustrated with warm-up results. DRC Leopards in Houston for June 17 vs Portugal. Africa has 6 teams in expanded 48-team tournament. Bafana\'s opening result will influence political weather in SA amid June 30 crisis.', detail: 'LOW', type: 'INFO', tag: 'GEOPOLITICAL', country: 'ZAR' },
+    { time: '09:00:00', signal: 'ZAR weakens to 16.56 from 16.30 — rand gives up May gains on dollar strength. 2026 ZAR average 16.43. SARB 7% provides structural support. June 30 in 19 days adds political risk premium. Household debt: 41% in default, R237bn overdue. PEPFAR-CDC expiring September adds compound pressure.', detail: 'HIGH', type: 'ALERT', tag: 'FX UPDATE', country: 'ZAR' },
+    { time: '08:45:00', signal: 'Kenya: June 25 storming anniversary in 14 days. Finance Bill 2026 June 30. Opposition rejected — Kalonzo: "Ruto learnt nothing." Gen-Z mobilisation building. Identical calendar to 2024. Eurobond $2bn Q2 rollover simultaneous. Nanyuki protests: 1+ dead. US-Kenya relations strained. KES at 129.41.', detail: 'HIGH', type: 'ALERT', tag: 'POLITICAL RISK', country: 'KES' },
+    { time: '08:30:00', signal: 'Ebola: 550 confirmed 101 deaths. 35 new cases in 24 hours. Armed groups attacking burial teams Bunia. Uganda 19 confirmed — Kampala + Wakiso. Contact tracing below 90%. WHO $518m plan operational. DRC Leopards in Houston. Fans banned. Somali referee banned. Ebola has reshaped Africa\'s World Cup presence.', detail: 'HIGH', type: 'ALERT', tag: 'HEALTH RISK', country: 'AFRICA' },
+    { time: '08:15:00', signal: 'Senegal: IMF visit Monday June 15. Bonds rallying. Diba targets June 30 agreement. Three Pastef members in Lo government. Acute default risk defused. Structural risk: 132% debt/GDP, $9.7bn obligations. South Africa cartel meth labs found on farms — Mexico cartel networks expanding into SA ahead of World Cup per Al Jazeera.', detail: 'MEDIUM', type: 'INFO', tag: 'CREDIT UPDATE', country: 'XOF' },
+    { time: '08:00:00', signal: 'Somalia: Ceasefire holding — Abdiaziz and Hawlwadag calm. But opposition calls Mohamud "former president" and vows to fight on. Al-Shabaab Bay Region operations ongoing. No constitutional court to resolve dispute. Jubaland + Puntland reject amendments. Structural crisis ongoing.', detail: 'HIGH', type: 'ALERT', tag: 'SECURITY RISK', country: 'AFRICA' },
+    { time: '07:45:00', signal: 'LIVE FX June 11: NGN 1,360.73 | GHS 11.82 | KES 129.41 | EGP 52.22 | ZAR 16.56 (weakening from 16.30) | UGX 3,770 | ZMW 19.02. ZAR move is most significant — dollar strength unwinding May rand gains. Watch Bafana result impact on ZAR sentiment tonight.', detail: 'HIGH', type: 'ALERT', tag: 'FX UPDATE', country: 'AFRICA' },
   ],
 
   heatMap: [
@@ -100,7 +100,7 @@ export const content = {
     { country: 'Ghana', flag: '🇬🇭', score: 40, fiscal: 36, fx: 46, debt: 36, political: 32, external: 42 },
     { country: 'Kenya', flag: '🇰🇪', score: 96, fiscal: 84, fx: 74, debt: 90, political: 99, external: 98 },
     { country: 'Egypt', flag: '🇪🇬', score: 66, fiscal: 68, fx: 64, debt: 66, political: 65, external: 68 },
-    { country: 'South Africa', flag: '🇿🇦', score: 94, fiscal: 76, fx: 44, debt: 70, political: 94, external: 92 },
+    { country: 'South Africa', flag: '🇿🇦', score: 94, fiscal: 76, fx: 52, debt: 70, political: 94, external: 92 },
     { country: 'Senegal', flag: '🇸🇳', score: 84, fiscal: 86, fx: 74, debt: 88, political: 82, external: 80 },
     { country: 'Mali', flag: '🇲🇱', score: 97, fiscal: 88, fx: 85, debt: 85, political: 99, external: 94 },
     { country: 'Uganda', flag: '🇺🇬', score: 96, fiscal: 70, fx: 78, debt: 74, political: 68, external: 99 },
@@ -109,27 +109,27 @@ export const content = {
   currencyStress: [
     { code: 'NGN', country: 'Nigeria', rate: '1,360.73', change: '-13.02%', stress: 'LOW', ytd: '-3.10%', color: '#00c48c' },
     { code: 'GHS', country: 'Ghana', rate: '11.82', change: '+15.83%', stress: 'MODERATE', ytd: '+5.47%', color: '#f5a623' },
-    { code: 'KES', country: 'Kenya', rate: '129.53', change: '+0.31%', stress: 'ELEVATED', ytd: '-0.98%', color: '#ff3b3b' },
+    { code: 'KES', country: 'Kenya', rate: '129.41', change: '+0.06%', stress: 'ELEVATED', ytd: '-0.87%', color: '#ff3b3b' },
     { code: 'EGP', country: 'Egypt', rate: '52.22', change: '-4.32%', stress: 'HIGH', ytd: '-4.51%', color: '#ff3b3b' },
-    { code: 'ZAR', country: 'South Africa', rate: '16.30', change: '+3.52%', stress: 'MODERATE', ytd: '+3.52%', color: '#f5a623' },
+    { code: 'ZAR', country: 'South Africa', rate: '16.56', change: '+1.91%', stress: 'MODERATE', ytd: '+1.91%', color: '#f5a623' },
     { code: 'UGX', country: 'Uganda', rate: '3,770.00', change: '-1.62%', stress: 'ELEVATED', ytd: '-4.80%', color: '#ff3b3b' },
     { code: 'ZMW', country: 'Zambia', rate: '19.02', change: '-32.91%', stress: 'HIGH', ytd: '-32.91%', color: '#ff3b3b' },
     { code: 'XOF', country: 'Mali/Senegal', rate: '615.00', change: '-0.82%', stress: 'ELEVATED', ytd: '-0.82%', color: '#f5a623' },
   ],
 
   elections: [
-    { country: 'Ethiopia', flag: '🇪🇹', date: 'Results JUNE 11 — TOMORROW', type: 'General Election', risk: 'CRITICAL', note: 'PP landslide. Results same day World Cup opens. Pretoria Agreement collapsing. Eritrea tensions. Post-election war window goes live TOMORROW. Most dangerous Horn window since 2020.', color: '#ff3b3b' },
-    { country: 'Somalia', flag: '🇸🇴', date: 'Active Crisis — Ceasefire Not Resolution', type: 'Constitutional Crisis', risk: 'CRITICAL', note: 'Mogadishu violence subsided. Opposition calls Mohamud "former president," vows to fight on. Jubaland + Puntland reject amendments. No constitutional court. Somali referee banned from World Cup. Structural crisis ongoing.', color: '#ff3b3b' },
-    { country: 'Guinea', flag: '🇬🇳', date: 'June 1 — Results Pending', type: 'Parliamentary + Municipal', risk: 'HIGH', note: '40 opposition parties dissolved. Boycotted. Doumbouya allies sweep expected. Legitimacy void.', color: '#ff3b3b' },
-    { country: 'Zambia', flag: '🇿🇲', date: 'August 13, 2026', type: 'General Election', risk: 'HIGH', note: 'Hichilema under pressure. Slow reform, 3hrs power/day. Opposition consolidating. Outcome uncertain.', color: '#ff3b3b' },
-    { country: 'South Africa', flag: '🇿🇦', date: 'Fall 2026', type: 'Municipal Elections', risk: 'HIGH', note: 'June 30 — 20 days. March and March legal constraints. Ramaphosa 5-point plan. ZAR near March high. SARB 7%. 20 days to manage compound crisis.', color: '#ff3b3b' },
-    { country: 'Nigeria', flag: '🇳🇬', date: 'Early 2027', type: 'General Election', risk: 'HIGH', note: 'Tinubu APC nomination. Dangote 700k bpd. 360 Boko Haram rescued. Multi-vector security crisis. 2027 risk building.', color: '#ff3b3b' },
-    { country: 'Kenya', flag: '🇰🇪', date: '2027', type: 'General Election', risk: 'CRITICAL', note: 'Finance Bill June 30. June 25 storming anniversary in 15 days. Kalonzo: "Ruto learnt nothing." Gen-Z watching. Eurobond Q2 rollover critical.', color: '#ff3b3b' },
+    { country: 'Ethiopia', flag: '🇪🇹', date: 'RESULTS TODAY — PP 457/547 SEATS', type: 'General Election', risk: 'CRITICAL', note: 'PP landslide confirmed. Abiy third term. Post-election war risk on Tigray + Eritrea LIVE. Pretoria Agreement collapsing. Watch Abiy\'s next 72 hours.', color: '#ff3b3b' },
+    { country: 'Somalia', flag: '🇸🇴', date: 'Constitutional Crisis — Ceasefire Holding', type: 'Constitutional Crisis', risk: 'CRITICAL', note: 'Ceasefire but opposition calls Mohamud "former president." Al-Shabaab Bay Region active. No constitutional court. Jubaland + Puntland reject amendments.', color: '#ff3b3b' },
+    { country: 'Guinea', flag: '🇬🇳', date: 'June 1 — Results Pending', type: 'Parliamentary + Municipal', risk: 'HIGH', note: '40 opposition parties dissolved. Boycotted. Legitimacy void.', color: '#ff3b3b' },
+    { country: 'Zambia', flag: '🇿🇲', date: 'August 13, 2026', type: 'General Election', risk: 'HIGH', note: 'Hichilema under pressure. Slow reform, 3hrs power/day. Opposition consolidating.', color: '#ff3b3b' },
+    { country: 'South Africa', flag: '🇿🇦', date: 'Fall 2026', type: 'Municipal Elections', risk: 'HIGH', note: 'June 30 — 19 days. Bafana opens World Cup today. ZAR 16.56. Ramaphosa 5-point plan. March and March legal constraints. 41% borrowers in default.', color: '#ff3b3b' },
+    { country: 'Nigeria', flag: '🇳🇬', date: 'Early 2027', type: 'General Election', risk: 'HIGH', note: 'Tinubu APC nomination. Dangote 700k bpd. Multi-vector security crisis. 2027 risk building.', color: '#ff3b3b' },
+    { country: 'Kenya', flag: '🇰🇪', date: '2027', type: 'General Election', risk: 'CRITICAL', note: 'Finance Bill June 30. June 25 in 14 days. Kalonzo: "Ruto learnt nothing." Gen-Z mobilising. Eurobond Q2 critical.', color: '#ff3b3b' },
   ],
 
   debtMaturities: [
-    { country: 'Senegal', flag: '🇸🇳', amount: '€53.75m + $38.8m PAID EARLY', instrument: 'Bond Coupons', maturity: 'PAID — IMF VISIT THIS WEEK', risk: 'HIGH', color: '#f5a623' },
-    { country: 'Senegal', flag: '🇸🇳', amount: '$1.8bn', instrument: 'IMF Programme', maturity: 'Disbursement Frozen — IMF June 15', risk: 'CRITICAL', color: '#ff3b3b' },
+    { country: 'Senegal', flag: '🇸🇳', amount: 'PAID EARLY', instrument: 'Bond Coupons', maturity: 'IMF VISIT MONDAY JUNE 15', risk: 'HIGH', color: '#f5a623' },
+    { country: 'Senegal', flag: '🇸🇳', amount: '$1.8bn', instrument: 'IMF Programme', maturity: 'Disbursement Frozen', risk: 'CRITICAL', color: '#ff3b3b' },
     { country: 'Kenya', flag: '🇰🇪', amount: '$2.0bn', instrument: 'Eurobond', maturity: 'Q2 2026', risk: 'CRITICAL', color: '#ff3b3b' },
     { country: 'Egypt', flag: '🇪🇬', amount: '$2.1bn', instrument: 'Eurobond', maturity: 'Q2 2026', risk: 'HIGH', color: '#ff3b3b' },
     { country: 'Egypt', flag: '🇪🇬', amount: '$1.4bn', instrument: 'IMF Repurchase', maturity: 'Q3 2026', risk: 'HIGH', color: '#ff3b3b' },
@@ -149,13 +149,13 @@ export const content = {
   ],
 
   riskTable: [
-    { country: 'SOMALIA', cds: 0, delta: 'N/A', bond: 'N/A', fx: 'N/A', signal: 'CEASEFIRE — OPPOSITION "FORMER PRESIDENT"', color: '#ff3b3b' },
-    { country: 'ETHIOPIA', cds: 520, delta: '+50', bond: '-2.5pts', fx: '-0.9%', signal: 'RESULTS TOMORROW — WAR RISK LIVE', color: '#ff3b3b' },
-    { country: 'KENYA', cds: 192, delta: '+48', bond: '-2.4pts', fx: '-0.3%', signal: 'JUNE 25 IN 15 DAYS — JUNE 30 IN 20', color: '#ff3b3b' },
-    { country: 'SOUTH AFRICA', cds: 198, delta: '+35', bond: '-1.8pts', fx: '+3.5%', signal: 'JUNE 30 — 20 DAYS — ZAR NEAR HIGH', color: '#f5a623' },
-    { country: 'SENEGAL', cds: 820, delta: '-130', bond: '+1.5pts', fx: '-0.5%', signal: 'BONDS RALLY — IMF THIS WEEK', color: '#f5a623' },
+    { country: 'ETHIOPIA', cds: 520, delta: '+55', bond: '-2.8pts', fx: '-0.9%', signal: 'ABIY THIRD TERM — WAR RISK LIVE', color: '#ff3b3b' },
+    { country: 'KENYA', cds: 192, delta: '+48', bond: '-2.4pts', fx: '+0.1%', signal: 'JUNE 25 IN 14 DAYS — JUNE 30 IN 19', color: '#ff3b3b' },
+    { country: 'SOUTH AFRICA', cds: 198, delta: '+38', bond: '-1.9pts', fx: '+1.9%', signal: 'JUNE 30 — 19 DAYS — WORLD CUP TODAY', color: '#f5a623' },
+    { country: 'SENEGAL', cds: 820, delta: '-130', bond: '+1.5pts', fx: '-0.5%', signal: 'IMF MONDAY — AGREEMENT JUNE 30', color: '#f5a623' },
+    { country: 'SOMALIA', cds: 0, delta: 'N/A', bond: 'N/A', fx: 'N/A', signal: 'CEASEFIRE — OPPOSITION FIGHTS ON', color: '#ff3b3b' },
     { country: 'MALI', cds: 920, delta: '+65', bond: '-3.0pts', fx: '-1.5%', signal: 'SECURITY COLLAPSE', color: '#ff3b3b' },
-    { country: 'NIGERIA', cds: 380, delta: '-35', bond: '+1.2pts', fx: '-13.0%', signal: 'DANGOTE + 360 RESCUED — BENCHMARK', color: '#00c48c' },
+    { country: 'NIGERIA', cds: 380, delta: '-35', bond: '+1.2pts', fx: '-13.0%', signal: 'DANGOTE 700K — WORLD CUP GROUP STAGE', color: '#00c48c' },
     { country: 'GHANA', cds: 232, delta: '-5', bond: '+0.6pts', fx: '+5.5%', signal: 'IMF PROGRAMME COMPLETE — BENCHMARK', color: '#00c48c' },
   ],
 
@@ -180,6 +180,7 @@ export const content = {
     { date: 'Jun 7', NGN: 1361.39, GHS: 11.75, KES: 129.53, EGP: 52.22, ZAR: 16.29, UGX: 3770, ZMW: 19.02, XOF: 615 },
     { date: 'Jun 8', NGN: 1360.73, GHS: 11.82, KES: 129.53, EGP: 52.22, ZAR: 16.30, UGX: 3770, ZMW: 19.02, XOF: 615 },
     { date: 'Jun 9', NGN: 1360.73, GHS: 11.82, KES: 129.53, EGP: 52.22, ZAR: 16.30, UGX: 3770, ZMW: 19.02, XOF: 615 },
-    { date: 'Jun 10', NGN: 1360.73, GHS: 11.82, KES: 129.53, EGP: 52.22, ZAR: 16.30, UGX: 3770, ZMW: 19.02, XOF: 615 },
+    { date: 'Jun 10', NGN: 1360.73, GHS: 11.82, KES: 129.41, EGP: 52.22, ZAR: 16.56, UGX: 3770, ZMW: 19.02, XOF: 615 },
+    { date: 'Jun 11', NGN: 1360.73, GHS: 11.82, KES: 129.41, EGP: 52.22, ZAR: 16.56, UGX: 3770, ZMW: 19.02, XOF: 615 },
   ],
 }
